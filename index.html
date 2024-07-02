@@ -77,6 +77,8 @@
       opacity: 100%;
     }
 }
+    
+
 
     </style>
     <title>Des-atendidos</title>
@@ -255,7 +257,7 @@
           <div style="z-index: 2; "><img src="ilustracion_ana6.jpg" height="300"></div>
           
           <div style="margin-left: 100px; z-index: 2; ">
-            <p style="width: 400px;">El día de hoy hablamos con Ana. La vimos muy rara últimamente y queríamos 
+            <p style="width: 400px; font-size: 3vh;">El día de hoy hablamos con Ana. La vimos muy rara últimamente y queríamos 
               saber qué es lo que pasaba. Sus padres están muy preocupados por ella, 
               porque siempre está aislada, ya no tiene amigos y duerme todo el día. 
               Veamos que le sucede a esta pequeña.</p>
@@ -265,6 +267,7 @@
 
         </div>
 
+        <!--
         <div style="background: #ffc447;
           border-radius: 50%;
           width: 100vw;
@@ -272,15 +275,39 @@
           position: relative;
           margin-top: -10vw;
           z-index: 1;"></div>
+          -->
+        </div>
+        
+
+  
+      <div id="slide6" style="background-color: #ffc447; z-index: 2; display: flex; justify-content: center; align-items: center;">
+        
+        <div id="slide6_izquierda" style="width: 40vw; display: inline-block; text-align: left;">
+          <h3 style="color: white; font-size: 6vh; ">¿Qué rol deberían cumplir los colegios ante esta situación?</h3>
+        </div>
+
+        <div style="
+        display: inline-block;
+        background: #006d74;
+        width: 4px;
+        height: 250px;
+        position: relative;
+        margin-left: 50px;
+        margin-right: 50px;
+        ">
+
+        </div>
+
+        <div id="slide6_derecha" style="width: 40vw; display: inline-block; text-align: left;">
+          <p style="font-size: 2.1vh;">Los colegios tienen la obligación de crear un ambiente seguro, inclusivo 
+            y respetuoso donde tdos los estudiantes se sientan valorados y protegidos. 
+            Estos deben cumplir los <strong>roles de prevención, detención temprana e intervención 
+            y apoyo psicológico.</strong></p>
+        </div>
+
 
       </div>
 
-  
-      <h3>¿Qué rol deberían cumplir los colegios ante esta situación?</h3>
-      <p>Los colegios tienen la obligación de crear un ambiente seguro, inclusivo 
-        y respetuoso donde tdos los estudiantes se sientan valorados y protegidos. 
-        Estos deben cumplir los roles de prevención, detención temprana e intervención 
-        y apoyo psicológico</p>
 
       <h3>¿Qué están haciendo las autoridades?</h3>
       <p>En el año 2022, el Ministerio de Educación ha puesto en marcha el Programa 
@@ -389,10 +416,12 @@
 
         <script>
 
+          
           function toggleDesplegar() {
               var contenido_desplegable = document.getElementById("slide5_desplegable");
               contenido_desplegable.classList.toggle("mostrar");
           }
+          
           
           </script>
 
