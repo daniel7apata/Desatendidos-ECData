@@ -57,6 +57,26 @@
     }
     
 
+    .contenido_desplegable {
+    display: none;
+    }
+
+    .contenido_desplegable.mostrar {
+        display: block;
+        animation: desplegar 0.5s ease-in-out;
+    }
+
+
+    @keyframes desplegar {
+    0% {
+        overflow: hidden;
+        opacity: 0%;
+    }
+    100% {
+      overflow: visible;
+      opacity: 100%;
+    }
+}
 
     </style>
     <title>Des-atendidos</title>
@@ -74,7 +94,7 @@
 
     <div class="navbarmain">
         <nav class="navbar navbar-light navbar-expand-lg" 
-        style="background-color: #e7c727; height: 60px;">
+        style="background-color: #e7c727;">
           <div class="container-fluid" style="max-width: fit-content;
            margin-left: auto; margin-right: auto;">
            
@@ -99,7 +119,7 @@
                   <a class="nav-link" href="#2dasec">Búsqueda</a>
                 </li>
                 
-                <img src="logo_el_comercio.png" style="height: 30px; margin-left: 20px; margin-right: 60px; margin-top: 5px;">
+                <img src="logo_el_comercio.png" style="height: 30px; width: 190px; margin-left: 20px; margin-right: 60px; margin-top: 5px; ">
 
                 <div style="border: red 1px; background-color: red;
                  border-radius: 15px; color: white; font-weight: bold;">
@@ -205,18 +225,17 @@
       <div id="slide4" style="text-align: center; margin-top: 7vh; margin-bottom: 7vh;">
         <h3 style="color: #006d74; font-size: 6vh;">¿Cómo es hablar con un niño que ha sufrido de</h3>
         <h2 style="color: #ff8182; font-size: 8vh;">acoso escolar?</h2>
-        <img src="ilustracion_ana4.png" height="300"> <br>
+        <img src="ilustracion_ana4.png" height="300" onclick="toggleDesplegar()"> <br>
         <p style="font-size: 2.5vh; margin-top:1.5vh">Haz clic sobre el personaje para saber sobre ella</p>
       </div>
 
-      <div id="slide5_desplegable">
+      <div  class="contenido_desplegable" id="slide5_desplegable">
 
-        <div id="slide5_1" style="background-color: #ff8182; display: flex; justify-content: center; 
-      align-items: center;">
+        <div id="slide5_1" style="background-color: #ff8182; display: flex; justify-content: center; align-items: center;">
 
-          <img src="ilustracion_ana5.png" height="300">
-
-          <div id="recuadro_slide_5_1" style="background-color: #ffc447; border-radius: 15px; width: 400px; height: 100px; margin-left: 15vw;" >
+          <img src="ilustracion_ana5.png" style="float: left;" height="300">
+          
+          <div id="recuadro_slide_5_1" style=" float: left; background-color: #ffc447; border-radius: 15px; width: 500px; height: 120px; margin-left: 100px;" >
             <div style="display: flex; justify-content: center; margin-top: 5%;">
               <h3 style="font-size: 20px; color: white;">NOMBRE: </h3><p style="margin-left: 10px;">Ana</p>
               <h3 style="font-size: 20px; color: white; margin-left: 30px;">ACTIVIDADES FAVORITAS: </h3><p style="margin-left: 10px;">Dormir</p>
@@ -231,12 +250,28 @@
 
         </div>
 
-        <div id="slide5_2">
-          <p>El día de hoy hablamos con Ana. La vimos muy rara últimamente y queríamos 
-            saber qué es lo que pasaba. Sus padres están muy preocupados por ella, 
-            porque siempre está aislada, ya no tiene amigos y duerme todo el día. 
-            Veamos que le sucede a esta pequeña.</p>
+        <div id="slide5_2" style="background-color: #b8eaec; padding-top: 9vh; padding-bottom: 9vh; display: flex; justify-content: center; align-items: center;">
+          
+          <div style="z-index: 2; "><img src="ilustracion_ana6.jpg" height="300"></div>
+          
+          <div style="margin-left: 100px; z-index: 2; ">
+            <p style="width: 400px;">El día de hoy hablamos con Ana. La vimos muy rara últimamente y queríamos 
+              saber qué es lo que pasaba. Sus padres están muy preocupados por ella, 
+              porque siempre está aislada, ya no tiene amigos y duerme todo el día. 
+              Veamos que le sucede a esta pequeña.</p>
+          </div>
+
+          
+
         </div>
+
+        <div style="background: #ffc447;
+          border-radius: 50%;
+          width: 100vw;
+          height: 20vw;
+          position: relative;
+          margin-top: -10vw;
+          z-index: 1;"></div>
 
       </div>
 
@@ -352,7 +387,14 @@
 
 
 
+        <script>
 
+          function toggleDesplegar() {
+              var contenido_desplegable = document.getElementById("slide5_desplegable");
+              contenido_desplegable.classList.toggle("mostrar");
+          }
+          
+          </script>
 
     <div id="solo espacio" style="margin-bottom: 30vh;">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
