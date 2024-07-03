@@ -92,8 +92,10 @@
     }
     .modal {
       z-index: 2;
-      width: 90vw; height: 20vh;
+      width: 90vw; height: auto;
       position: sticky;
+      padding-top: 20px;
+      padding-bottom: 20px;
      
     }
 
@@ -567,6 +569,8 @@
           const overlay2 = document.getElementById('overlay2');
           btnMostrar2.addEventListener('click', () => {
               overlay2.style.display = 'flex';
+              overlay2.style.justifyContent = 'center';
+              overlay2.style.alignItems = 'center';
           });
           overlay2.addEventListener('click', (e) => {
               if (e.target === overlay2) {
@@ -578,6 +582,8 @@
           const overlay3 = document.getElementById('overlay3');
           btnMostrar3.addEventListener('click', () => {
               overlay3.style.display = 'flex';
+              overlay3.style.justifyContent = 'center';
+              overlay3.style.alignItems = 'center';
           });
           overlay3.addEventListener('click', (e) => {
               if (e.target === overlay3) {
