@@ -79,6 +79,23 @@
 }
     
 
+.overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+    }
+    .modal {
+      z-index: 2;
+      width: 90vw; height: 20vh;
+     
+    }
+
 
     </style>
     <title>Des-atendidos</title>
@@ -361,21 +378,21 @@
             <!--Caja 1-->
             <div style="background: #ff8182; height: 200px; width: 200px; 
             border-radius: 17px; display: flex; justify-content: center; 
-            align-items: end; flex-wrap: wrap; margin-top: 2vh;">
+            align-items: end; flex-wrap: wrap; margin-top: 2vh;" id="mostrarc1">
               <img src="falta_de_psicologos.png" height="100">
               <p>Falta de psicólogos</p>
           </div>
             <!--Caja 2-->
             <div style="background: #ff8182; height: 200px; margin-left: 2vw; 
             margin-right: 2vw; width: 200px; border-radius: 17px; display: flex; 
-            justify-content: center; align-items: end; flex-wrap: wrap; margin-top: 2vh;">
+            justify-content: center; align-items: end; flex-wrap: wrap; margin-top: 2vh;" id="mostrarc2">
               <img src="recorte_meses_contratacion.png" height="100">
               <p>Recorte de meses de contratación</p>
           </div>  
             <!--Caja 3-->
             <div style="background: #ff8182; height: 200px; width: 200px; 
             border-radius: 17px; display: flex; justify-content: center; 
-            align-items: end; flex-wrap: wrap; margin-top: 2vh;">
+            align-items: end; flex-wrap: wrap; margin-top: 2vh;" id="mostrarc3">
               <img src="rotacion_de_psicologos.png" height="100">
               <p>Rotación de psicólogos</p>
           </div>  
@@ -383,64 +400,62 @@
           </div>
         </div>
 
-
-
-        <div id="slide8_caja_blanca_1" style="background-color: white;
-        border-radius: 25px; width: 90vw; 
-        padding-left: 2vw; padding-right: 2vw;
-        padding-top: 2vw; padding-bottom: 2vw; flex-wrap: wrap; display: flex; justify-content: center; align-items: center;">
-            <div style="background: #ff8182; height: 150px; width: 150px; 
-            border-radius: 50%; display: flex; justify-content: center; align-items: center;">
-              <img src="falta_de_psicologos.png" height="100">
-              </div>
-              <div style="text-align: left; margin-left: 3vw;">
-                <h3 style="color: #006d74;
-                font-size: 4vh; ">Falta de psicólogos</h3>
-                <p style="font-size: 2vh;">Falta de psicólogos</p>
-              </div>
-          
-        </div>
-
-
-        <div id="slide8_caja_blanca_2" style="background-color: white;
-        border-radius: 25px; width: 90vw; 
-        padding-left: 2vw; padding-right: 2vw;
-        padding-top: 2vw; padding-bottom: 2vw; flex-wrap: wrap; display: flex; justify-content: center; align-items: center;">
-            <div style="background: #ff8182; height: 150px; width: 150px; 
-            border-radius: 50%; display: flex; justify-content: center; align-items: center;">
-              <img src="recorte_meses_contratacion.png" height="100">
-              </div>
-              <div style="text-align: left; margin-left: 3vw;">
-                <h3 style="color: #006d74;
-                font-size: 4vh; ">Recorte de meses de contratación</h3>
-                <p style="font-size: 2vh;">Recorte de meses de contratación</p>
-              </div>
-          
-        </div>
-
-
-        <div id="slide8_caja_blanca_3" style="background-color: white;
-        border-radius: 25px; width: 90vw; 
-        padding-left: 2vw; padding-right: 2vw;
-        padding-top: 2vw; padding-bottom: 2vw; flex-wrap: wrap; display: flex; justify-content: center; align-items: center;">
-            <div style="background: #ff8182; height: 150px; width: 150px; 
-            border-radius: 50%; display: flex; justify-content: center; align-items: center;">
-              <img src="rotacion_de_psicologos.png" height="100">
-              </div>
-              <div style="text-align: left; margin-left: 3vw;">
-                <h3 style="color: #006d74;
-                font-size: 4vh; ">Rotación de psicólogos</h3>
-                <p style="font-size: 2vh;">Rotación de psicólogos</p>
-              </div>
-          
-        </div>
-
-
-
+        <!--antes de intento-->
+    
 
       </div>
 
+      
+       <div class="overlay" id="overlay1" style="justify-content: center; align-items: center;"> 
+          <div class="modal" style="background-color: white;
+          border-radius: 25px; 
+          flex-wrap: wrap; display: flex; justify-content: center; align-items: center;">
+              <div style="background: #ff8182; height: 150px; width: 150px; 
+              border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                <img src="falta_de_psicologos.png" height="100">
+              </div>
+              <div style="text-align: left; margin-left: 3vw;">
+                  <h3 style="color: #006d74;
+                  font-size: 4vh; ">Falta de psicólogos</h3>
+                  <p style="font-size: 2vh;">Falta de psicólogos</p>
+              </div>
+            
+          </div>
+        </div>
 
+
+        <div class="overlay" id="overlay2"> 
+          <div class="modal" id="slide8_caja_blanca_2" style="background-color: white;
+          border-radius: 25px;
+           flex-wrap: wrap; display: flex; justify-content: center; align-items: center;">
+              <div style="background: #ff8182; height: 150px; width: 150px; 
+              border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                <img src="recorte_meses_contratacion.png" height="100">
+                </div>
+                <div style="text-align: left; margin-left: 3vw;">
+                  <h3 style="color: #006d74;
+                  font-size: 4vh; ">Recorte de meses de contratación</h3>
+                  <p style="font-size: 2vh;">Recorte de meses de contratación</p>
+                </div>
+              </div>
+          </div>
+
+        <div class="overlay" id="overlay3"> 
+          <div class="modal" id="slide8_caja_blanca_3" style="background-color: white;
+          border-radius: 25px; 
+          flex-wrap: wrap; display: flex; justify-content: center; align-items: center;">
+              <div style="background: #ff8182; height: 150px; width: 150px; 
+              border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                <img src="rotacion_de_psicologos.png" height="100">
+                </div>
+                <div style="text-align: left; margin-left: 3vw;">
+                  <h3 style="color: #006d74;
+                  font-size: 4vh; ">Rotación de psicólogos</h3>
+                  <p style="font-size: 2vh;">Rotación de psicólogos</p>
+                </div>
+              </div>
+          </div>
+        
 
       <h2>¿Cómo es la situación en diferentes regiones?</h2>
       <p>Aquí podrás comparar el número de psicólogos existentes, los casos de acoso 
@@ -531,6 +546,46 @@
           }
           
           
+          const btnMostrar1 = document.getElementById('mostrarc1');
+          const btnMostrar2 = document.getElementById('mostrarc2');
+          const btnMostrar3 = document.getElementById('mostrarc3');
+
+          const overlay1 = document.getElementById('overlay1');
+          btnMostrar1.addEventListener('click', () => {
+              overlay1.style.display = 'flex';
+              overlay1.style.justifyContent = 'center';
+              overlay1.style.alignItems = 'center';
+          });
+          overlay1.addEventListener('click', (e) => {
+              if (e.target === overlay1) {
+                  overlay1.style.display = 'none';
+              }
+          });
+
+
+          const overlay2 = document.getElementById('overlay2');
+          btnMostrar2.addEventListener('click', () => {
+              overlay2.style.display = 'flex';
+          });
+          overlay2.addEventListener('click', (e) => {
+              if (e.target === overlay2) {
+                  overlay2.style.display = 'none';
+              }
+          });
+
+
+          const overlay3 = document.getElementById('overlay3');
+          btnMostrar3.addEventListener('click', () => {
+              overlay3.style.display = 'flex';
+          });
+          overlay3.addEventListener('click', (e) => {
+              if (e.target === overlay3) {
+                  overlay3.style.display = 'none';
+              }
+          });
+
+
+
           </script>
 
     <div id="solo espacio" style="margin-bottom: 30vh;">
