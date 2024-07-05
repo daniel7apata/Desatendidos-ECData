@@ -148,8 +148,6 @@
     }
 
     /*para circulitos*/
-
-
   </style>
   <title>Des-atendidos</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -607,17 +605,23 @@
   </div>
 
 
-  <div id="slide_entre11y12_grafico_circulos" style=" display: flex; justify-content: center; 
+  <div id="slide_entre11y12_grafico_circulos" style="padding-top: 10vh;">
+    <div style=" display: flex; justify-content: center; 
   align-items: center; padding: 10vw; flex-wrap: wrap; height: fit-content;
     ">
-    <div class="avatar-container">
-      <img src="dra_vinieta_1.svg" width="100" alt="Avatar de la persona">
-      <div class="circles-container" id="circles-container"></div>
-    </div>
-    
-  </div>
-  <p style="text-align: center; font-size: 1.5vh;">Por colegio, <strong style="font-size: 2vh;">un solo </strong>psicólogo para <strong style="font-size: 2vh;">100 alumnos</strong></p>
+      <div class="avatar-container">
+        <img src="dra_vinieta_1.svg" width="100" alt="Avatar de la persona">
+        <div class="circles-container" id="circles-container"></div>
+      </div>
 
+    </div>
+    <div style="display: flex; justify-content: center; align-items: baseline; margin-top: 30px;">
+      <p style="text-align: center; font-size: 1.5vh; ">
+        Por colegio, <strong style="font-size: 2vh;">un solo </strong>psicólogo para </p>
+      <p id="texto_numero" style="font-size: 2vh; text-align: center; line-height: 1; margin-left: 6px; margin-right: 6px;"></p>
+      <p><strong style="font-size: 2vh; text-align: center; line-height: 1;"> alumnos</strong></p>
+    </div>
+  </div>
 
   <div id="slide12" style="margin-top: 80px; padding-top: 8vh; 
   padding-bottom: 8vh; background-color: #ff8182; display: flex; 
@@ -819,8 +823,6 @@
   </div>
 
 
-
-
   <!--A partir de aqui son los scripts-->
   <script>
 
@@ -878,19 +880,42 @@
   <!--para circulos-->
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const circlesContainer = document.getElementById('circles-container');
-      const avatar = document.querySelector('.avatar-container img');
 
-      var numCircles = 100; // Número de círculos que se van a crear
-      const circleSize = 20; // Tamaño de los círculos
+
+    // Variable para almacenar el número aleatorio
+    var numCircles;
+    // Variable para almacenar el tamaño de circulos
+    var circleSize;
+
+    // Función para actualizar el número aleatorio
+    function actualizarNumeroAleatorio() {
+      numCircles = Math.floor(Math.random() * (1000 - 100 + 1)) + 100; // Rango del numero de circulos
+      circleSize = 200*20/numCircles;
+      console.log("Número aleatorio actualizado:", numCircles);
+
+      dibujarCirculos(); // Llama a la función para dibujar los círculos cada vez que se actualice numCircles
+
+
+
+      var textoNumero = document.getElementById('texto_numero');
+      textoNumero.textContent = numCircles;
+    }
+
+    // Función para dibujar los círculos en la página
+    function dibujarCirculos() {
+      const circlesContainer = document.getElementById('circles-container');
       const avatarSize = 100; // Tamaño del avatar (ancho y alto deben ser iguales)
+      ; // Tamaño de los círculos
       const spacing = 5; // Espacio entre los círculos
 
       // Calculamos el número de filas y columnas para formar un bloque cuadrado
       const rows = Math.ceil(Math.sqrt(numCircles));
       const cols = Math.ceil(numCircles / rows);
 
+      // Limpiamos el contenedor antes de agregar nuevos círculos
+      circlesContainer.innerHTML = '';
+
+      // Creamos los círculos y los agregamos al contenedor
       for (let i = 0; i < numCircles; i++) {
         const circle = document.createElement('div');
         circle.classList.add('circle');
@@ -910,7 +935,13 @@
 
         circlesContainer.appendChild(circle);
       }
-    });
+    }
+
+    // Llamar a la función por primera vez para iniciar
+    actualizarNumeroAleatorio();
+
+    // Frecuencia de refresco en segundos
+    setInterval(actualizarNumeroAleatorio, 700); // 
 
   </script>
 
