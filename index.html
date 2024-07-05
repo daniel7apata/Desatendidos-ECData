@@ -358,42 +358,53 @@
       <img src="ilustracion_ana5.png" height="300">
 
       <div id="recuadro_slide_5_1" style="background-color: #ffc447; 
-          border-radius: 15px; width: 500px; height: 120px; margin-left: 9vw; margin-right: 9vw;
-          margin-top: 5vh;">
-        <div style="display: flex; justify-content: center; margin-top: 5%;">
-          <h3 style="font-size: 20px; color: white;">NOMBRE: </h3>
-          <p style="margin-left: 10px;">Ana</p>
-          <h3 style="font-size: 20px; color: white; margin-left: 30px;">ACTIVIDADES FAVORITAS: </h3>
-          <p style="margin-left: 10px;">Dormir</p>
-        </div>
-        <div style="display: flex; justify-content: center">
+          border-radius: 15px; width: 40vw; height: auto; margin-left: 9vw; margin-right: 9vw;
+          margin-top: 5vh; margin-bottom: 6vh; padding: 5vh">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
 
-          <h3 style="font-size: 20px; color: white;">EDAD: </h3>
-          <p style="margin-left: 10px;">9 años</p>
-          <h3 style="font-size: 20px; color: white; margin-left: 30px;">MEJORES AMIGOS: </h3>
-          <p style="margin-left: 10px;">No tiene</p>
+          <div style="display: flex; justify-content: left; flex-wrap: wrap; margin-right: 5vw;">
+            <h3 style="font-size: 3vh; color: white;">NOMBRE: </h3>
+            <p style="margin-left: 1vw; font-size: 2.5vh;">Ana</p>
+          </div>
+          <div style=" display: flex; justify-content: left; flex-wrap: wrap; ">
+            <h3 style="font-size: 3vh; color: white;">ACTIVIDADES FAVORITAS: </h3>
+            <p style="font-size: 2.5vh; margin-left: 1vw;">Dormir</p>
+          </div>
+          <div style=" display: flex; justify-content: left; flex-wrap: wrap; margin-right: 5vw;">
+            <h3 style="font-size: 3vh;; color: white;">EDAD: </h3>
+            <p style="margin-left: 1vw; font-size: 2.5vh;">9 años</p>
+          </div>
+          
+          <div style="display: flex; justify-content: left; flex-wrap: wrap;">
+            <h3 style="font-size: 3vh;; color: white; ">MEJORES AMIGOS: </h3>
+            <p style="margin-left: 1vw; font-size: 2.5vh;">No tiene</p>
+          </div>
+
+
         </div>
+
       </div>
-
-
     </div>
 
 
+  </div>
 
-    <div id="slide5_2" style="background-color: #b8eaec; padding-top: 9vh; padding-bottom: 9vh; 
+
+
+  <div id="slide5_2" style="background-color: #b8eaec; padding-top: 9vh; padding-bottom: 9vh; 
         display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
 
-      <div style="z-index: 2; "><img src="ilustracion_ana6.jpg" height="300"></div>
+    <div style="z-index: 2; "><img src="ilustracion_ana6.jpg" height="300"></div>
 
-      <div style="margin-left: 5vw; z-index: 2; ">
-        <p style="width: 400px; font-size: 2vh; padding-top: 2vh;">El día de hoy hablamos con Ana.
-          La vimos muy rara últimamente y queríamos
-          saber qué es lo que pasaba. Sus padres están muy preocupados por ella,
-          porque siempre está aislada, ya no tiene amigos y duerme todo el día.
-          Veamos que le sucede a esta pequeña.</p>
-      </div>
-
+    <div style="margin-left: 5vw; z-index: 2; ">
+      <p style="width: 400px; font-size: 2vh; padding-top: 2vh;">El día de hoy hablamos con Ana.
+        La vimos muy rara últimamente y queríamos
+        saber qué es lo que pasaba. Sus padres están muy preocupados por ella,
+        porque siempre está aislada, ya no tiene amigos y duerme todo el día.
+        Veamos que le sucede a esta pequeña.</p>
     </div>
+
+  </div>
   </div>
 
 
@@ -620,7 +631,8 @@
     <div style="display: flex; justify-content: center; align-items: baseline; margin-top: 30px;">
       <p style="text-align: center; font-size: 1.5vh; ">
         Por colegio, <strong style="font-size: 2vh;">un solo </strong>psicólogo para </p>
-      <p id="texto_numero" style="font-size: 2vh; text-align: center; line-height: 1; margin-left: 6px; margin-right: 6px;"></p>
+      <p id="texto_numero"
+        style="font-size: 2vh; text-align: center; line-height: 1; margin-left: 6px; margin-right: 6px;"></p>
       <p><strong style="font-size: 2vh; text-align: center; line-height: 1;"> alumnos</strong></p>
     </div>
   </div>
@@ -894,8 +906,8 @@
     // Función para actualizar el número aleatorio
     function actualizarNumeroAleatorio() {
       numCircles = Math.floor(Math.random() * (1000 - 100 + 1)) + 100; // Rango del numero de circulos
-      circleSize = 250*20/numCircles;
-      spacing = circleSize/10;
+      circleSize = 250 * 20 / numCircles;
+      spacing = circleSize / 10;
       console.log("Número aleatorio actualizado:", numCircles);
 
       dibujarCirculos(); // Llama a la función para dibujar los círculos cada vez que se actualice numCircles
