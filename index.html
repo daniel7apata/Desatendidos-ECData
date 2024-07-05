@@ -61,23 +61,35 @@
 
     .contenido_desplegable {
       display: none;
+      z-index: -1;
     }
 
     .contenido_desplegable.mostrar {
       display: block;
-      animation: desplegar 0.5s ease-in-out;
+      animation: desplegar .7s ease-in-out;
+      z-index: -1;
     }
 
 
     @keyframes desplegar {
       0% {
-        overflow: hidden;
+        overflow: visible;
+        z-index: -1;
         opacity: 0%;
+        margin-top: -100%;
+      }
+
+      40% {
+        overflow: visible;
+        z-index: -1;
+        margin-top: -80%;
+        opacity: 100%;
       }
 
       100% {
+        z-index: -1;
         overflow: visible;
-        opacity: 100%;
+        margin-top: 0%;
       }
     }
 
@@ -327,7 +339,7 @@
   </div>
 
 
-  <div id="slide4" style="background-color: #ff8182; display: flex; 
+  <div id="slide4" style="background-color: #ff8182; display: flex; z-index: 2; position: sticky;
       justify-content: center; align-items: center; padding-top: 5vh; padding-bottom: 5vh;">
     <div id="texto2" style="margin-right: 10vw; margin-left: 12vw;">
       <h2 style="color: #ffffff; font-weight: bold; font-size: 8vh;">x%</h2>
@@ -343,14 +355,14 @@
 
 
 
-  <div id="slide4" style="text-align: center; margin-top: 7vh; margin-bottom: 7vh;">
+  <div id="slide4" style="text-align: center; padding-top: 7vh; margin-bottom: 7vh; background-color: white; z-index: 2; position: sticky;">
     <h3 style="color: #006d74; font-size: 6vh;">¿Cómo es hablar con un niño que ha sufrido de</h3>
     <h2 style="color: #ff8182; font-size: 8vh;">acoso escolar?</h2>
     <img src="ilustracion_ana4.png" height="300" onclick="toggleDesplegar()"> <br>
     <p style="font-size: 2.5vh; margin-top:1.5vh">Haz clic sobre el personaje para saber sobre ella</p>
   </div>
 
-  <div class="contenido_desplegable" id="slide5_desplegable">
+  <div class="contenido_desplegable" id="slide5_desplegable" style="z-index: -1;">
 
     <div id="slide5_1" style="background-color: #ff8182; flex-wrap: wrap; 
         display: flex; justify-content: center; align-items: center;">
@@ -398,18 +410,8 @@
           porque siempre está aislada, ya no tiene amigos y duerme todo el día.
           Veamos que le sucede a esta pequeña.</p>
       </div>
-
     </div>
-
   </div>
-
-
-
-
-  </div>
-  </div>
-
-
 
   <div id="slide6" style="background-color: #ffc447; 
       display: flex; justify-content: center; align-items: center;
