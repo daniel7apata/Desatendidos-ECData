@@ -886,11 +886,14 @@
     var numCircles;
     // Variable para almacenar el tamaño de circulos
     var circleSize;
+    // Variable para almacenar el espaciado entre circulos
+    var spacing;
 
     // Función para actualizar el número aleatorio
     function actualizarNumeroAleatorio() {
       numCircles = Math.floor(Math.random() * (1000 - 100 + 1)) + 100; // Rango del numero de circulos
-      circleSize = 200*20/numCircles;
+      circleSize = 250*20/numCircles;
+      spacing = circleSize/10;
       console.log("Número aleatorio actualizado:", numCircles);
 
       dibujarCirculos(); // Llama a la función para dibujar los círculos cada vez que se actualice numCircles
@@ -905,8 +908,7 @@
     function dibujarCirculos() {
       const circlesContainer = document.getElementById('circles-container');
       const avatarSize = 100; // Tamaño del avatar (ancho y alto deben ser iguales)
-      ; // Tamaño de los círculos
-      const spacing = 5; // Espacio entre los círculos
+
 
       // Calculamos el número de filas y columnas para formar un bloque cuadrado
       const rows = Math.ceil(Math.sqrt(numCircles));
@@ -941,7 +943,7 @@
     actualizarNumeroAleatorio();
 
     // Frecuencia de refresco en segundos
-    setInterval(actualizarNumeroAleatorio, 700); // 
+    setInterval(actualizarNumeroAleatorio, 1000); // 
 
   </script>
 
