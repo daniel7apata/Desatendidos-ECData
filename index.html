@@ -167,22 +167,29 @@
     @media screen and (max-width: 980px) {
 
       /* Estilos para dispositivos móviles */
-      #menusito {
-        display: none;
-      }
-      #buscaricono {
-        display: none;
-      }
+      #menusito {display: none;}
 
-      #logoelcomercio {
-        display: none;
-      }
+      #buscaricono {display: none;}
 
-      #botondesuscribirse{
-        display: none;
-      }
+      #logoelcomercio {display: none;}
 
+      #botondesuscribirse {display: none;}
 
+      #opt_pagina_inicio {display: block;font-size: 3vh;}
+
+      #opt_buscar {display: block;font-size: 3vh;}
+
+      #opt_suscribete {display: block;font-size: 3vh;}
+
+    }
+
+    @media screen and (min-width: 981px) {
+
+      #opt_pagina_inicio {display: none;}
+
+      #opt_buscar {display: none;}
+
+      #opt_suscribete {display: none;}
 
     }
   </style>
@@ -224,8 +231,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <!--UL es donde van las opciones del navbar-->
           <ul class="navbar-nav" style="font-size: 2vh; display: flex; align-items: center;
-          justify-content: space-between;
-          ">
+          justify-content: space-between;" id="contenido_navbar">
 
             <li class="nav-item" id="menusito" style="margin: 5px;">
               <a class="nav-link active" aria-current="page" href="https://elcomercio.pe/">
@@ -237,6 +243,7 @@
               </a>
             </li>
 
+            <!--buscar-->
             <li class="nav-item" id="buscaricono" style="margin: 5px; margin-right: 180px;">
               <a class="nav-link"
                 href="https://elcomercio.pe/buscar/psicologo+colegio/todas/descendiente/?query=psicologo+colegio">
@@ -249,13 +256,28 @@
               </a>
             </li>
 
+            <li class="nav-item" id="opt_pagina_inicio">
+              <a class="nav-link" href="https://elcomercio.pe/buscar/psicologo+colegio/todas/descendiente/?query=psicologo+colegio">
+                Buscar
+              </a>
+            </li>
+            <!--buscar-->
+
+            <!--pagina de inicio-->
             <li class="nav-item" id="logoelcomercio">
               <a class="nav-link" href="https://elcomercio.pe/">
                 <img src="logo_el_comercio.png" style="height: 30px; width: 190px; margin: 5px; margin-right: 100px;">
               </a>
             </li>
 
+            <li class="nav-item" id="opt_pagina_inicio">
+              <a class="nav-link" href="https://elcomercio.pe/">
+                Página de inicio
+              </a>
+            </li>
+            <!--pagina de inicio-->
 
+            <!--suscribirse-->
             <div id="botondesuscribirse" style="border: red 1px; background-color: red;
                  border-radius: 15px; color: white; font-weight: bold; margin: 5px;">
               <li class="nav-item" style="text-align: center;">
@@ -264,8 +286,17 @@
               </li>
             </div>
 
+            <li class="nav-item" id="opt_suscribete">
+              <a class="nav-link" href="https://elcomercio.pe/suscripciones/?ref=btn-suscribete-elcomercio&loc=">
+                Suscríbete por s/5
+              </a>
+            </li>
+            <!--suscribirse-->
+
+            <!--iniciar sesion-->
             <li class="nav-item" style="margin-left: 5px;">
-              <a class="nav-link"  style="display: flex; align-self: end; padding-top: 20px;" href="https://id.piano.io/id/gm-sso?client_id=Enoqbpnkpu&gm_sso_piano_id_domain=https:%2F%2Fid.piano.io&site=https:%2F%2Felcomercio.pe%2F&display_mode=redirect&gm_sso_redirect_container_width=400&page_view_id=lyb1bt0okghe4cum&page_title=Noticias%20del%20Per%C3%BA%20y%20el%20Mundo%20de%20%C3%BAltimo%20minuto%20%7C%20EL%20COMERCIO%20PER%C3%9A&browser_id=lyb1bt0oxnnyd883&screen=login&redirect_uri=https:%2F%2Felcomercio.pe%2F&gm_sso_confirm=after&user_state=anon">
+              <a class="nav-link" style="display: flex; align-self: end; padding-top: 20px;"
+                href="https://id.piano.io/id/gm-sso?client_id=Enoqbpnkpu&gm_sso_piano_id_domain=https:%2F%2Fid.piano.io&site=https:%2F%2Felcomercio.pe%2F&display_mode=redirect&gm_sso_redirect_container_width=400&page_view_id=lyb1bt0okghe4cum&page_title=Noticias%20del%20Per%C3%BA%20y%20el%20Mundo%20de%20%C3%BAltimo%20minuto%20%7C%20EL%20COMERCIO%20PER%C3%9A&browser_id=lyb1bt0oxnnyd883&screen=login&redirect_uri=https:%2F%2Felcomercio.pe%2F&gm_sso_confirm=after&user_state=anon">
                 <svg class="nav-d__sign-svg" width="28" height="28" viewBox="0 0 25 25" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path class="nav-d__sign-p1"
@@ -278,6 +309,7 @@
                 <p style="margin-left: 5px;">INICIAR SESIÓN</p>
               </a>
             </li>
+            <!--iniciar sesion-->
 
           </ul>
           </li>
