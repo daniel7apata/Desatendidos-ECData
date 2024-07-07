@@ -70,6 +70,14 @@
       z-index: -1;
     }
 
+    .offcanvas-body {
+      display: none;
+    }
+
+    .offcanvas-body.mostrar{
+      display: block;
+      animation: visibilizar .8s ease-in-out;
+    }
 
     @keyframes desplegar {
       0% {
@@ -93,6 +101,17 @@
       }
     }
 
+    @keyframes visibilizar {
+      0% {
+        overflow: hidden;
+        opacity: 0%;
+      }
+
+      100% {
+        overflow: visible;
+        opacity: 100%;
+      }
+    }
 
     .overlay {
       display: none;
@@ -210,17 +229,15 @@
 </head>
 
 <body>
-
-  <div class="navbarmain">
+<!--navbar-->
+  <div class="navbarmain" style="z-index: 2; position: sticky;">
     <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #e7c727;">
       <div class="container-fluid" style="max-width: fit-content; 
            ">
-
-
         <a class="navbar-brand" href="#"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" 
           style="height: fit-content; width: fit-content; margin-right: 90vw; margin-bottom: 1vh;">
           <svg width="30" height="30" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 1H16" stroke="#4D4D4D" stroke-width="2"></path>
@@ -234,7 +251,7 @@
           justify-content: space-between;" id="contenido_navbar">
 
             <li class="nav-item" id="menusito" style="margin: 5px;">
-              <a class="nav-link active" aria-current="page" href="https://elcomercio.pe/">
+              <a class="nav-link active" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" onclick="toggleVisibilizarLateral()">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 1H16" stroke="#4D4D4D" stroke-width="2"></path>
                   <path d="M0 7H16" stroke="#4D4D4D" stroke-width="2"></path>
@@ -318,6 +335,64 @@
       </div>
     </nav>
   </div>
+<!--navbar-->
+
+<!--menu lateral-->
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false"
+  style="z-index: 1; width: 240px; padding-top: 80px; box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.3)">
+    <!--contenido del menu-->
+    <div class="offcanvas-body" id="contenid_offcanvas" style="font-weight: bold; color: #404040; margin-left: 1px; line-height: 40px;">
+      <a style="margin-top:20px;"> Lo último</a> <br>
+      <a style="margin-top:20px;"> Portada</a><br>
+      <a style="margin-top:20px;"> Edición impresa</a><br>
+      <a style="margin-top:20px;"> Club El Comercio</a><br>
+      <a style="margin-top:20px;"> Copa América</a><br>
+      <a style="margin-top:20px;"> Newsletters</a><br>
+      <a style="margin-top:20px;"> Día 1</a><br>
+      <a style="margin-top:20px;"> Audiencias Vecinales</a><br>
+      <a style="margin-top:20px;"> Corresponsales escolares</a><br>
+      <a style="margin-top:20px;"> Reviú</a><br>
+      <a style="margin-top:20px;"> Juegos</a><br>
+      <a style="margin-top:20px;"> Podcast</a><br>
+      <a style="margin-top:20px;"> Editorial</a><br>
+      <a style="margin-top:20px;"> Columnistas</a><br>
+      <a style="margin-top:20px;"> El Comercio TV</a><br>
+      <a style="margin-top:20px;"> Provecho</a><br>
+      <a style="margin-top:20px;"> Saltar intro</a><br>
+      <a style="margin-top:20px;"> Política</a><br>
+      <a style="margin-top:20px;"> Economía</a><br>
+      <a style="margin-top:20px;"> Lima</a><br>
+      <a style="margin-top:20px;"> Perú</a><br>
+      <a style="margin-top:20px;"> DT</a><br>
+      <a style="margin-top:20px;"> Luces</a><br>
+      <a style="margin-top:20px;"> TV+</a><br>
+      <a style="margin-top:20px;"> Tecnología y ciencias</a><br>
+      <a style="margin-top:20px;"> Somos</a><br>
+      <a style="margin-top:20px;"> Bienestar</a><br>
+      <a style="margin-top:20px;"> Hogar & Familia</a><br>
+      <a style="margin-top:20px;"> Respuestas</a><br>
+      <a style="margin-top:20px;"> Mag</a><br>
+      <a style="margin-top:20px;"> Viú</a><br>
+      <a style="margin-top:20px;"> Vamos</a><br>
+      <a style="margin-top:20px;"> Ruedas y Tuercas</a><br>
+      <a style="margin-top:20px;"> Casa y Más</a><br>
+      <a style="margin-top:20px;"> El Dominical</a><br>
+      <a style="margin-top:20px;"> Horóscopo</a><br>
+      <a style="margin-top:20px;"> Desde la redacción</a><br>
+      <a style="margin-top:20px;"> Videos</a><br>
+      <a style="margin-top:20px;"> Archivo El Comercio</a><br>
+      <a style="margin-top:20px;"> Blogs</a><br>
+      <a style="margin-top:20px;"> WUF</a><br>
+      <a style="margin-top:20px;"> Menú Perú</a><br>
+      <a style="margin-top:20px;"> Notas contratadas</a><br>
+      <a style="margin-top:20px;"> Colecciones El Comercio</a><br>
+      <!--contenido del menu-->
+    </div>
+  </div>
+<!--menu lateral-->
+
+
 
 
   <video id="video" loop autoplay preload muted>
@@ -417,7 +492,7 @@
     style="text-align: center; padding-top: 7vh; padding-bottom: 7vh; background-color: white; z-index: 2; position: sticky;">
     <h3 style="color: #006d74; font-size: 6vh;">¿Cómo es hablar con un niño que ha sufrido de</h3>
     <h2 style="color: #ff8182; font-size: 8vh;">acoso escolar?</h2>
-    <img src="ilustracion_ana4.png" height="300" onclick="toggleDesplegar()"> <br>
+    <img src="ilustracion_ana4.png" height="300" onclick="toggleDesplegar()"> <br> 
     <p style="font-size: 2.5vh; margin-top:1.5vh">Haz clic sobre el personaje para saber sobre ella</p>
   </div>
 
@@ -930,6 +1005,11 @@
     function toggleDesplegar() {
       var contenido_desplegable = document.getElementById("slide6_desplegable");
       contenido_desplegable.classList.toggle("mostrar");
+    }
+
+    function toggleVisibilizarLateral() {
+      var offcanvas = document.getElementById("contenid_offcanvas");
+      offcanvas.classList.toggle("mostrar");
     }
 
     const btnMostrar1 = document.getElementById('mostrarc1');
