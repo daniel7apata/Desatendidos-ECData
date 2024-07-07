@@ -74,7 +74,7 @@
       display: none;
     }
 
-    .offcanvas-body.mostrar{
+    .offcanvas-body.mostrar {
       display: block;
       animation: visibilizar .8s ease-in-out;
     }
@@ -96,7 +96,7 @@
 
       100% {
         z-index: -1;
-        overflow: visible;
+        overflow: hidden;
         margin-top: 0%;
       }
     }
@@ -186,29 +186,52 @@
     @media screen and (max-width: 980px) {
 
       /* Estilos para dispositivos móviles */
-      #menusito {display: none;}
+      #menusito {
+        display: none;
+      }
 
-      #buscaricono {display: none;}
+      #buscaricono {
+        display: none;
+      }
 
-      #logoelcomercio {display: none;}
+      #logoelcomercio {
+        display: none;
+      }
 
-      #botondesuscribirse {display: none;}
+      #botondesuscribirse {
+        display: none;
+      }
 
-      #opt_pagina_inicio {display: block;font-size: 3vh;}
+      #opt_pagina_inicio {
+        display: block;
+        font-size: 3vh;
+      }
 
-      #opt_buscar {display: block;font-size: 3vh;}
+      #opt_buscar {
+        display: block;
+        font-size: 3vh;
+      }
 
-      #opt_suscribete {display: block;font-size: 3vh;}
+      #opt_suscribete {
+        display: block;
+        font-size: 3vh;
+      }
 
     }
 
     @media screen and (min-width: 981px) {
 
-      #opt_pagina_inicio {display: none;}
+      #opt_pagina_inicio {
+        display: none;
+      }
 
-      #opt_buscar {display: none;}
+      #opt_buscar {
+        display: none;
+      }
 
-      #opt_suscribete {display: none;}
+      #opt_suscribete {
+        display: none;
+      }
 
     }
   </style>
@@ -229,7 +252,7 @@
 </head>
 
 <body>
-<!--navbar-->
+  <!--navbar-->
   <div class="navbarmain" style="z-index: 2; position: sticky;">
     <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #e7c727;">
       <div class="container-fluid" style="max-width: fit-content; 
@@ -237,7 +260,7 @@
         <a class="navbar-brand" href="#"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
           style="height: fit-content; width: fit-content; margin-right: 90vw; margin-bottom: 1vh;">
           <svg width="30" height="30" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 1H16" stroke="#4D4D4D" stroke-width="2"></path>
@@ -251,7 +274,9 @@
           justify-content: space-between;" id="contenido_navbar">
 
             <li class="nav-item" id="menusito" style="margin: 5px;">
-              <a class="nav-link active" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" onclick="toggleVisibilizarLateral()">
+              <a class="nav-link active" aria-current="page" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                onclick="toggleVisibilizarLateral()">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 1H16" stroke="#4D4D4D" stroke-width="2"></path>
                   <path d="M0 7H16" stroke="#4D4D4D" stroke-width="2"></path>
@@ -274,7 +299,8 @@
             </li>
 
             <li class="nav-item" id="opt_pagina_inicio">
-              <a class="nav-link" href="https://elcomercio.pe/buscar/psicologo+colegio/todas/descendiente/?query=psicologo+colegio">
+              <a class="nav-link"
+                href="https://elcomercio.pe/buscar/psicologo+colegio/todas/descendiente/?query=psicologo+colegio">
                 Buscar
               </a>
             </li>
@@ -335,14 +361,16 @@
       </div>
     </nav>
   </div>
-<!--navbar-->
+  <!--navbar-->
 
-<!--menu lateral-->
-  
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false"
-  style="z-index: 1; width: 240px; padding-top: 80px; box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.3)">
+  <!--menu lateral-->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+    data-bs-backdrop="false"
+    style="z-index: 1; width: 240px; padding-top: 80px; box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.3)">
     <!--contenido del menu-->
-    <div class="offcanvas-body" id="contenid_offcanvas" style="font-weight: bold; color: #404040; margin-left: 1px; line-height: 40px;">
+    <div class="offcanvas-body" id="contenid_offcanvas"
+      style="font-weight: bold; color: #404040; margin-left: 1px; line-height: 40px;">
       <a style="margin-top:20px;"> Lo último</a> <br>
       <a style="margin-top:20px;"> Portada</a><br>
       <a style="margin-top:20px;"> Edición impresa</a><br>
@@ -390,7 +418,7 @@
       <!--contenido del menu-->
     </div>
   </div>
-<!--menu lateral-->
+  <!--menu lateral-->
 
 
 
@@ -492,7 +520,7 @@
     style="text-align: center; padding-top: 7vh; padding-bottom: 7vh; background-color: white; z-index: 2; position: sticky;">
     <h3 style="color: #006d74; font-size: 6vh;">¿Cómo es hablar con un niño que ha sufrido de</h3>
     <h2 style="color: #ff8182; font-size: 8vh;">acoso escolar?</h2>
-    <img src="ilustracion_ana4.png" height="300" onclick="toggleDesplegar()"> <br> 
+    <img src="ilustracion_ana4.png" height="300" onclick="toggleDesplegar()"> <br>
     <p style="font-size: 2.5vh; margin-top:1.5vh">Haz clic sobre el personaje para saber sobre ella</p>
   </div>
 
