@@ -183,7 +183,76 @@
     /*para circulitos*/
 
 
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 469px) {
+
+      #imagen_sammy{
+        width: 20vw;
+        height: 20vw;
+      }
+
+      #cuadro_ia_rosa{
+        width: fit-content;
+        
+      }
+
+      #dra_y_texto{
+        display: block;
+        
+      }
+
+      #espacio_para_ai{
+        width: fit-content;
+        display: none;
+      }
+
+      #gd_1{
+        width: 40px;
+      }
+
+      #espacio_mensaje{
+        width: 40px;
+      }
+
+      #texto_superior_ia{
+        width: 60vw;
+      }
+
+      #cerebro_slide16{
+        display: none;
+      }
+
+      #slide_16_texto_div{
+        justify-content: center;
+        margin-right: 0px;
+        color: #a30240;
+      }
+
+      #slide_16_texto{
+        width: 90vw;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0px;
+        color: #a30240;
+      }
+
+      #cuadro_blanco_op_1{
+        width: 200px;
+      }
+
+      #cuadro_blanco_op_2{
+        width: 200px;
+      }
+
+      #cuadro_blanco_op_3{
+        width: 200px;
+      }
+
+
+    }
+
+
+
+    @media screen and (min-width: 470px) and (max-width: 980px) {
 
       /* Estilos para dispositivos móviles */
       #menusito {
@@ -221,6 +290,10 @@
         width: 95vw;
       }
 
+      #dra_y_texto{
+        width: 80vw;
+      }
+
       #espacio_para_ai{
         width: 80vw;
       }
@@ -232,6 +305,8 @@
       #espacio_mensaje{
         width: 70vw;
       }
+
+
 
     }
 
@@ -247,6 +322,10 @@
 
       #opt_suscribete {
         display: none;
+      }
+
+      #dra_y_texto{
+        width: 450px;
       }
 
     }
@@ -831,7 +910,7 @@
     <div id="slide14_cuadro1" style="width: 410px; z-index: 1; display: flex;
     height: 240px; margin: 2vw;">
       <div style="display: block;">
-        <div style="background-color: white; border-radius: 20px; 
+        <div id="cuadro_blanco_op_1" style="background-color: white; border-radius: 20px; 
       box-shadow: 2px 2px 2px rgb(119, 119, 119);
       width: 400px; height: 200px;margin-top: 30px;
       padding: 20px; padding-top: 60px; z-index: 2;  ">
@@ -856,7 +935,7 @@
     <div id="slide14_cuadro2" style="width: 410px; z-index: 1; display: flex;
     height: 240px; margin: 2vw;">
       <div style="display: block; ">
-        <div style="background-color: white; border-radius: 20px; 
+        <div id="cuadro_blanco_op_2" style="background-color: white; border-radius: 20px; 
       box-shadow: 2px 2px 2px rgb(119, 119, 119);
       width: 400px; height: 200px;margin-top: 30px;
       padding: 20px; padding-top: 60px; z-index: 2;">
@@ -881,7 +960,7 @@
     <div id="slide14_cuadro3" style="width: 410px; z-index: 1; display: flex;
     height: 240px; margin: 2vw;">
       <div style="display: block;">
-        <div style="background-color: white; border-radius: 20px; 
+        <div id="cuadro_blanco_op_3" style="background-color: white; border-radius: 20px; 
       box-shadow: 2px 2px 2px rgb(119, 119, 119);
       width: 400px; height: 200px;margin-top: 30px;
       padding: 20px; padding-top: 60px; z-index: 2;">
@@ -945,7 +1024,7 @@
   <div id="slide_16" style="text-align: right; display: flex; 
       justify-content: space-between; align-items: center;  background-color: #8edde1;">
 
-    <div style="flex: 0; text-align: center; ">
+    <div id="cerebro_slide16" style="flex: 0; text-align: center; ">
       <svg id="cerebro_izquierda" width="20vh" height="auto" viewBox="0 0 267 540" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.3">
@@ -960,8 +1039,8 @@
     </div>
 
 
-    <div style="margin-right: 5vw; width: 50vw;">
-      <h3 style="color: #006d74; font-size: 5vh;">
+    <div id="slide_16_texto_div" style="margin-right: 5vw; width: 50vw;">
+      <h3 id="slide_16_texto" style="color: #006d74; font-size: 5vh;">
         ¿Cómo denunciar casos de acoso escolar en mi institución educativa?</h3>
     </div>
 
@@ -981,10 +1060,10 @@
 
 
 
-      <div id="dra_y_texto" style="display: flex; align-items: center; width: 450px; margin-left: 20px;">
-        <img src="ia_sammy.png" height="170" style="margin-left: 20px; margin-top: 20px; 
+      <div id="dra_y_texto" style="display: flex; align-items: center; width: 200px; margin-left: 20px;">
+        <img id="imagen_sammy" src="ia_sammy.png" height="170" style="margin-left: 20px; margin-top: 20px; 
       padding-bottom: 20px;">
-        <div style="width: 40vw; display: block;">
+        <div id="texto_superior_ia" style="width: 40vw; display: block;">
           <h2 style="color: #ffffff; font-size: 5vh; ">Sammy</h2>
           <p style="font-size: 1.6vh; line-height: 1; margin-top: -10px;">Samy te brindará las herramientas necesarias
             para conocer el proceso para
