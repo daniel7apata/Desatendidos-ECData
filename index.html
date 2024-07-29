@@ -179,8 +179,44 @@
       margin: 5px;
       /* Espacio entre los círculos */
     }
+    
 
     /*para circulitos*/
+
+
+
+    .ball {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .smiley {
+            font-size: 100px;
+        }
+
+        .container_balls {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('salon.png'); /* Imagen en el mismo directorio */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #ballsContainer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
 
 
     @media screen and (max-width: 469px) {
@@ -867,9 +903,9 @@
       <div style="text-align: left; margin-left: 3vw;">
         <h3 style="color: #006d74;
                   font-size: 4vh; text-align: center;">Escasez de psicólogos</h3>
-        <p style="font-size: 2vh;">La escasez de psicólogos en Perú se debe a una 
-          alta demanda de servicios de salud mental, sumado a la concentración 
-          de estos profesionales en Lima. Esta situación impacta negativamente 
+        <p style="font-size: 2vh;">La escasez de psicólogos en Perú se debe a una
+          alta demanda de servicios de salud mental, sumado a la concentración
+          de estos profesionales en Lima. Esta situación impacta negativamente
           en el acceso a tratamientos oportunos.
         </p>
       </div>
@@ -889,10 +925,10 @@
       <div style="text-align: left; margin-left: 3vw;">
         <h3 style="color: #006d74;
                   font-size: 4vh; text-align: center;">Recorte de meses de contratación</h3>
-        <p style="font-size: 2vh;">El recorte de meses de contratación de los 
-          psicólogos, según la Ley General de Salud N. 26842 modificada por la 
-          Ley N. 31683, se refiere a la reducción de 6 a 3 meses en el plazo de 
-          contratación civil de profesionales de Salud para servicios rurales y 
+        <p style="font-size: 2vh;">El recorte de meses de contratación de los
+          psicólogos, según la Ley General de Salud N. 26842 modificada por la
+          Ley N. 31683, se refiere a la reducción de 6 a 3 meses en el plazo de
+          contratación civil de profesionales de Salud para servicios rurales y
           urbano marginales.</p>
       </div>
     </div>
@@ -909,9 +945,9 @@
       <div style="text-align: left; margin-left: 3vw;">
         <h3 style="color: #006d74;
                   font-size: 4vh; text-align: center;">Rotación de psicólogos</h3>
-        <p style="font-size: 2vh;">puede ser perjudicial para el paciente debido 
-          a una interrupción en la continuidad de la terapia, lo que dificulta 
-          la creación de un vínculo terapéutico duradero y efectivo para el 
+        <p style="font-size: 2vh;">puede ser perjudicial para el paciente debido
+          a una interrupción en la continuidad de la terapia, lo que dificulta
+          la creación de un vínculo terapéutico duradero y efectivo para el
           tratamiento adecuado. </p>
       </div>
     </div>
@@ -975,6 +1011,28 @@
   </div>
   <br>
 
+  <!--grafico interactivo-->
+  <div id="slide11_5" style="background-color: #ffc347; padding: 30px;">
+
+
+    <div class="container_balls" style="height: 80vh; width: auto;">
+      <div id="ballsContainer"></div>
+    </div>
+
+    <div>
+      <select id="citySelect" onchange="drawBalls()" 
+      style="border-radius: 10px; font-size: 30px;">
+        <option value="">Selecciona una ciudad</option>
+        <option value="Lima">Lima</option>
+        <option value="Arequipa">Arequipa</option>
+        <option value="Cusco">Cusco</option>
+        <option value="Trujillo">Trujillo</option>
+        <option value="Chiclayo">Chiclayo</option>
+      </select>
+    </div>
+
+
+  </div>
 
 
   <div id="slide12" style="text-align: center; padding-bottom: 10vh; padding-top: 10vh; display: flex; 
@@ -988,25 +1046,6 @@
 
   </div>
 
-
-  <div id="slide_entre13_grafico_circulos" style="padding-top: 10vh;">
-    <div style=" display: flex; justify-content: center; 
-  align-items: center; padding: 10vw; flex-wrap: wrap; height: fit-content;
-    ">
-      <div class="avatar-container">
-        <img src="dra_vinieta_1.svg" width="100" alt="Avatar de la persona">
-        <div class="circles-container" id="circles-container"></div>
-      </div>
-
-    </div>
-    <div style="display: flex; justify-content: center; align-items: baseline; margin-top: 30px;">
-      <p style="text-align: center; font-size: 18px; ">
-        Por colegio, <strong style="font-size: 18px;">un solo </strong>psicólogo para </p>
-      <p id="texto_numero"
-        style="font-size: 18px; text-align: center; line-height: 1; margin-left: 6px; margin-right: 6px;"></p>
-      <p><strong style="font-size: 18px; text-align: center; line-height: 1;"> alumnos</strong></p>
-    </div>
-  </div>
 
   <div id="slide14" style="margin-top: 80px; padding-top: 8vh; 
   padding-bottom: 8vh; background-color: #ff8182; display: flex; 
@@ -1363,6 +1402,53 @@
   </script>
 
   <!--para circulos-->
+
+
+  <script>
+    function drawBalls() {
+        var citySelect = document.getElementById("citySelect");
+        var cityName = citySelect.value;
+        var ballCount = cityName.length;
+
+        var ballsContainer = document.getElementById("ballsContainer");
+        ballsContainer.innerHTML = "";
+
+        var ballSize = 100;
+        var containerWidth = window.innerWidth;
+        var ballsPerRow = Math.floor(containerWidth / ballSize);
+
+        for (var i = 0; i < ballCount; i++) {
+            (function(i) {
+                setTimeout(function() {
+                    var ball = document.createElement("div");
+                    ball.className = "ball";
+                    ball.innerHTML = '<div class="smiley">☹️</div>';
+
+                    // Calcular la posición de la bolita
+                    var row = Math.floor(i / ballsPerRow);
+                    var col = i % ballsPerRow;
+
+                    // Calcular el espacio sobrante y centrar la fila
+                    var ballsInCurrentRow = Math.min(ballsPerRow, ballCount - row * ballsPerRow);
+                    var rowWidth = ballsInCurrentRow * ballSize;
+                    var offsetX = (containerWidth - rowWidth) / 2;
+
+                    ball.style.bottom = (row * ballSize) + "px";
+                    ball.style.left = (col * ballSize + offsetX) + "px";
+
+                    ballsContainer.appendChild(ball);
+
+                    // Forzar el reflujo para que la transición funcione
+                    window.getComputedStyle(ball).opacity;
+                    ball.style.opacity = 1;
+                }, i * 200);
+            })(i);
+        }
+    }
+
+    // Ejecutar drawBalls cuando la ventana cambia de tamaño
+    window.addEventListener('resize', drawBalls);
+</script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
