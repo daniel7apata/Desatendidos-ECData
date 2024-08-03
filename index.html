@@ -906,61 +906,64 @@
     <div id="slide11_5" style="background-color: #ffc347; padding: 20px; width: 100vw; margin-top: 10vh;">
 
       <div id="centrar_contador" style="display: flex; justify-content: center;">
-      <div id="ballCountDisplay"
-        style="font-size: 4.5vh; color:white; width: 60vw; text-align: center; font-family: Londrina Solid;
+        <div id="ballCountDisplay" style="font-size: 4.5vh; color:white; width: 60vw; text-align: center; font-family: Londrina Solid;
         background-color: #ff8182; padding: 5px; 
         ">1 psicólogo
-        por cada <span id="ballCountValue">X</span> alumnos.</div>
+          por cada <span id="ballCountValue">X</span> alumnos.</div>
       </div>
 
       <div class="container_balls" style="height: 80vh; width: auto;">
         <div id="ballsContainer"></div>
       </div>
 
-      <div id="menus_desplegables" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+      <div id="menus_desplegables"
+        style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
 
-          <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Año</h3>
+        <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Año</h3>
 
-            <select id="yearSelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
+        <select id="yearSelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
           color: #ffffff ; background-color: #ffc347;">
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-              <option value="2023">2023</option>
-            </select>
+          <option value="nada">Selecciona un año</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
 
         <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Region</h3>
 
         <select id="citySelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
         color: #ffffff ; background-color: #ffc347;">
+        <option value="nada">Selecciona una región</option>
+          
+          <option value="Amazonas">Amazonas</option>
+          <option value="Ancash">Ancash</option>
+          <option value="Apurimac">Apurimac</option>
+          <option value="Arequipa">Arequipa</option>
+          <option value="Ayacucho">Ayacucho</option>
+          <option value="Cajamarca">Cajamarca</option>
+          <option value="Callao">Callao</option>
+          <option value="Cusco">Cusco</option>
+          <option value="Huancavelica">Huancavelica</option>
+          <option value="Huanuco">Huanuco</option>
+          <option value="Ica">Ica</option>
+          <option value="Junin">Junin</option>
+          <option value="La Libertad">La Libertad</option>
+          <option value="Lambayeque">Lambayeque</option>
           <option value="Lima">Lima</option>
-            <option value="Amazonas">Amazonas</option>
-            <option value="Ancash">Ancash</option>
-            <option value="Apurimac">Apurimac</option>
-            <option value="Arequipa">Arequipa</option>
-            <option value="Ayacucho">Ayacucho</option>
-            <option value="Cajamarca">Cajamarca</option>
-            <option value="Callao">Callao</option>
-            <option value="Cusco">Cusco</option>
-            <option value="Huancavelica">Huancavelica</option>
-            <option value="Huanuco">Huanuco</option>
-            <option value="Ica">Ica</option>
-            <option value="Junin">Junin</option>
-            <option value="La Libertad">La Libertad</option>
-            <option value="Lambayeque">Lambayeque</option>
-            <option value="Loreto">Loreto</option>
-            <option value="Madre de Dios">Madre de Dios</option>
-            <option value="Moquegua">Moquegua</option>
-            <option value="Pasco">Pasco</option>
-            <option value="Piura">Piura</option>
-            <option value="Puno">Puno</option>
-            <option value="San Martin">San Martin</option>
-            <option value="Tacna">Tacna</option>
-            <option value="Tumbes">Tumbes</option>
-            <option value="Ucayali">Ucayali</option>
-          </select>
+          <option value="Loreto">Loreto</option>
+          <option value="Madre de Dios">Madre de Dios</option>
+          <option value="Moquegua">Moquegua</option>
+          <option value="Pasco">Pasco</option>
+          <option value="Piura">Piura</option>
+          <option value="Puno">Puno</option>
+          <option value="San Martin">San Martin</option>
+          <option value="Tacna">Tacna</option>
+          <option value="Tumbes">Tumbes</option>
+          <option value="Ucayali">Ucayali</option>
+        </select>
 
-      </div> 
+      </div>
 
 
     </div>
@@ -1217,15 +1220,123 @@
     <script>
       function drawBalls() {
         var citySelect = document.getElementById("citySelect");
+        var yearSelect = document.getElementById("yearSelect");
         var cityName = citySelect.value;
-        var ballCount = cityName.length;
+        var yearNumber = yearSelect.value;
+        //var ballCount = cityName.length;
+        var ballCount = 0;
         var ballCountElement = document.getElementById('ballCountValue');
-        ballCountElement.textContent = ballCount;
+
+
+        if (cityName === "Amazonas" && yearNumber === "2020") { ballCountElement.textContent = "2578"; ballCount = 2; }
+        else if (cityName === "Ancash" && yearNumber === "2020") { ballCountElement.textContent = "2670"; ballCount = 2; }
+        else if (cityName === "Apurimac" && yearNumber === "2020") { ballCountElement.textContent = "2011"; ballCount = 2; }
+        else if (cityName === "Arequipa" && yearNumber === "2020") { ballCountElement.textContent = "3808"; ballCount = 3; }
+        else if (cityName === "Ayacucho" && yearNumber === "2020") { ballCountElement.textContent = "2769"; ballCount = 2; }
+        else if (cityName === "Cajamarca" && yearNumber === "2020") { ballCountElement.textContent = "2326"; ballCount = 2; }
+        else if (cityName === "Callao" && yearNumber === "2020") { ballCountElement.textContent = "16608"; ballCount = 16; }
+        else if (cityName === "Cusco" && yearNumber === "2020") { ballCountElement.textContent = "2234"; ballCount = 2; }
+        else if (cityName === "Huancavelica" && yearNumber === "2020") { ballCountElement.textContent = "1020"; ballCount = 1; }
+        else if (cityName === "Huanuco" && yearNumber === "2020") { ballCountElement.textContent = "2557"; ballCount = 2; }
+        else if (cityName === "Ica" && yearNumber === "2020") { ballCountElement.textContent = "6969"; ballCount = 6; }
+        else if (cityName === "Junin" && yearNumber === "2020") { ballCountElement.textContent = "3818"; ballCount = 3; }
+        else if (cityName === "La Libertad" && yearNumber === "2020") { ballCountElement.textContent = "6737"; ballCount = 6; }
+        else if (cityName === "Lambayeque" && yearNumber === "2020") { ballCountElement.textContent = "11806"; ballCount = 11; }
+        else if (cityName === "Lima" && yearNumber === "2020") { ballCountElement.textContent = "15476"; ballCount = 15; }
+        else if (cityName === "Loreto" && yearNumber === "2020") { ballCountElement.textContent = "13621"; ballCount = 13; }
+        else if (cityName === "Madre de Dios" && yearNumber === "2020") { ballCountElement.textContent = "5239"; ballCount = 5; }
+        else if (cityName === "Moquegua" && yearNumber === "2020") { ballCountElement.textContent = "3966"; ballCount = 3; }
+        else if (cityName === "Pasco" && yearNumber === "2020") { ballCountElement.textContent = "2882"; ballCount = 2; }
+        else if (cityName === "Piura" && yearNumber === "2020") { ballCountElement.textContent = "3645"; ballCount = 3; }
+        else if (cityName === "Puno" && yearNumber === "2020") { ballCountElement.textContent = "1876"; ballCount = 1; }
+        else if (cityName === "San Martin" && yearNumber === "2020") { ballCountElement.textContent = "3678"; ballCount = 3; }
+        else if (cityName === "Tacna" && yearNumber === "2020") { ballCountElement.textContent = "6042"; ballCount = 6; }
+        else if (cityName === "Tumbes" && yearNumber === "2020") { ballCountElement.textContent = "9316"; ballCount = 9; }
+        else if (cityName === "Ucayali" && yearNumber === "2020") { ballCountElement.textContent = "16527"; ballCount = 16; }
+        else if (cityName === "Amazonas" && yearNumber === "2021") { ballCountElement.textContent = "2759"; ballCount = 2; }
+        else if (cityName === "Ancash" && yearNumber === "2021") { ballCountElement.textContent = "3090"; ballCount = 3; }
+        else if (cityName === "Apurimac" && yearNumber === "2021") { ballCountElement.textContent = "2478"; ballCount = 2; }
+        else if (cityName === "Arequipa" && yearNumber === "2021") { ballCountElement.textContent = "4115"; ballCount = 4; }
+        else if (cityName === "Ayacucho" && yearNumber === "2021") { ballCountElement.textContent = "3385"; ballCount = 3; }
+        else if (cityName === "Cajamarca" && yearNumber === "2021") { ballCountElement.textContent = "2771"; ballCount = 2; }
+        else if (cityName === "Callao" && yearNumber === "2021") { ballCountElement.textContent = "16608"; ballCount = 16; }
+        else if (cityName === "Cusco" && yearNumber === "2021") { ballCountElement.textContent = "2708"; ballCount = 2; }
+        else if (cityName === "Huancavelica" && yearNumber === "2021") { ballCountElement.textContent = "1368"; ballCount = 1; }
+        else if (cityName === "Huanuco" && yearNumber === "2021") { ballCountElement.textContent = "3050"; ballCount = 3; }
+        else if (cityName === "Ica" && yearNumber === "2021") { ballCountElement.textContent = "6969"; ballCount = 6; }
+        else if (cityName === "Junin" && yearNumber === "2021") { ballCountElement.textContent = "4351"; ballCount = 4; }
+        else if (cityName === "La Libertad" && yearNumber === "2021") { ballCountElement.textContent = "8103"; ballCount = 8; }
+        else if (cityName === "Lambayeque" && yearNumber === "2021") { ballCountElement.textContent = "13993"; ballCount = 13; }
+        else if (cityName === "Lima" && yearNumber === "2021") { ballCountElement.textContent = "15924"; ballCount = 15; }
+        else if (cityName === "Loreto" && yearNumber === "2021") { ballCountElement.textContent = "13621"; ballCount = 13; }
+        else if (cityName === "Madre de Dios" && yearNumber === "2021") { ballCountElement.textContent = "5675"; ballCount = 5; }
+        else if (cityName === "Moquegua" && yearNumber === "2021") { ballCountElement.textContent = "3683"; ballCount = 3; }
+        else if (cityName === "Pasco" && yearNumber === "2021") { ballCountElement.textContent = "3087"; ballCount = 3; }
+        else if (cityName === "Piura" && yearNumber === "2021") { ballCountElement.textContent = "4236"; ballCount = 4; }
+        else if (cityName === "Puno" && yearNumber === "2021") { ballCountElement.textContent = "2174"; ballCount = 2; }
+        else if (cityName === "San Martin" && yearNumber === "2021") { ballCountElement.textContent = "4489"; ballCount = 4; }
+        else if (cityName === "Tacna" && yearNumber === "2021") { ballCountElement.textContent = "6042"; ballCount = 6; }
+        else if (cityName === "Tumbes" && yearNumber === "2021") { ballCountElement.textContent = "10480"; ballCount = 10; }
+        else if (cityName === "Ucayali" && yearNumber === "2021") { ballCountElement.textContent = "16527"; ballCount = 16; }
+        else if (cityName === "Amazonas" && yearNumber === "2022") { ballCountElement.textContent = "2537"; ballCount = 2; }
+        else if (cityName === "Ancash" && yearNumber === "2022") { ballCountElement.textContent = "2587"; ballCount = 2; }
+        else if (cityName === "Apurimac" && yearNumber === "2022") { ballCountElement.textContent = "2011"; ballCount = 2; }
+        else if (cityName === "Arequipa" && yearNumber === "2022") { ballCountElement.textContent = "3772"; ballCount = 3; }
+        else if (cityName === "Ayacucho" && yearNumber === "2022") { ballCountElement.textContent = "2699"; ballCount = 2; }
+        else if (cityName === "Cajamarca" && yearNumber === "2022") { ballCountElement.textContent = "2278"; ballCount = 2; }
+        else if (cityName === "Callao" && yearNumber === "2022") { ballCountElement.textContent = "14763"; ballCount = 14; }
+        else if (cityName === "Cusco" && yearNumber === "2022") { ballCountElement.textContent = "2234"; ballCount = 2; }
+        else if (cityName === "Huancavelica" && yearNumber === "2022") { ballCountElement.textContent = "1002"; ballCount = 1; }
+        else if (cityName === "Huanuco" && yearNumber === "2022") { ballCountElement.textContent = "2532"; ballCount = 2; }
+        else if (cityName === "Ica" && yearNumber === "2022") { ballCountElement.textContent = "6645"; ballCount = 6; }
+        else if (cityName === "Junin" && yearNumber === "2022") { ballCountElement.textContent = "3854"; ballCount = 3; }
+        else if (cityName === "La Libertad" && yearNumber === "2022") { ballCountElement.textContent = "6502"; ballCount = 6; }
+        else if (cityName === "Lambayeque" && yearNumber === "2022") { ballCountElement.textContent = "11806"; ballCount = 11; }
+        else if (cityName === "Lima" && yearNumber === "2022") { ballCountElement.textContent = "14499"; ballCount = 14; }
+        else if (cityName === "Loreto" && yearNumber === "2022") { ballCountElement.textContent = "13621"; ballCount = 13; }
+        else if (cityName === "Madre de Dios" && yearNumber === "2022") { ballCountElement.textContent = "5239"; ballCount = 5; }
+        else if (cityName === "Moquegua" && yearNumber === "2022") { ballCountElement.textContent = "3437"; ballCount = 3; }
+        else if (cityName === "Pasco" && yearNumber === "2022") { ballCountElement.textContent = "2702"; ballCount = 2; }
+        else if (cityName === "Piura" && yearNumber === "2022") { ballCountElement.textContent = "3603"; ballCount = 3; }
+        else if (cityName === "Puno" && yearNumber === "2022") { ballCountElement.textContent = "1865"; ballCount = 1; }
+        else if (cityName === "San Martin" && yearNumber === "2022") { ballCountElement.textContent = "3678"; ballCount = 3; }
+        else if (cityName === "Tacna" && yearNumber === "2022") { ballCountElement.textContent = "6042"; ballCount = 6; }
+        else if (cityName === "Tumbes" && yearNumber === "2022") { ballCountElement.textContent = "9316"; ballCount = 9; }
+        else if (cityName === "Ucayali" && yearNumber === "2022") { ballCountElement.textContent = "16527"; ballCount = 16; }
+        else if (cityName === "Amazonas" && yearNumber === "2023") { ballCountElement.textContent = "2538"; ballCount = 2; }
+        else if (cityName === "Ancash" && yearNumber === "2023") { ballCountElement.textContent = "2587"; ballCount = 2; }
+        else if (cityName === "Apurimac" && yearNumber === "2023") { ballCountElement.textContent = "2011"; ballCount = 2; }
+        else if (cityName === "Arequipa" && yearNumber === "2023") { ballCountElement.textContent = "3772"; ballCount = 3; }
+        else if (cityName === "Ayacucho" && yearNumber === "2023") { ballCountElement.textContent = "2699"; ballCount = 2; }
+        else if (cityName === "Cajamarca" && yearNumber === "2023") { ballCountElement.textContent = "2278"; ballCount = 2; }
+        else if (cityName === "Callao" && yearNumber === "2023") { ballCountElement.textContent = "14763"; ballCount = 14; }
+        else if (cityName === "Cusco" && yearNumber === "2023") { ballCountElement.textContent = "2234"; ballCount = 2; }
+        else if (cityName === "Huancavelica" && yearNumber === "2023") { ballCountElement.textContent = "1002"; ballCount = 1; }
+        else if (cityName === "Huanuco" && yearNumber === "2023") { ballCountElement.textContent = "2532"; ballCount = 2; }
+        else if (cityName === "Ica" && yearNumber === "2023") { ballCountElement.textContent = "6645"; ballCount = 6; }
+        else if (cityName === "Junin" && yearNumber === "2023") { ballCountElement.textContent = "3854"; ballCount = 3; }
+        else if (cityName === "La Libertad" && yearNumber === "2023") { ballCountElement.textContent = "6502"; ballCount = 6; }
+        else if (cityName === "Lambayeque" && yearNumber === "2023") { ballCountElement.textContent = "11806"; ballCount = 11; }
+        else if (cityName === "Lima" && yearNumber === "2023") { ballCountElement.textContent = "14499"; ballCount = 14; }
+        else if (cityName === "Loreto" && yearNumber === "2023") { ballCountElement.textContent = "13621"; ballCount = 13; }
+        else if (cityName === "Madre de Dios" && yearNumber === "2023") { ballCountElement.textContent = "5239"; ballCount = 5; }
+        else if (cityName === "Moquegua" && yearNumber === "2023") { ballCountElement.textContent = "3437"; ballCount = 3; }
+        else if (cityName === "Pasco" && yearNumber === "2023") { ballCountElement.textContent = "2702"; ballCount = 2; }
+        else if (cityName === "Piura" && yearNumber === "2023") { ballCountElement.textContent = "3603"; ballCount = 3; }
+        else if (cityName === "Puno" && yearNumber === "2023") { ballCountElement.textContent = "1865"; ballCount = 1; }
+        else if (cityName === "San Martin" && yearNumber === "2023") { ballCountElement.textContent = "3678"; ballCount = 3; }
+        else if (cityName === "Tacna" && yearNumber === "2023") { ballCountElement.textContent = "6042"; ballCount = 6; }
+        else if (cityName === "Tumbes" && yearNumber === "2023") { ballCountElement.textContent = "9316"; ballCount = 9; }
+        else if (cityName === "Ucayali" && yearNumber === "2023") { ballCountElement.textContent = "16527"; ballCount = 16; }
+        else if (cityName === "nada" || yearNumber === "nada") { ballCountElement.textContent = "X"; ballCount = 0; }
+
+
+        //ballCountElement.textContent = ballCount;
 
         var ballsContainer = document.getElementById("ballsContainer");
         ballsContainer.innerHTML = "";
 
-        var ballSize = 100;
+        var ballSize = 101;
         var containerWidth = window.innerWidth;
         var ballsPerRow = Math.floor(containerWidth / ballSize);
 
