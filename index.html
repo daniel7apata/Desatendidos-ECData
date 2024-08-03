@@ -70,18 +70,16 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      z-index: 1;
+      z-index: 3;
 
     }
 
     .modal {
-      z-index: 2;
+      z-index: 4;
       height: auto;
       position: sticky;
       margin: 3vw;
       padding: 2vw;
-
-
     }
 
     /*para pop-ups de informacion*/
@@ -578,7 +576,7 @@
     <div id="texto1" style="z-index: 1; text-align: center;">
       <h1 style="color: 006d74; font-weight: bold; color: #006d74; font-size:  8vh;">La realidad en cifras</h1>
 
-      <p style="font-size: 18px;"><i>Durante el 2023, se registraron 192.049 casos de trastornos mentales de niños y
+      <p style="font-size: 18px;"><i>Durante el 2023, se registraron 192,049 casos de trastornos mentales de niños y
           adolescentes a nivel nacional.</i></p>
     </div>
 
@@ -988,12 +986,9 @@
       <div id="ballsContainer"></div>
     </div>
 
-
-
-    <div id="centrar_contador" style="display: flex; justify-content: center;">
-      <div id="ballCountDisplay" style="font-size: 4.5vh; color:white; width: 60vw; text-align: center; font-family: Londrina Solid;
-        background-color: #ff8182; padding: 5px; 
-        ">1 psicólogo
+    <div class="overlay" id="overlay4" style="justify-content: center; align-self: center;">
+      <div id="ballCountDisplay" style="font-size: 4.5vh; color:white; width: 60vw; height: fit-content; text-align: center; 
+      font-family: Londrina Solid; background-color: #ff8182; padding: 5px; border-radius: 20px;">1 psicólogo
         por cada <span id="ballCountValue">X</span> alumnos.</div>
     </div>
 
@@ -1298,12 +1293,20 @@
 
 
 
+
+
   </script>
   <!--script pop-ups-->
+
+
+
 
   <!--script grafico interactivo-->
 
   <script>
+
+    const overlay4 = document.getElementById('overlay4');
+
     function drawBalls() {
       var citySelect = document.getElementById("citySelect");
       var yearSelect = document.getElementById("yearSelect");
@@ -1445,8 +1448,12 @@
 
             var circle = document.createElement("div");
             circle.className = "red-circle";
+
+
             circle.style.width = "6px"; //ancho
             circle.style.height = "6px"; //ancho
+
+
             circle.style.backgroundColor = "red";
             circle.style.borderRadius = "50%";
 
@@ -1472,7 +1479,28 @@
           }, i * 0.00000000000000000000001);
         })(i);
       }
+
+
+
+
+
+
+      var cuadroDeCifras = document.getElementById("ballCountDisplay");
+      if (cityName === "nada" || yearNumber === "nada") { cuadroDeCifras.style.display = "none" }
+      else {
+        cuadroDeCifras.style.display = "block";
+        overlay4.style.display = 'flex';
+        overlay4.style.justifyContent = 'center';
+        overlay4.style.alignItems = 'center';
+      }
+
     }
+
+    overlay4.addEventListener('click', (e) => {
+      if (e.target === overlay4) {
+        overlay4.style.display = 'none';
+      }
+    });
 
     // Ejecutar drawBalls cuando la ventana cambia de tamaño
     window.addEventListener('resize', drawBalls);
