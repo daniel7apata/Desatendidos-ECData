@@ -1214,8 +1214,67 @@
       </div>
     </div>
 
+<!--script pop-ups-->
+    <script>
 
+      function toggleDesplegar() {
+        var contenido_desplegable = document.getElementById("slide6_desplegable");
+        contenido_desplegable.classList.toggle("mostrar");
+      }
+  
+      function toggleVisibilizarLateral() {
+        var offcanvas = document.getElementById("contenid_offcanvas");
+        offcanvas.classList.toggle("mostrar");
+      }
+  
+      const btnMostrar1 = document.getElementById('mostrarc1');
+      const btnMostrar2 = document.getElementById('mostrarc2');
+      const btnMostrar3 = document.getElementById('mostrarc3');
+  
+      const overlay1 = document.getElementById('overlay1');
+      btnMostrar1.addEventListener('click', () => {
+        overlay1.style.display = 'flex';
+        overlay1.style.justifyContent = 'center';
+        overlay1.style.alignItems = 'center';
+      });
+      overlay1.addEventListener('click', (e) => {
+        if (e.target === overlay1) {
+          overlay1.style.display = 'none';
+        }
+      });
+  
+  
+      const overlay2 = document.getElementById('overlay2');
+      btnMostrar2.addEventListener('click', () => {
+        overlay2.style.display = 'flex';
+        overlay2.style.justifyContent = 'center';
+        overlay2.style.alignItems = 'center';
+      });
+      overlay2.addEventListener('click', (e) => {
+        if (e.target === overlay2) {
+          overlay2.style.display = 'none';
+        }
+      });
+  
+  
+      const overlay3 = document.getElementById('overlay3');
+      btnMostrar3.addEventListener('click', () => {
+        overlay3.style.display = 'flex';
+        overlay3.style.justifyContent = 'center';
+        overlay3.style.alignItems = 'center';
+      });
+      overlay3.addEventListener('click', (e) => {
+        if (e.target === overlay3) {
+          overlay3.style.display = 'none';
+        }
+      });
+  
+  
+  
+    </script>
+<!--script pop-ups-->
 
+<!--script grafico interactivo-->
 
     <script>
       function drawBalls() {
@@ -1379,6 +1438,7 @@
       // Ejecutar drawBalls cuando la ventana cambia de tamaño
       window.addEventListener('resize', drawBalls);
     </script>
+    <!--script grafico interactivo-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
