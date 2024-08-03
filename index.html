@@ -905,26 +905,81 @@
     <!--grafico interactivo-->
     <div id="slide11_5" style="background-color: #ffc347; padding: 30px; width: 100vw; margin-top: 10vh;">
 
-      <div id="ballCountDisplay">1 psicólogo por cada <span id="ballCountValue"></span> alumnos.</div>
+      <div id="ballCountDisplay"
+        style="font-size: 4.5vh; color:white; width: 80vw; text-align: center; font-family: Londrina Solid;">1 psicólogo
+        por cada <span id="ballCountValue">X</span> alumnos.</div>
 
 
       <div class="container_balls" style="height: 80vh; width: auto;">
         <div id="ballsContainer"></div>
       </div>
 
-      <div>
-        <select id="citySelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 30px;">
-          <option value="">Selecciona una ciudad</option>
+      <div id="menus_desplegables" style="display: flex; justify-content: center; align-items: center;">
+        <div>
+
+          <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Año</h3>
+
+        
+            <select id="yearSelect" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
+          color: #ffffff ; background-color: #ffc347;">
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+    
+
+        </div>
+
+        <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Region</h3>
+
+        <select id="citySelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
+        color: #ffffff ; background-color: #ffc347;">
           <option value="Lima">Lima</option>
-          <option value="Arequipa">Arequipa</option>
-          <option value="Cusco">Cusco</option>
-          <option value="Trujillo">Trujillo</option>
-          <option value="Chiclayo">Chiclayo</option>
-        </select>
-      </div>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Ancash">Ancash</option>
+            <option value="Apurimac">Apurimac</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Ayacucho">Ayacucho</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Callao">Callao</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Huancavelica">Huancavelica</option>
+            <option value="Huanuco">Huanuco</option>
+            <option value="Ica">Ica</option>
+            <option value="Junin">Junin</option>
+            <option value="La Libertad">La Libertad</option>
+            <option value="Lambayeque">Lambayeque</option>
+            <option value="Loreto">Loreto</option>
+            <option value="Madre de Dios">Madre de Dios</option>
+            <option value="Moquegua">Moquegua</option>
+            <option value="Pasco">Pasco</option>
+            <option value="Piura">Piura</option>
+            <option value="Puno">Puno</option>
+            <option value="San Martin">San Martin</option>
+            <option value="Tacna">Tacna</option>
+            <option value="Tumbes">Tumbes</option>
+            <option value="Ucayali">Ucayali</option>
+          </select>
+
+      </div> 
 
 
     </div>
+    <!--grafico interactivo-->
+
+
+
+    <div id="slide_16"
+      style="display: flex; justify-content: center; align-items: center;  background-color: #006d74; width: 100vw; padding-top: 20vh; padding-bottom: 20vh;">
+      <div id="slide_16_texto_div" style="width: 50vw;">
+        <p style="font-size:18px; font-weight: bold; color: #ffffff; text-align: center;">Para atender a esa cantidad de
+          alumnos, aunque sea una vez, un psicólogo
+          tendría que trabajar en promedio, XXX días en una jornada de 8 horas. </p>
+      </div>
+
+    </div>
+
 
 
     <div id="slide11" style="text-align: center; 
@@ -1043,8 +1098,8 @@
 
 
     <div id="slide_15" style="margin-top: 80px; padding-top: 20vh; 
-  padding-bottom: 20vh; padding-left: 15vw; padding-right: 15vw">
-      <h3 style="font-size: 4.5vh;">Medidas de solución</h3>
+  padding-bottom: 20vh; padding-left: 15vw; padding-right: 15vw; text-align: left;">
+      <h3 style="font-size: 4.5vh; text-align: center;">Medidas de solución</h3>
       <p style="font-size: 18px; margin-top: 20px;">
         La violencia psicológica en las escuelas es una realidad
         preocupante que afecta a miles de estudiantes.
@@ -1059,21 +1114,15 @@
       </p>
       <p style="font-size: 18px; margin-top: 20px;">Algunas medidas clave incluyen:</p>
       <p style="font-size: 18px; margin-top: 20px;"><strong>• Sensibilizar y prevenir: </strong>Educar a toda la
-        comunidad
-        educativa
+        comunidad educativa
         sobre la violencia psicológica, sus formas y sus efectos.</p>
       <p style="font-size: 18px; margin-top: 20px;"><strong>• Detección y atención temprana: </strong> Capacitar al
-        personal
-        escolar
-        para identificar señales de violencia psicológica y establecer mecanismos para
-        reportar casos.</p>
+        personal escolar para identificar señales de violencia psicológica y
+        establecer mecanismos para reportar casos.</p>
       <p style="font-size: 18px; margin-top: 20px;"><strong>• Intervención y apoyo: </strong>Brindar apoyo psicológico a
-        las
-        víctimas
-        y a los estudiantes que ejercen violencia psicológica.</p>
+        las víctimas y a los estudiantes que ejercen violencia psicológica.</p>
       <p style="font-size: 18px; margin-top: 20px;"><strong>• Fortalecimiento de la red de apoyo: </strong>Colaborar con
-        profesionales
-        de salud mental y otras instituciones relevantes.</p>
+        profesionales de salud mental y otras instituciones relevantes.</p>
     </div>
 
 
