@@ -820,8 +820,8 @@
       <div style="text-align: left; margin-left: 3vw;">
         <h3 style="color: #006d74;
                   font-size: 4vh; text-align: center;">Escasez de psicólogos</h3>
-        <p style="font-size: 2vh;">Existe un vacío administrativo tanto en el Ministerio de Educación 
-          y en el Ministerio de Salud. <strong>No existe</strong> un programa específico que contempla la detección y 
+        <p style="font-size: 2vh;">Existe un vacío administrativo tanto en el Ministerio de Educación
+          y en el Ministerio de Salud. <strong>No existe</strong> un programa específico que contempla la detección y
           tratamiento de salud mental en el <strong>ámbito escolar</strong>
         </p>
       </div>
@@ -842,8 +842,8 @@
         <h3 style="color: #006d74;
                   font-size: 4vh; text-align: center;">Recorte de meses de contratación</h3>
         <p style="font-size: 2vh;">Con la promulgación de la Resolución 009-2024 del Ministerio de
-           Educación, los contratos de los psicólogos no cumplen el año escolar, sino que tienen 
-           una duración de 6 a 8 meses.</p>
+          Educación, los contratos de los psicólogos no cumplen el año escolar, sino que tienen
+          una duración de 6 a 8 meses.</p>
       </div>
     </div>
   </div>
@@ -859,9 +859,9 @@
       <div style="text-align: left; margin-left: 3vw;">
         <h3 style="color: #006d74;
                   font-size: 4vh; text-align: center;">Rotación de psicólogos</h3>
-        <p style="font-size: 2vh;">Los contratos de los psicólogos en el ámbito educativo nacional 
-          son temporales. Por ende, no hay una certeza de si el psicólogo seguirá desempeñándose 
-          en su respectivo centro educativo, lo cual dificulta el acompañamiento idóneo con los 
+        <p style="font-size: 2vh;">Los contratos de los psicólogos en el ámbito educativo nacional
+          son temporales. Por ende, no hay una certeza de si el psicólogo seguirá desempeñándose
+          en su respectivo centro educativo, lo cual dificulta el acompañamiento idóneo con los
           menores afectados.</p>
       </div>
     </div>
@@ -992,7 +992,7 @@
 
   </div>
 
-<!-- se quitara
+  <!-- se quitara
 
   <div id="slide11" style="text-align: center; 
     padding-bottom: 10vh; display: flex; justify-content: center; 
@@ -1031,9 +1031,9 @@
      box-shadow: 2px 2px 2px rgb(119, 119, 119);
      width: 400px; height: 200px;margin-top: 30px;
      padding: 20px; padding-top: 60px; z-index: 2;  ">
-          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
           </p>
         </div>
         <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
@@ -1056,9 +1056,9 @@
      box-shadow: 2px 2px 2px rgb(119, 119, 119);
      width: 400px; height: 200px;margin-top: 30px;
      padding: 20px; padding-top: 60px; z-index: 2;">
-          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
           </p>
         </div>
         <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
@@ -1081,9 +1081,9 @@
      box-shadow: 2px 2px 2px rgb(119, 119, 119);
      width: 400px; height: 200px;margin-top: 30px;
      padding: 20px; padding-top: 60px; z-index: 2;">
-          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
           </p>
         </div>
         <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
@@ -1412,6 +1412,7 @@
             var ball = document.createElement("div");
             ball.className = "ball";
 
+            /*
             var img = document.createElement("img");
             img.src = "cara_triste.png"; // Replace with the actual path to your PNG image
             img.className = "smiley";
@@ -1419,6 +1420,19 @@
             img.style.height = "100px";
 
             ball.appendChild(img);
+            */
+
+            var circle = document.createElement("div");
+            circle.className = "red-circle";
+            circle.style.width = "100px";
+            circle.style.height = "100px";
+            circle.style.backgroundColor = "red";
+            circle.style.borderRadius = "50%";
+
+            ball.appendChild(circle);
+
+
+
 
             // Calculate the position of the ball
             var row = Math.floor(i / ballsPerRow);
