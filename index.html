@@ -91,12 +91,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100px;
-      height: 100px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       position: absolute;
       opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.001s ease-in-out;
     }
 
     .smiley {
@@ -1294,13 +1294,13 @@
       var ballCountElement = document.getElementById('ballCountValue');
 
 
-      if (cityName === "Amazonas" && yearNumber === "2020") { ballCountElement.textContent = "2578"; ballCount = 2; }
-      else if (cityName === "Ancash" && yearNumber === "2020") { ballCountElement.textContent = "2670"; ballCount = 2; }
+      if (cityName === "Amazonas" && yearNumber === "2020") { ballCountElement.textContent = "2578"; ballCount = 2578; }
+      else if (cityName === "Ancash" && yearNumber === "2020") { ballCountElement.textContent = "2670"; ballCount = 2670; }
       else if (cityName === "Apurimac" && yearNumber === "2020") { ballCountElement.textContent = "2011"; ballCount = 2; }
       else if (cityName === "Arequipa" && yearNumber === "2020") { ballCountElement.textContent = "3808"; ballCount = 3; }
       else if (cityName === "Ayacucho" && yearNumber === "2020") { ballCountElement.textContent = "2769"; ballCount = 2; }
       else if (cityName === "Cajamarca" && yearNumber === "2020") { ballCountElement.textContent = "2326"; ballCount = 2; }
-      else if (cityName === "Callao" && yearNumber === "2020") { ballCountElement.textContent = "16608"; ballCount = 16; }
+      else if (cityName === "Callao" && yearNumber === "2020") { ballCountElement.textContent = "16608"; ballCount = 16608; }
       else if (cityName === "Cusco" && yearNumber === "2020") { ballCountElement.textContent = "2234"; ballCount = 2; }
       else if (cityName === "Huancavelica" && yearNumber === "2020") { ballCountElement.textContent = "1020"; ballCount = 1; }
       else if (cityName === "Huanuco" && yearNumber === "2020") { ballCountElement.textContent = "2557"; ballCount = 2; }
@@ -1402,7 +1402,7 @@
       var ballsContainer = document.getElementById("ballsContainer");
       ballsContainer.innerHTML = "";
 
-      var ballSize = 101;
+      var ballSize = 10;
       var containerWidth = window.innerWidth;
       var ballsPerRow = Math.floor(containerWidth / ballSize);
 
@@ -1424,9 +1424,9 @@
 
             var circle = document.createElement("div");
             circle.className = "red-circle";
-            circle.style.width = "100px";
-            circle.style.height = "100px";
-            circle.style.backgroundColor = "red";
+            circle.style.width = "5px";
+            circle.style.height = "5px";
+            circle.style.backgroundColor = "#ffffff";
             circle.style.borderRadius = "50%";
 
             ball.appendChild(circle);
@@ -1451,7 +1451,7 @@
             // Force reflow to make the transition work
             window.getComputedStyle(ball).opacity;
             ball.style.opacity = 1;
-          }, i * 200);
+          }, i * 0.0000000000000001);
         })(i);
       }
     }
