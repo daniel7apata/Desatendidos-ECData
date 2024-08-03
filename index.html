@@ -241,6 +241,8 @@
 
 
 
+
+
     @media screen and (min-width: 470px) and (max-width: 980px) {
 
       /* Estilos para dispositivos móviles */
@@ -711,11 +713,11 @@
         </div>
         <div class="back" style="background-color: #b7f1f2; padding: 20px;">
           <p style="font-size:18px; margin-top: 30px;">Contenido de la parte de atrás</p>
-          
-          <iframe width="350" height="350" src="https://www.youtube.com/embed/EsgAibVIENo" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen></iframe>
+
+          <iframe width="350" height="350" src="https://www.youtube.com/embed/EsgAibVIENo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
         </div>
       </div>
@@ -726,10 +728,10 @@
         </div>
         <div class="back" style="background-color: #ff8182; padding: 40px;">
           <p style="font-size:18px; margin-top: 30px;">Contenido de la parte de atrás</p>
-          <iframe width="300" height="169" src="https://www.youtube.com/embed/EsgAibVIENo" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen></iframe>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/EsgAibVIENo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
         </div>
       </div>
@@ -907,550 +909,550 @@
     </div>
      -->
   </div>
- 
 
 
 
 
 
 
-    <!--grafico interactivo-->
-    <div id="slide11_5" style="background-color: #ffc347; padding: 20px; margin-top: 10vh;">
 
-      <div id="centrar_contador" style="display: flex; justify-content: center;">
-        <div id="ballCountDisplay" style="font-size: 4.5vh; color:white; width: 60vw; text-align: center; font-family: Londrina Solid;
-        background-color: #ff8182; padding: 5px; 
-        ">1 psicólogo
-          por cada <span id="ballCountValue">X</span> alumnos.</div>
-      </div>
+  <!--grafico interactivo-->
+  <div id="slide11_5" style="background-color: #ffc347; padding: 20px; margin-top: 10vh;">
 
-      <div class="container_balls" style="height: 80vh; width: auto;">
-        <div id="ballsContainer"></div>
-      </div>
+    <div id="menus_desplegables" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
 
-      <div id="menus_desplegables"
-        style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+      <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Año</h3>
 
-        <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Año</h3>
-
-        <select id="yearSelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
+      <select id="yearSelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
           color: #ffffff ; background-color: #ffc347;">
-          <option value="nada">Selecciona un año</option>
-          <option value="2020">2020</option>
-          <option value="2021">2021</option>
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-        </select>
+        <option value="nada">Selecciona un año</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
 
-        <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Region</h3>
+      <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Region</h3>
 
-        <select id="citySelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
+      <select id="citySelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
         color: #ffffff ; background-color: #ffc347;">
         <option value="nada">Selecciona una región</option>
-          
-          <option value="Amazonas">Amazonas</option>
-          <option value="Ancash">Ancash</option>
-          <option value="Apurimac">Apurimac</option>
-          <option value="Arequipa">Arequipa</option>
-          <option value="Ayacucho">Ayacucho</option>
-          <option value="Cajamarca">Cajamarca</option>
-          <option value="Callao">Callao</option>
-          <option value="Cusco">Cusco</option>
-          <option value="Huancavelica">Huancavelica</option>
-          <option value="Huanuco">Huanuco</option>
-          <option value="Ica">Ica</option>
-          <option value="Junin">Junin</option>
-          <option value="La Libertad">La Libertad</option>
-          <option value="Lambayeque">Lambayeque</option>
-          <option value="Lima">Lima</option>
-          <option value="Loreto">Loreto</option>
-          <option value="Madre de Dios">Madre de Dios</option>
-          <option value="Moquegua">Moquegua</option>
-          <option value="Pasco">Pasco</option>
-          <option value="Piura">Piura</option>
-          <option value="Puno">Puno</option>
-          <option value="San Martin">San Martin</option>
-          <option value="Tacna">Tacna</option>
-          <option value="Tumbes">Tumbes</option>
-          <option value="Ucayali">Ucayali</option>
-        </select>
 
-      </div>
-
+        <option value="Amazonas">Amazonas</option>
+        <option value="Ancash">Ancash</option>
+        <option value="Apurimac">Apurimac</option>
+        <option value="Arequipa">Arequipa</option>
+        <option value="Ayacucho">Ayacucho</option>
+        <option value="Cajamarca">Cajamarca</option>
+        <option value="Callao">Callao</option>
+        <option value="Cusco">Cusco</option>
+        <option value="Huancavelica">Huancavelica</option>
+        <option value="Huanuco">Huanuco</option>
+        <option value="Ica">Ica</option>
+        <option value="Junin">Junin</option>
+        <option value="La Libertad">La Libertad</option>
+        <option value="Lambayeque">Lambayeque</option>
+        <option value="Lima">Lima</option>
+        <option value="Loreto">Loreto</option>
+        <option value="Madre de Dios">Madre de Dios</option>
+        <option value="Moquegua">Moquegua</option>
+        <option value="Pasco">Pasco</option>
+        <option value="Piura">Piura</option>
+        <option value="Puno">Puno</option>
+        <option value="San Martin">San Martin</option>
+        <option value="Tacna">Tacna</option>
+        <option value="Tumbes">Tumbes</option>
+        <option value="Ucayali">Ucayali</option>
+      </select>
 
     </div>
-    <!--grafico interactivo-->
 
-
-
-    <div id="slide_16"
-      style="display: flex; justify-content: center; align-items: center;  background-color: #006d74; padding-top: 20vh; padding-bottom: 20vh;">
-      <div id="slide_16_texto_div" style="width: 50vw;">
-        <p style="font-size:18px; font-weight: bold; color: #ffffff; text-align: center;">Para atender a esa cantidad de
-          alumnos, aunque sea una vez, un psicólogo
-          tendría que trabajar en promedio, XXX días en una jornada de 8 horas. </p>
-      </div>
-
+    <div class="container_balls" style="height: 80vh; width: auto;">
+      <div id="ballsContainer"></div>
     </div>
 
 
 
-    <div id="slide11" style="text-align: center; 
+    <div id="centrar_contador" style="display: flex; justify-content: center;">
+      <div id="ballCountDisplay" style="font-size: 4.5vh; color:white; width: 60vw; text-align: center; font-family: Londrina Solid;
+        background-color: #ff8182; padding: 5px; 
+        ">1 psicólogo
+        por cada <span id="ballCountValue">X</span> alumnos.</div>
+    </div>
+
+  </div>
+  <!--grafico interactivo-->
+
+
+
+  <div id="slide_16"
+    style="display: flex; justify-content: center; align-items: center;  background-color: #006d74; padding-top: 20vh; padding-bottom: 20vh;">
+    <div id="slide_16_texto_div" style="width: 50vw;">
+      <p style="font-size:18px; font-weight: bold; color: #ffffff; text-align: center;">Para atender a esa cantidad de
+        alumnos, aunque sea una vez, un psicólogo
+        tendría que trabajar en promedio, XXX días en una jornada de 8 horas. </p>
+    </div>
+
+  </div>
+
+
+
+  <div id="slide11" style="text-align: center; 
     padding-bottom: 10vh; display: flex; justify-content: center; 
     align-items: center;  flex-wrap: wrap; margin-top: 10vh;">
-      <h3 style="color: #006d74; font-size: 6vh;">Un psicólogo por colegio no es suficiente</h3>
-      <p style="font-size: 18px; margin-top: 20px; width: 85vw;">De acuerdo a las cifras entregadas por el portal de
-        transparencia, de las
-        86 mil instituciones educativas públicas, sólo 1928 cuentan con un psicólogo
-        y 73 con dos psicólogos. </p>
-      <div style="width: 80vw; margin-top: 2vh;">
-        <iframe title="Distribución de instituciones educativas según cantidad de psicólogos (2023)"
-          aria-label="Gráfico de círculo" id="datawrapper-chart-zDIfb" src="https://datawrapper.dwcdn.net/zDIfb/1/"
-          scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="373"
-          data-external="1"></iframe>
-        <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
-        </script>
-      </div>
+    <h3 style="color: #006d74; font-size: 6vh;">Un psicólogo por colegio no es suficiente</h3>
+    <p style="font-size: 18px; margin-top: 20px; width: 85vw;">De acuerdo a las cifras entregadas por el portal de
+      transparencia, de las
+      86 mil instituciones educativas públicas, sólo 1928 cuentan con un psicólogo
+      y 73 con dos psicólogos. </p>
+    <div style="width: 80vw; margin-top: 2vh;">
+      <iframe title="Distribución de instituciones educativas según cantidad de psicólogos (2023)"
+        aria-label="Gráfico de círculo" id="datawrapper-chart-zDIfb" src="https://datawrapper.dwcdn.net/zDIfb/1/"
+        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="373"
+        data-external="1"></iframe>
+      <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+      </script>
     </div>
-    <br>
+  </div>
+  <br>
 
 
 
 
-    <div id="slide14" style="margin-top: 80px; padding-top: 8vh; 
+  <div id="slide14" style="margin-top: 80px; padding-top: 8vh; 
   padding-bottom: 8vh; background-color: #ff8182; display: flex; 
   justify-content: center; align-items: center;  
   flex-wrap: wrap;">
-      <h3 style="font-size: 4.5vh; color:white; width: 80vw; text-align: center;">
-        ¿Qué dicen los expertos?</h3>
-   <!--psicologo 1-->
-   <div id="slide14_cuadro1" style="width: 410px; z-index: 1; display: flex;
+    <h3 style="font-size: 4.5vh; color:white; width: 80vw; text-align: center;">
+      ¿Qué dicen los expertos?</h3>
+    <!--psicologo 1-->
+    <div id="slide14_cuadro1" style="width: 410px; z-index: 1; display: flex;
    height: 240px; margin: 2vw;">
-     <div style="display: block;">
-       <div id="cuadro_blanco_op_1" style="background-color: white; border-radius: 20px; 
+      <div style="display: block;">
+        <div id="cuadro_blanco_op_1" style="background-color: white; border-radius: 20px; 
      box-shadow: 2px 2px 2px rgb(119, 119, 119);
      width: 400px; height: 200px;margin-top: 30px;
      padding: 20px; padding-top: 60px; z-index: 2;  ">
-         <p>El vídeo proporciona una manera eficaz para ayudarle a demostrar el punto.
-           Cuando haga clic en Vídeo en línea, puede pegar el código para insertar del
-           vídeo que desea agregar. También puede escribir una palabra clave para buscar
-         </p>
-       </div>
-       <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
+          <p>El vídeo proporciona una manera eficaz para ayudarle a demostrar el punto.
+            Cuando haga clic en Vídeo en línea, puede pegar el código para insertar del
+            vídeo que desea agregar. También puede escribir una palabra clave para buscar
+          </p>
+        </div>
+        <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
      height: 80px; z-index: 2; padding-left: 40px; padding-top: 5px;
      margin-top: -230px; margin-left: 50px;">
-         <p style="font-weight: bold; line-height: 20px; width: 170px;">Licenciada en psicología infantil</p>
-         <p style="line-height: 0px;">Nombre del especialista</p>
-       </div>
-       <img src="icono_persona.png" height="90" style="z-index: 3;
+          <p style="font-weight: bold; line-height: 20px; width: 170px;">Licenciada en psicología infantil</p>
+          <p style="line-height: 0px;">Nombre del especialista</p>
+        </div>
+        <img src="icono_persona.png" height="90" style="z-index: 3;
      margin-top: -90px; margin-left: 10px;">
-     </div>
-   </div>
-   <!--psicologo 1-->
-
-   <!--psicologo 2-->
-   <div id="slide14_cuadro2" style="width: 410px; z-index: 1; display: flex;
-   height: 240px; margin: 2vw;">
-     <div style="display: block; ">
-       <div id="cuadro_blanco_op_2" style="background-color: white; border-radius: 20px; 
-     box-shadow: 2px 2px 2px rgb(119, 119, 119);
-     width: 400px; height: 200px;margin-top: 30px;
-     padding: 20px; padding-top: 60px; z-index: 2;">
-         <p>El vídeo proporciona una manera eficaz para ayudarle a demostrar el punto.
-           Cuando haga clic en Vídeo en línea, puede pegar el código para insertar del
-           vídeo que desea agregar. También puede escribir una palabra clave para buscar
-         </p>
-       </div>
-       <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
-     height: 80px; z-index: 2; padding-left: 40px; padding-top: 5px;
-     margin-top: -230px; margin-left: 50px;">
-         <p style="font-weight: bold; line-height: 20px; width: 170px;">Licenciada en psicología infantil</p>
-         <p style="line-height: 0px;">Nombre del especialista</p>
-       </div>
-       <img src="icono_persona.png" height="90" style="z-index: 3;
-     margin-top: -90px; margin-left: 10px;">
-     </div>
-   </div>
-   <!--psicologo 2-->
-
-   <!--psicologo 3-->
-   <div id="slide14_cuadro3" style="width: 410px; z-index: 1; display: flex;
-   height: 240px; margin: 2vw;">
-     <div style="display: block;">
-       <div id="cuadro_blanco_op_3" style="background-color: white; border-radius: 20px; 
-     box-shadow: 2px 2px 2px rgb(119, 119, 119);
-     width: 400px; height: 200px;margin-top: 30px;
-     padding: 20px; padding-top: 60px; z-index: 2;">
-         <p>El vídeo proporciona una manera eficaz para ayudarle a demostrar el punto.
-           Cuando haga clic en Vídeo en línea, puede pegar el código para insertar del
-           vídeo que desea agregar. También puede escribir una palabra clave para buscar
-         </p>
-       </div>
-       <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
-     height: 80px; z-index: 2; padding-left: 40px; padding-top: 5px;
-     margin-top: -230px; margin-left: 50px;">
-         <p style="font-weight: bold; line-height: 20px; width: 170px;">Licenciada en psicología infantil</p>
-         <p style="line-height: 0px;">Nombre del especialista</p>
-       </div>
-       <img src="icono_persona.png" height="90" style="z-index: 3;
-     margin-top: -90px; margin-left: 10px;">
-     </div>
-   </div>
-   <!--psicologo 3-->
-
-
-
+      </div>
     </div>
+    <!--psicologo 1-->
+
+    <!--psicologo 2-->
+    <div id="slide14_cuadro2" style="width: 410px; z-index: 1; display: flex;
+   height: 240px; margin: 2vw;">
+      <div style="display: block; ">
+        <div id="cuadro_blanco_op_2" style="background-color: white; border-radius: 20px; 
+     box-shadow: 2px 2px 2px rgb(119, 119, 119);
+     width: 400px; height: 200px;margin-top: 30px;
+     padding: 20px; padding-top: 60px; z-index: 2;">
+          <p>El vídeo proporciona una manera eficaz para ayudarle a demostrar el punto.
+            Cuando haga clic en Vídeo en línea, puede pegar el código para insertar del
+            vídeo que desea agregar. También puede escribir una palabra clave para buscar
+          </p>
+        </div>
+        <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
+     height: 80px; z-index: 2; padding-left: 40px; padding-top: 5px;
+     margin-top: -230px; margin-left: 50px;">
+          <p style="font-weight: bold; line-height: 20px; width: 170px;">Licenciada en psicología infantil</p>
+          <p style="line-height: 0px;">Nombre del especialista</p>
+        </div>
+        <img src="icono_persona.png" height="90" style="z-index: 3;
+     margin-top: -90px; margin-left: 10px;">
+      </div>
+    </div>
+    <!--psicologo 2-->
+
+    <!--psicologo 3-->
+    <div id="slide14_cuadro3" style="width: 410px; z-index: 1; display: flex;
+   height: 240px; margin: 2vw;">
+      <div style="display: block;">
+        <div id="cuadro_blanco_op_3" style="background-color: white; border-radius: 20px; 
+     box-shadow: 2px 2px 2px rgb(119, 119, 119);
+     width: 400px; height: 200px;margin-top: 30px;
+     padding: 20px; padding-top: 60px; z-index: 2;">
+          <p>El vídeo proporciona una manera eficaz para ayudarle a demostrar el punto.
+            Cuando haga clic en Vídeo en línea, puede pegar el código para insertar del
+            vídeo que desea agregar. También puede escribir una palabra clave para buscar
+          </p>
+        </div>
+        <div style="background-color: #ffc447; border-radius: 20px; width: 300px;
+     height: 80px; z-index: 2; padding-left: 40px; padding-top: 5px;
+     margin-top: -230px; margin-left: 50px;">
+          <p style="font-weight: bold; line-height: 20px; width: 170px;">Licenciada en psicología infantil</p>
+          <p style="line-height: 0px;">Nombre del especialista</p>
+        </div>
+        <img src="icono_persona.png" height="90" style="z-index: 3;
+     margin-top: -90px; margin-left: 10px;">
+      </div>
+    </div>
+    <!--psicologo 3-->
+
+
+
+  </div>
 
 
 
 
-    <div id="slide_15" style="margin-top: 80px; padding-top: 20vh; 
+  <div id="slide_15" style="margin-top: 80px; padding-top: 20vh; 
   padding-bottom: 20vh; padding-left: 15vw; padding-right: 15vw; text-align: left;">
-      <h3 style="font-size: 4.5vh; text-align: center;">Medidas de solución</h3>
-      <p style="font-size: 18px; margin-top: 20px;">
-        La violencia psicológica en las escuelas es una realidad
-        preocupante que afecta a miles de estudiantes.
-        Sus consecuencias pueden ser graves, incluyendo
-        baja autoestima, ansiedad, depresión y problemas
-        de aprendizaje.<br><br>
-        Para abordarla, se necesita un enfoque integral
-        que involucre a toda la comunidad educativa. Las escuelas
-        deben crear un ambiente seguro y libre de violencia, y se
-        deben implementar medidas para prevenir, detectar y
-        atender casos de violencia psicológica. <br>
-      </p>
-      <p style="font-size: 18px; margin-top: 20px;">Algunas medidas clave incluyen:</p>
-      <p style="font-size: 18px; margin-top: 20px;"><strong>• Sensibilizar y prevenir: </strong>Educar a toda la
-        comunidad educativa
-        sobre la violencia psicológica, sus formas y sus efectos.</p>
-      <p style="font-size: 18px; margin-top: 20px;"><strong>• Detección y atención temprana: </strong> Capacitar al
-        personal escolar para identificar señales de violencia psicológica y
-        establecer mecanismos para reportar casos.</p>
-      <p style="font-size: 18px; margin-top: 20px;"><strong>• Intervención y apoyo: </strong>Brindar apoyo psicológico a
-        las víctimas y a los estudiantes que ejercen violencia psicológica.</p>
-      <p style="font-size: 18px; margin-top: 20px;"><strong>• Fortalecimiento de la red de apoyo: </strong>Colaborar con
-        profesionales de salud mental y otras instituciones relevantes.</p>
-    </div>
+    <h3 style="font-size: 4.5vh; text-align: center;">Medidas de solución</h3>
+    <p style="font-size: 18px; margin-top: 20px;">
+      La violencia psicológica en las escuelas es una realidad
+      preocupante que afecta a miles de estudiantes.
+      Sus consecuencias pueden ser graves, incluyendo
+      baja autoestima, ansiedad, depresión y problemas
+      de aprendizaje.<br><br>
+      Para abordarla, se necesita un enfoque integral
+      que involucre a toda la comunidad educativa. Las escuelas
+      deben crear un ambiente seguro y libre de violencia, y se
+      deben implementar medidas para prevenir, detectar y
+      atender casos de violencia psicológica. <br>
+    </p>
+    <p style="font-size: 18px; margin-top: 20px;">Algunas medidas clave incluyen:</p>
+    <p style="font-size: 18px; margin-top: 20px;"><strong>• Sensibilizar y prevenir: </strong>Educar a toda la
+      comunidad educativa
+      sobre la violencia psicológica, sus formas y sus efectos.</p>
+    <p style="font-size: 18px; margin-top: 20px;"><strong>• Detección y atención temprana: </strong> Capacitar al
+      personal escolar para identificar señales de violencia psicológica y
+      establecer mecanismos para reportar casos.</p>
+    <p style="font-size: 18px; margin-top: 20px;"><strong>• Intervención y apoyo: </strong>Brindar apoyo psicológico a
+      las víctimas y a los estudiantes que ejercen violencia psicológica.</p>
+    <p style="font-size: 18px; margin-top: 20px;"><strong>• Fortalecimiento de la red de apoyo: </strong>Colaborar con
+      profesionales de salud mental y otras instituciones relevantes.</p>
+  </div>
 
 
 
-    <div id="slide_16" style="text-align: right; display: flex; 
+  <div id="slide_16" style="text-align: right; display: flex; 
       justify-content: left; align-items: center;  background-color: #8edde1;">
 
-      <div id="cerebro_slide16" style="flex: 0; text-align: center; ">
-        <svg id="cerebro_izquierda" width="20vh" height="auto" viewBox="0 0 267 540" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.3">
-            <path
-              d="M227.901 268.213C230.329 259.998 230.892 250.891 229.452 241.825C228.107 233.321 225.117 225.613 220.837 219.126C233.265 211.555 242.456 198.224 245.899 182.355C252.086 153.868 242.332 124.476 219.794 103.725C199.04 84.6196 171.275 76.0613 145.006 80.0799C148.326 62.3734 142.606 42.541 129.492 27.8519C116.748 13.5742 97.6258 4.02837 75.6229 0.969832C62.2757 -0.881732 42.7282 -0.991475 25.3755 9.007C9.28477 18.2923 -0.811357 34.7644 -0.838794 51.4285C-0.838794 51.5245 -0.866229 51.6206 -0.866229 51.7303L-0.866232 436.98C-1.04455 437.776 -1.04455 438.599 -0.866233 439.394L-0.866236 482.858C-0.866236 482.858 -0.866236 482.885 -0.866236 482.913C-1.57956 496.82 8.68122 517.544 20.4646 525.842C33.7157 535.168 51.2468 539.996 70.3691 539.996C80.9179 539.996 91.9742 538.529 103.044 535.539C126.501 529.202 149.533 509.891 166.241 482.57C176.159 466.345 180.452 448.501 178.395 432.248C180.933 432.674 183.457 432.866 185.967 432.866C205.322 432.866 223.347 421.578 229.369 417.381C253.498 400.58 267.559 372.216 266.969 341.521C266.393 311.43 251.811 284.178 227.901 268.227L227.901 268.213ZM223.073 408.315C209.986 417.436 190.782 425.171 175.569 420.179C171.083 407.41 162.318 396.602 151.262 390.513C156.886 383.737 160.85 375.549 162.318 366.922C165.13 350.491 158.998 332.593 146.694 321.333C144.444 319.275 140.96 319.426 138.902 321.675C136.844 323.925 136.995 327.408 139.245 329.466C148.847 338.257 153.635 352.219 151.44 365.057C149.245 377.895 140.082 389.484 128.106 394.572C116.131 399.675 101.426 398.234 90.6573 390.924C88.1333 389.21 84.7039 389.868 82.9892 392.392C81.2745 394.915 81.933 398.344 84.457 400.059C92.7561 405.696 102.88 408.603 112.976 408.603C119.656 408.603 126.323 407.328 132.427 404.722C136.131 403.144 139.629 401.074 142.839 398.618C142.894 398.646 142.935 398.673 142.976 398.701C155.692 404.159 165.281 417.628 167.407 433.03C169.328 446.965 165.569 462.518 156.831 476.81C141.577 501.744 120.932 519.272 100.177 524.882C72.166 532.453 44.7447 529.435 26.8295 516.817C17.2684 510.083 9.54541 492.418 10.1627 483.215C10.1627 483.146 10.1627 483.091 10.1627 483.023C10.1627 482.954 10.1764 482.899 10.1764 482.844L10.1764 439.847C20.1216 427.078 38.9833 421.77 54.0452 427.805C69.6832 434.073 79.8753 452.012 77.2553 468.649C76.7752 471.653 78.8328 474.478 81.8507 474.958C82.1387 474.999 82.4268 475.027 82.7149 475.027C85.3761 475.027 87.7218 473.093 88.1607 470.377C91.549 448.871 78.3664 425.679 58.1604 417.573C42.495 411.305 23.6608 414.528 10.1901 424.609L10.1901 248.82C19.2163 257.405 31.6718 262.96 43.6061 262.96C44.6624 262.96 45.7186 262.919 46.7611 262.823C63.6886 261.397 78.8328 249.684 84.992 234.021C91.1786 237.93 98.1883 240.563 105.527 241.482C107.557 241.742 109.588 241.866 111.618 241.866C128.806 241.866 145.706 232.855 154.993 218.276C156.625 215.711 155.871 212.296 153.305 210.664C150.74 209.031 147.325 209.786 145.692 212.351C137.667 224.941 121.728 232.416 106.913 230.551C92.0977 228.672 78.5173 217.466 73.8945 203.271C69.2579 189.076 73.6064 172.014 84.457 161.768C86.6655 159.67 86.7753 156.186 84.6765 153.978C82.5777 151.77 79.0934 151.66 76.8849 153.759C62.8244 167.035 57.406 188.321 63.4143 206.714C65.8834 214.298 70.2456 221.101 75.8149 226.683C72.2072 239.987 59.6008 250.699 45.8421 251.851C31.9736 253.03 15.9104 243.251 10.1901 230.359L10.1901 139.618C14.5935 140.4 18.9968 140.811 23.3315 140.811C32.344 140.811 41.0272 139.138 48.7913 135.805C63.6886 129.428 74.937 116.988 78.8877 102.518C83.2499 86.5535 78.0783 69.135 66.0206 59.1777C63.6749 57.2438 60.1906 57.573 58.2565 59.9183C56.3223 62.2637 56.6515 65.7473 58.9972 67.6812C67.6393 74.8132 71.4391 87.9387 68.2566 99.6105C65.225 110.692 56.1028 120.677 44.4566 125.67C34.4016 129.976 22.3439 130.881 10.2039 128.372L10.2038 53.527C10.2038 53.3213 10.245 53.1155 10.2313 52.9098C9.614 39.8665 17.9268 26.0826 30.9174 18.594C45.554 10.1454 62.4952 10.31 74.1414 11.9147C93.5517 14.6166 110.301 22.8869 121.302 35.217C132.839 48.1369 137.517 65.6925 133.634 80.697C122.482 73.2222 107.05 72.7559 95.6368 80.121C93.0716 81.7669 92.3446 85.182 93.9907 87.7467C95.6368 90.3115 99.0525 91.0384 101.618 89.3926C110.301 83.7967 122.935 85.0174 130.383 92.163C137.832 99.3087 139.56 111.886 134.334 120.787C132.798 123.407 133.662 126.794 136.296 128.33C137.174 128.852 138.134 129.098 139.08 129.098C140.973 129.098 142.811 128.125 143.84 126.383C150.082 115.767 149.753 102.107 143.717 91.5733C167.572 86.8689 193.292 94.3164 212.373 111.872C232.291 130.209 240.604 155.062 235.172 180.051C232.223 193.629 224.225 204.766 213.58 210.554C212.702 209.745 211.825 208.935 210.878 208.195C199.561 199.335 183.937 197.168 171.975 202.791C169.218 204.094 168.038 207.372 169.328 210.129C170.617 212.885 173.909 214.065 176.666 212.776C184.938 208.881 195.953 210.526 204.074 216.89C211.536 222.733 216.831 232.471 218.601 243.594C220.165 253.455 218.889 263.289 214.98 271.272C210.837 279.761 203.457 286.386 195.226 289.019C186.639 291.762 176.913 290.089 170.466 284.74C168.12 282.792 164.65 283.122 162.702 285.467C160.754 287.812 161.083 291.282 163.429 293.23C169.863 298.565 178.175 301.377 186.721 301.377C190.686 301.377 194.705 300.773 198.601 299.525C208.944 296.22 217.874 288.635 223.526 278.596C243.416 292.681 255.488 316.011 255.981 341.755C256.503 368.76 244.212 393.667 223.1 408.356L223.073 408.315Z"
-              fill="#006A70" />
-            <path
-              d="M101.933 318.96C99.0387 318 95.9248 319.577 94.9646 322.471C91.2334 333.772 80.3554 342.44 68.5034 343.551C56.6515 344.662 44.3605 338.161 38.5992 327.738C32.8378 317.328 33.8803 303.448 41.1232 294.012C42.975 291.598 42.5224 288.128 40.1081 286.276C37.6938 284.425 34.2232 284.877 32.3714 287.291C22.5359 300.115 21.1367 318.932 28.942 333.073C36.1711 346.157 51.0273 354.702 65.952 354.702C67.1454 354.702 68.3388 354.647 69.5322 354.537C85.6092 353.029 100.383 341.275 105.445 325.927C106.391 323.033 104.828 319.92 101.933 318.96Z"
-              fill="#006A70" />
-          </g>
-        </svg>
-      </div>
-
-
-      <div id="slide_16_texto_div" style="width: 50vw; margin-left: 10vw;">
-        <h3 id="slide_16_texto" style="color: #006d74; font-size: 5vh;">
-          ¿Cómo identifico su mi hijo o alumnos ha sufrido de acoso escolar o padece de algún trastorno mental?</h3>
-      </div>
-
+    <div id="cerebro_slide16" style="flex: 0; text-align: center; ">
+      <svg id="cerebro_izquierda" width="20vh" height="auto" viewBox="0 0 267 540" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.3">
+          <path
+            d="M227.901 268.213C230.329 259.998 230.892 250.891 229.452 241.825C228.107 233.321 225.117 225.613 220.837 219.126C233.265 211.555 242.456 198.224 245.899 182.355C252.086 153.868 242.332 124.476 219.794 103.725C199.04 84.6196 171.275 76.0613 145.006 80.0799C148.326 62.3734 142.606 42.541 129.492 27.8519C116.748 13.5742 97.6258 4.02837 75.6229 0.969832C62.2757 -0.881732 42.7282 -0.991475 25.3755 9.007C9.28477 18.2923 -0.811357 34.7644 -0.838794 51.4285C-0.838794 51.5245 -0.866229 51.6206 -0.866229 51.7303L-0.866232 436.98C-1.04455 437.776 -1.04455 438.599 -0.866233 439.394L-0.866236 482.858C-0.866236 482.858 -0.866236 482.885 -0.866236 482.913C-1.57956 496.82 8.68122 517.544 20.4646 525.842C33.7157 535.168 51.2468 539.996 70.3691 539.996C80.9179 539.996 91.9742 538.529 103.044 535.539C126.501 529.202 149.533 509.891 166.241 482.57C176.159 466.345 180.452 448.501 178.395 432.248C180.933 432.674 183.457 432.866 185.967 432.866C205.322 432.866 223.347 421.578 229.369 417.381C253.498 400.58 267.559 372.216 266.969 341.521C266.393 311.43 251.811 284.178 227.901 268.227L227.901 268.213ZM223.073 408.315C209.986 417.436 190.782 425.171 175.569 420.179C171.083 407.41 162.318 396.602 151.262 390.513C156.886 383.737 160.85 375.549 162.318 366.922C165.13 350.491 158.998 332.593 146.694 321.333C144.444 319.275 140.96 319.426 138.902 321.675C136.844 323.925 136.995 327.408 139.245 329.466C148.847 338.257 153.635 352.219 151.44 365.057C149.245 377.895 140.082 389.484 128.106 394.572C116.131 399.675 101.426 398.234 90.6573 390.924C88.1333 389.21 84.7039 389.868 82.9892 392.392C81.2745 394.915 81.933 398.344 84.457 400.059C92.7561 405.696 102.88 408.603 112.976 408.603C119.656 408.603 126.323 407.328 132.427 404.722C136.131 403.144 139.629 401.074 142.839 398.618C142.894 398.646 142.935 398.673 142.976 398.701C155.692 404.159 165.281 417.628 167.407 433.03C169.328 446.965 165.569 462.518 156.831 476.81C141.577 501.744 120.932 519.272 100.177 524.882C72.166 532.453 44.7447 529.435 26.8295 516.817C17.2684 510.083 9.54541 492.418 10.1627 483.215C10.1627 483.146 10.1627 483.091 10.1627 483.023C10.1627 482.954 10.1764 482.899 10.1764 482.844L10.1764 439.847C20.1216 427.078 38.9833 421.77 54.0452 427.805C69.6832 434.073 79.8753 452.012 77.2553 468.649C76.7752 471.653 78.8328 474.478 81.8507 474.958C82.1387 474.999 82.4268 475.027 82.7149 475.027C85.3761 475.027 87.7218 473.093 88.1607 470.377C91.549 448.871 78.3664 425.679 58.1604 417.573C42.495 411.305 23.6608 414.528 10.1901 424.609L10.1901 248.82C19.2163 257.405 31.6718 262.96 43.6061 262.96C44.6624 262.96 45.7186 262.919 46.7611 262.823C63.6886 261.397 78.8328 249.684 84.992 234.021C91.1786 237.93 98.1883 240.563 105.527 241.482C107.557 241.742 109.588 241.866 111.618 241.866C128.806 241.866 145.706 232.855 154.993 218.276C156.625 215.711 155.871 212.296 153.305 210.664C150.74 209.031 147.325 209.786 145.692 212.351C137.667 224.941 121.728 232.416 106.913 230.551C92.0977 228.672 78.5173 217.466 73.8945 203.271C69.2579 189.076 73.6064 172.014 84.457 161.768C86.6655 159.67 86.7753 156.186 84.6765 153.978C82.5777 151.77 79.0934 151.66 76.8849 153.759C62.8244 167.035 57.406 188.321 63.4143 206.714C65.8834 214.298 70.2456 221.101 75.8149 226.683C72.2072 239.987 59.6008 250.699 45.8421 251.851C31.9736 253.03 15.9104 243.251 10.1901 230.359L10.1901 139.618C14.5935 140.4 18.9968 140.811 23.3315 140.811C32.344 140.811 41.0272 139.138 48.7913 135.805C63.6886 129.428 74.937 116.988 78.8877 102.518C83.2499 86.5535 78.0783 69.135 66.0206 59.1777C63.6749 57.2438 60.1906 57.573 58.2565 59.9183C56.3223 62.2637 56.6515 65.7473 58.9972 67.6812C67.6393 74.8132 71.4391 87.9387 68.2566 99.6105C65.225 110.692 56.1028 120.677 44.4566 125.67C34.4016 129.976 22.3439 130.881 10.2039 128.372L10.2038 53.527C10.2038 53.3213 10.245 53.1155 10.2313 52.9098C9.614 39.8665 17.9268 26.0826 30.9174 18.594C45.554 10.1454 62.4952 10.31 74.1414 11.9147C93.5517 14.6166 110.301 22.8869 121.302 35.217C132.839 48.1369 137.517 65.6925 133.634 80.697C122.482 73.2222 107.05 72.7559 95.6368 80.121C93.0716 81.7669 92.3446 85.182 93.9907 87.7467C95.6368 90.3115 99.0525 91.0384 101.618 89.3926C110.301 83.7967 122.935 85.0174 130.383 92.163C137.832 99.3087 139.56 111.886 134.334 120.787C132.798 123.407 133.662 126.794 136.296 128.33C137.174 128.852 138.134 129.098 139.08 129.098C140.973 129.098 142.811 128.125 143.84 126.383C150.082 115.767 149.753 102.107 143.717 91.5733C167.572 86.8689 193.292 94.3164 212.373 111.872C232.291 130.209 240.604 155.062 235.172 180.051C232.223 193.629 224.225 204.766 213.58 210.554C212.702 209.745 211.825 208.935 210.878 208.195C199.561 199.335 183.937 197.168 171.975 202.791C169.218 204.094 168.038 207.372 169.328 210.129C170.617 212.885 173.909 214.065 176.666 212.776C184.938 208.881 195.953 210.526 204.074 216.89C211.536 222.733 216.831 232.471 218.601 243.594C220.165 253.455 218.889 263.289 214.98 271.272C210.837 279.761 203.457 286.386 195.226 289.019C186.639 291.762 176.913 290.089 170.466 284.74C168.12 282.792 164.65 283.122 162.702 285.467C160.754 287.812 161.083 291.282 163.429 293.23C169.863 298.565 178.175 301.377 186.721 301.377C190.686 301.377 194.705 300.773 198.601 299.525C208.944 296.22 217.874 288.635 223.526 278.596C243.416 292.681 255.488 316.011 255.981 341.755C256.503 368.76 244.212 393.667 223.1 408.356L223.073 408.315Z"
+            fill="#006A70" />
+          <path
+            d="M101.933 318.96C99.0387 318 95.9248 319.577 94.9646 322.471C91.2334 333.772 80.3554 342.44 68.5034 343.551C56.6515 344.662 44.3605 338.161 38.5992 327.738C32.8378 317.328 33.8803 303.448 41.1232 294.012C42.975 291.598 42.5224 288.128 40.1081 286.276C37.6938 284.425 34.2232 284.877 32.3714 287.291C22.5359 300.115 21.1367 318.932 28.942 333.073C36.1711 346.157 51.0273 354.702 65.952 354.702C67.1454 354.702 68.3388 354.647 69.5322 354.537C85.6092 353.029 100.383 341.275 105.445 325.927C106.391 323.033 104.828 319.92 101.933 318.96Z"
+            fill="#006A70" />
+        </g>
+      </svg>
     </div>
 
 
+    <div id="slide_16_texto_div" style="width: 50vw; margin-left: 10vw;">
+      <h3 id="slide_16_texto" style="color: #006d74; font-size: 5vh;">
+        ¿Cómo identifico si hijo o alumnos ha sufrido de acoso escolar o padece de algún trastorno mental?</h3>
+    </div>
+
+  </div>
 
 
-    <div id="slide_17_sammy" style="background-color: #b7f1f2; padding: 5vw;
+
+
+  <div id="slide_17_sammy" style="background-color: #b7f1f2; padding: 5vw;
   display: flex; flex-wrap: wrap; justify-content: center;">
-      <p style="font-size: 18px; width: 80vw; text-align: left;">Para ayudar a reconocer situaciones de acoso escolar,
-        El Comercio ha diseñado y creado a 'Sammy',
-        una asistente virtual entrenada con Inteligencia Artificial que tiene la capacidad de identificar y asesorar si
-        un alumno está sufriendo de abuso.
-        Sammy conoce la legislación y normativa vigente en Perú, específicamente la Ley N° 29719 y su modificación
-        mediante la Ley N° 31902, que promueven la convivencia sin violencia en las instituciones educativas. Además,
-        está entrenada con información
-        sobre salud mental, buenas prácticas docentes y guías de intervención en casos de violencia escolar.
-        <br><br>
-        Basándose en esta información, Sammy tiene la habilidad de diagnosticar si una situación probablemente califica
-        como acoso escolar, prevenir
-        mediante la orientación sobre buenas prácticas y estrategias educativas, y orientar a las víctimas y sus
-        familias sobre los pasos a seguir y
-        a quién recurrir para obtener ayuda.
-        <br><br>
-        Es importante tener en cuenta que las respuestas de Sammy no son definitivas. Sammy es un bot de Inteligencia
-        Artificial, no un psicólogo,
-        médico especialista ni abogado especializado. Saluda a Sammy con un "Hola" y cuéntale qué te ha sucedido en tu
-        entorno escolar. Sammy
-        analizará tu situación basándose en la normativa vigente y te brindará orientación sobre cómo proceder.
-        <br><br>
-        Intenta ser preciso con la información que le brindes a Sammy para que pueda ofrecerte la mejor orientación
-        posible.
-      </p>
+    <p style="font-size: 18px; width: 80vw; text-align: left;">Para ayudar a reconocer situaciones de acoso escolar,
+      El Comercio ha diseñado y creado a 'Sammy',
+      una asistente virtual entrenada con Inteligencia Artificial que tiene la capacidad de identificar y asesorar si
+      un alumno está sufriendo de abuso.
+      Sammy conoce la legislación y normativa vigente en Perú, específicamente la Ley N° 29719 y su modificación
+      mediante la Ley N° 31902, que promueven la convivencia sin violencia en las instituciones educativas. Además,
+      está entrenada con información
+      sobre salud mental, buenas prácticas docentes y guías de intervención en casos de violencia escolar.
+      <br><br>
+      Basándose en esta información, Sammy tiene la habilidad de diagnosticar si una situación probablemente califica
+      como acoso escolar, prevenir
+      mediante la orientación sobre buenas prácticas y estrategias educativas, y orientar a las víctimas y sus
+      familias sobre los pasos a seguir y
+      a quién recurrir para obtener ayuda.
+      <br><br>
+      Es importante tener en cuenta que las respuestas de Sammy no son definitivas. Sammy es un bot de Inteligencia
+      Artificial, no un psicólogo,
+      médico especialista ni abogado especializado. Saluda a Sammy con un "Hola" y cuéntale qué te ha sucedido en tu
+      entorno escolar. Sammy
+      analizará tu situación basándose en la normativa vigente y te brindará orientación sobre cómo proceder.
+      <br><br>
+      Intenta ser preciso con la información que le brindes a Sammy para que pueda ofrecerte la mejor orientación
+      posible.
+    </p>
 
 
 
-      <div id="cuadro_ia_rosa" style="background-color: #ff8182; border-radius: 20px; width: 62vw; margin-top: 5vh;
+    <div id="cuadro_ia_rosa" style="background-color: #ff8182; border-radius: 20px; width: 62vw; margin-top: 5vh;
        display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; padding: 40px;">
 
 
 
-        <div id="dra_y_texto" style="margin: 1vw; text-align: center;">
-          <img id="imagen_sammy" src="ia_sammy.png" height="130">
-          <div id="texto_superior_ia">
-            <h2 id="titulo_sammy" style="color: #ffffff; font-size: 30px ">Sammy</h2>
-          </div>
+      <div id="dra_y_texto" style="margin: 1vw; text-align: center;">
+        <img id="imagen_sammy" src="ia_sammy.png" height="130">
+        <div id="texto_superior_ia">
+          <h2 id="titulo_sammy" style="color: #ffffff; font-size: 30px ">Sammy</h2>
         </div>
+      </div>
 
 
 
-        <div id="solo_centrar" style="justify-content: center; display: flex; align-items: center;">
-          <div id="espacio_para_ai" style="background-color: white; width: 47vw; height: 500px; border-radius: 20px;
+      <div id="solo_centrar" style="justify-content: center; display: flex; align-items: center;">
+        <div id="espacio_para_ai" style="background-color: white; width: 47vw; height: 500px; border-radius: 20px;
        justify-content: center; display: flex; align-items: center; margin-right: 30px;">
 
-            <iframe
-              src="https://chatbot-template-bvq3ychcftk.streamlit.app/?embed=true&embed_options=show_footer&embed_options=light_theme"
-              style="height: 450px; width: 90%;"></iframe>
+          <iframe
+            src="https://chatbot-template-bvq3ychcftk.streamlit.app/?embed=true&embed_options=show_footer&embed_options=light_theme"
+            style="height: 450px; width: 90%;"></iframe>
 
 
-          </div>
         </div>
-
       </div>
+
     </div>
+  </div>
 
-<!--script pop-ups-->
-    <script>
+  <!--script pop-ups-->
+  <script>
 
-      function toggleDesplegar() {
-        var contenido_desplegable = document.getElementById("slide6_desplegable");
-        contenido_desplegable.classList.toggle("mostrar");
+    function toggleDesplegar() {
+      var contenido_desplegable = document.getElementById("slide6_desplegable");
+      contenido_desplegable.classList.toggle("mostrar");
+    }
+
+    function toggleVisibilizarLateral() {
+      var offcanvas = document.getElementById("contenid_offcanvas");
+      offcanvas.classList.toggle("mostrar");
+    }
+
+    const btnMostrar1 = document.getElementById('mostrarc1');
+    const btnMostrar2 = document.getElementById('mostrarc2');
+    const btnMostrar3 = document.getElementById('mostrarc3');
+
+    const overlay1 = document.getElementById('overlay1');
+    btnMostrar1.addEventListener('click', () => {
+      overlay1.style.display = 'flex';
+      overlay1.style.justifyContent = 'center';
+      overlay1.style.alignItems = 'center';
+    });
+    overlay1.addEventListener('click', (e) => {
+      if (e.target === overlay1) {
+        overlay1.style.display = 'none';
       }
-  
-      function toggleVisibilizarLateral() {
-        var offcanvas = document.getElementById("contenid_offcanvas");
-        offcanvas.classList.toggle("mostrar");
+    });
+
+
+    const overlay2 = document.getElementById('overlay2');
+    btnMostrar2.addEventListener('click', () => {
+      overlay2.style.display = 'flex';
+      overlay2.style.justifyContent = 'center';
+      overlay2.style.alignItems = 'center';
+    });
+    overlay2.addEventListener('click', (e) => {
+      if (e.target === overlay2) {
+        overlay2.style.display = 'none';
       }
-  
-      const btnMostrar1 = document.getElementById('mostrarc1');
-      const btnMostrar2 = document.getElementById('mostrarc2');
-      const btnMostrar3 = document.getElementById('mostrarc3');
-  
-      const overlay1 = document.getElementById('overlay1');
-      btnMostrar1.addEventListener('click', () => {
-        overlay1.style.display = 'flex';
-        overlay1.style.justifyContent = 'center';
-        overlay1.style.alignItems = 'center';
-      });
-      overlay1.addEventListener('click', (e) => {
-        if (e.target === overlay1) {
-          overlay1.style.display = 'none';
-        }
-      });
-  
-  
-      const overlay2 = document.getElementById('overlay2');
-      btnMostrar2.addEventListener('click', () => {
-        overlay2.style.display = 'flex';
-        overlay2.style.justifyContent = 'center';
-        overlay2.style.alignItems = 'center';
-      });
-      overlay2.addEventListener('click', (e) => {
-        if (e.target === overlay2) {
-          overlay2.style.display = 'none';
-        }
-      });
-  
-  
-      const overlay3 = document.getElementById('overlay3');
-      btnMostrar3.addEventListener('click', () => {
-        overlay3.style.display = 'flex';
-        overlay3.style.justifyContent = 'center';
-        overlay3.style.alignItems = 'center';
-      });
-      overlay3.addEventListener('click', (e) => {
-        if (e.target === overlay3) {
-          overlay3.style.display = 'none';
-        }
-      });
-  
-  
-  
-    </script>
-<!--script pop-ups-->
-
-<!--script grafico interactivo-->
-
-    <script>
-      function drawBalls() {
-        var citySelect = document.getElementById("citySelect");
-        var yearSelect = document.getElementById("yearSelect");
-        var cityName = citySelect.value;
-        var yearNumber = yearSelect.value;
-        //var ballCount = cityName.length;
-        var ballCount = 0;
-        var ballCountElement = document.getElementById('ballCountValue');
+    });
 
 
-        if (cityName === "Amazonas" && yearNumber === "2020") { ballCountElement.textContent = "2578"; ballCount = 2; }
-        else if (cityName === "Ancash" && yearNumber === "2020") { ballCountElement.textContent = "2670"; ballCount = 2; }
-        else if (cityName === "Apurimac" && yearNumber === "2020") { ballCountElement.textContent = "2011"; ballCount = 2; }
-        else if (cityName === "Arequipa" && yearNumber === "2020") { ballCountElement.textContent = "3808"; ballCount = 3; }
-        else if (cityName === "Ayacucho" && yearNumber === "2020") { ballCountElement.textContent = "2769"; ballCount = 2; }
-        else if (cityName === "Cajamarca" && yearNumber === "2020") { ballCountElement.textContent = "2326"; ballCount = 2; }
-        else if (cityName === "Callao" && yearNumber === "2020") { ballCountElement.textContent = "16608"; ballCount = 16; }
-        else if (cityName === "Cusco" && yearNumber === "2020") { ballCountElement.textContent = "2234"; ballCount = 2; }
-        else if (cityName === "Huancavelica" && yearNumber === "2020") { ballCountElement.textContent = "1020"; ballCount = 1; }
-        else if (cityName === "Huanuco" && yearNumber === "2020") { ballCountElement.textContent = "2557"; ballCount = 2; }
-        else if (cityName === "Ica" && yearNumber === "2020") { ballCountElement.textContent = "6969"; ballCount = 6; }
-        else if (cityName === "Junin" && yearNumber === "2020") { ballCountElement.textContent = "3818"; ballCount = 3; }
-        else if (cityName === "La Libertad" && yearNumber === "2020") { ballCountElement.textContent = "6737"; ballCount = 6; }
-        else if (cityName === "Lambayeque" && yearNumber === "2020") { ballCountElement.textContent = "11806"; ballCount = 11; }
-        else if (cityName === "Lima" && yearNumber === "2020") { ballCountElement.textContent = "15476"; ballCount = 15; }
-        else if (cityName === "Loreto" && yearNumber === "2020") { ballCountElement.textContent = "13621"; ballCount = 13; }
-        else if (cityName === "Madre de Dios" && yearNumber === "2020") { ballCountElement.textContent = "5239"; ballCount = 5; }
-        else if (cityName === "Moquegua" && yearNumber === "2020") { ballCountElement.textContent = "3966"; ballCount = 3; }
-        else if (cityName === "Pasco" && yearNumber === "2020") { ballCountElement.textContent = "2882"; ballCount = 2; }
-        else if (cityName === "Piura" && yearNumber === "2020") { ballCountElement.textContent = "3645"; ballCount = 3; }
-        else if (cityName === "Puno" && yearNumber === "2020") { ballCountElement.textContent = "1876"; ballCount = 1; }
-        else if (cityName === "San Martin" && yearNumber === "2020") { ballCountElement.textContent = "3678"; ballCount = 3; }
-        else if (cityName === "Tacna" && yearNumber === "2020") { ballCountElement.textContent = "6042"; ballCount = 6; }
-        else if (cityName === "Tumbes" && yearNumber === "2020") { ballCountElement.textContent = "9316"; ballCount = 9; }
-        else if (cityName === "Ucayali" && yearNumber === "2020") { ballCountElement.textContent = "16527"; ballCount = 16; }
-        else if (cityName === "Amazonas" && yearNumber === "2021") { ballCountElement.textContent = "2759"; ballCount = 2; }
-        else if (cityName === "Ancash" && yearNumber === "2021") { ballCountElement.textContent = "3090"; ballCount = 3; }
-        else if (cityName === "Apurimac" && yearNumber === "2021") { ballCountElement.textContent = "2478"; ballCount = 2; }
-        else if (cityName === "Arequipa" && yearNumber === "2021") { ballCountElement.textContent = "4115"; ballCount = 4; }
-        else if (cityName === "Ayacucho" && yearNumber === "2021") { ballCountElement.textContent = "3385"; ballCount = 3; }
-        else if (cityName === "Cajamarca" && yearNumber === "2021") { ballCountElement.textContent = "2771"; ballCount = 2; }
-        else if (cityName === "Callao" && yearNumber === "2021") { ballCountElement.textContent = "16608"; ballCount = 16; }
-        else if (cityName === "Cusco" && yearNumber === "2021") { ballCountElement.textContent = "2708"; ballCount = 2; }
-        else if (cityName === "Huancavelica" && yearNumber === "2021") { ballCountElement.textContent = "1368"; ballCount = 1; }
-        else if (cityName === "Huanuco" && yearNumber === "2021") { ballCountElement.textContent = "3050"; ballCount = 3; }
-        else if (cityName === "Ica" && yearNumber === "2021") { ballCountElement.textContent = "6969"; ballCount = 6; }
-        else if (cityName === "Junin" && yearNumber === "2021") { ballCountElement.textContent = "4351"; ballCount = 4; }
-        else if (cityName === "La Libertad" && yearNumber === "2021") { ballCountElement.textContent = "8103"; ballCount = 8; }
-        else if (cityName === "Lambayeque" && yearNumber === "2021") { ballCountElement.textContent = "13993"; ballCount = 13; }
-        else if (cityName === "Lima" && yearNumber === "2021") { ballCountElement.textContent = "15924"; ballCount = 15; }
-        else if (cityName === "Loreto" && yearNumber === "2021") { ballCountElement.textContent = "13621"; ballCount = 13; }
-        else if (cityName === "Madre de Dios" && yearNumber === "2021") { ballCountElement.textContent = "5675"; ballCount = 5; }
-        else if (cityName === "Moquegua" && yearNumber === "2021") { ballCountElement.textContent = "3683"; ballCount = 3; }
-        else if (cityName === "Pasco" && yearNumber === "2021") { ballCountElement.textContent = "3087"; ballCount = 3; }
-        else if (cityName === "Piura" && yearNumber === "2021") { ballCountElement.textContent = "4236"; ballCount = 4; }
-        else if (cityName === "Puno" && yearNumber === "2021") { ballCountElement.textContent = "2174"; ballCount = 2; }
-        else if (cityName === "San Martin" && yearNumber === "2021") { ballCountElement.textContent = "4489"; ballCount = 4; }
-        else if (cityName === "Tacna" && yearNumber === "2021") { ballCountElement.textContent = "6042"; ballCount = 6; }
-        else if (cityName === "Tumbes" && yearNumber === "2021") { ballCountElement.textContent = "10480"; ballCount = 10; }
-        else if (cityName === "Ucayali" && yearNumber === "2021") { ballCountElement.textContent = "16527"; ballCount = 16; }
-        else if (cityName === "Amazonas" && yearNumber === "2022") { ballCountElement.textContent = "2537"; ballCount = 2; }
-        else if (cityName === "Ancash" && yearNumber === "2022") { ballCountElement.textContent = "2587"; ballCount = 2; }
-        else if (cityName === "Apurimac" && yearNumber === "2022") { ballCountElement.textContent = "2011"; ballCount = 2; }
-        else if (cityName === "Arequipa" && yearNumber === "2022") { ballCountElement.textContent = "3772"; ballCount = 3; }
-        else if (cityName === "Ayacucho" && yearNumber === "2022") { ballCountElement.textContent = "2699"; ballCount = 2; }
-        else if (cityName === "Cajamarca" && yearNumber === "2022") { ballCountElement.textContent = "2278"; ballCount = 2; }
-        else if (cityName === "Callao" && yearNumber === "2022") { ballCountElement.textContent = "14763"; ballCount = 14; }
-        else if (cityName === "Cusco" && yearNumber === "2022") { ballCountElement.textContent = "2234"; ballCount = 2; }
-        else if (cityName === "Huancavelica" && yearNumber === "2022") { ballCountElement.textContent = "1002"; ballCount = 1; }
-        else if (cityName === "Huanuco" && yearNumber === "2022") { ballCountElement.textContent = "2532"; ballCount = 2; }
-        else if (cityName === "Ica" && yearNumber === "2022") { ballCountElement.textContent = "6645"; ballCount = 6; }
-        else if (cityName === "Junin" && yearNumber === "2022") { ballCountElement.textContent = "3854"; ballCount = 3; }
-        else if (cityName === "La Libertad" && yearNumber === "2022") { ballCountElement.textContent = "6502"; ballCount = 6; }
-        else if (cityName === "Lambayeque" && yearNumber === "2022") { ballCountElement.textContent = "11806"; ballCount = 11; }
-        else if (cityName === "Lima" && yearNumber === "2022") { ballCountElement.textContent = "14499"; ballCount = 14; }
-        else if (cityName === "Loreto" && yearNumber === "2022") { ballCountElement.textContent = "13621"; ballCount = 13; }
-        else if (cityName === "Madre de Dios" && yearNumber === "2022") { ballCountElement.textContent = "5239"; ballCount = 5; }
-        else if (cityName === "Moquegua" && yearNumber === "2022") { ballCountElement.textContent = "3437"; ballCount = 3; }
-        else if (cityName === "Pasco" && yearNumber === "2022") { ballCountElement.textContent = "2702"; ballCount = 2; }
-        else if (cityName === "Piura" && yearNumber === "2022") { ballCountElement.textContent = "3603"; ballCount = 3; }
-        else if (cityName === "Puno" && yearNumber === "2022") { ballCountElement.textContent = "1865"; ballCount = 1; }
-        else if (cityName === "San Martin" && yearNumber === "2022") { ballCountElement.textContent = "3678"; ballCount = 3; }
-        else if (cityName === "Tacna" && yearNumber === "2022") { ballCountElement.textContent = "6042"; ballCount = 6; }
-        else if (cityName === "Tumbes" && yearNumber === "2022") { ballCountElement.textContent = "9316"; ballCount = 9; }
-        else if (cityName === "Ucayali" && yearNumber === "2022") { ballCountElement.textContent = "16527"; ballCount = 16; }
-        else if (cityName === "Amazonas" && yearNumber === "2023") { ballCountElement.textContent = "2538"; ballCount = 2; }
-        else if (cityName === "Ancash" && yearNumber === "2023") { ballCountElement.textContent = "2587"; ballCount = 2; }
-        else if (cityName === "Apurimac" && yearNumber === "2023") { ballCountElement.textContent = "2011"; ballCount = 2; }
-        else if (cityName === "Arequipa" && yearNumber === "2023") { ballCountElement.textContent = "3772"; ballCount = 3; }
-        else if (cityName === "Ayacucho" && yearNumber === "2023") { ballCountElement.textContent = "2699"; ballCount = 2; }
-        else if (cityName === "Cajamarca" && yearNumber === "2023") { ballCountElement.textContent = "2278"; ballCount = 2; }
-        else if (cityName === "Callao" && yearNumber === "2023") { ballCountElement.textContent = "14763"; ballCount = 14; }
-        else if (cityName === "Cusco" && yearNumber === "2023") { ballCountElement.textContent = "2234"; ballCount = 2; }
-        else if (cityName === "Huancavelica" && yearNumber === "2023") { ballCountElement.textContent = "1002"; ballCount = 1; }
-        else if (cityName === "Huanuco" && yearNumber === "2023") { ballCountElement.textContent = "2532"; ballCount = 2; }
-        else if (cityName === "Ica" && yearNumber === "2023") { ballCountElement.textContent = "6645"; ballCount = 6; }
-        else if (cityName === "Junin" && yearNumber === "2023") { ballCountElement.textContent = "3854"; ballCount = 3; }
-        else if (cityName === "La Libertad" && yearNumber === "2023") { ballCountElement.textContent = "6502"; ballCount = 6; }
-        else if (cityName === "Lambayeque" && yearNumber === "2023") { ballCountElement.textContent = "11806"; ballCount = 11; }
-        else if (cityName === "Lima" && yearNumber === "2023") { ballCountElement.textContent = "14499"; ballCount = 14; }
-        else if (cityName === "Loreto" && yearNumber === "2023") { ballCountElement.textContent = "13621"; ballCount = 13; }
-        else if (cityName === "Madre de Dios" && yearNumber === "2023") { ballCountElement.textContent = "5239"; ballCount = 5; }
-        else if (cityName === "Moquegua" && yearNumber === "2023") { ballCountElement.textContent = "3437"; ballCount = 3; }
-        else if (cityName === "Pasco" && yearNumber === "2023") { ballCountElement.textContent = "2702"; ballCount = 2; }
-        else if (cityName === "Piura" && yearNumber === "2023") { ballCountElement.textContent = "3603"; ballCount = 3; }
-        else if (cityName === "Puno" && yearNumber === "2023") { ballCountElement.textContent = "1865"; ballCount = 1; }
-        else if (cityName === "San Martin" && yearNumber === "2023") { ballCountElement.textContent = "3678"; ballCount = 3; }
-        else if (cityName === "Tacna" && yearNumber === "2023") { ballCountElement.textContent = "6042"; ballCount = 6; }
-        else if (cityName === "Tumbes" && yearNumber === "2023") { ballCountElement.textContent = "9316"; ballCount = 9; }
-        else if (cityName === "Ucayali" && yearNumber === "2023") { ballCountElement.textContent = "16527"; ballCount = 16; }
-        else if (cityName === "nada" || yearNumber === "nada") { ballCountElement.textContent = "X"; ballCount = 0; }
-
-
-        //ballCountElement.textContent = ballCount;
-
-        var ballsContainer = document.getElementById("ballsContainer");
-        ballsContainer.innerHTML = "";
-
-        var ballSize = 101;
-        var containerWidth = window.innerWidth;
-        var ballsPerRow = Math.floor(containerWidth / ballSize);
-
-        for (var i = 0; i < ballCount; i++) {
-          (function (i) {
-            setTimeout(function () {
-              var ball = document.createElement("div");
-              ball.className = "ball";
-
-              var img = document.createElement("img");
-              img.src = "cara_triste.png"; // Replace with the actual path to your PNG image
-              img.className = "smiley";
-              img.style.width = "100px";
-              img.style.height = "100px";
-
-              ball.appendChild(img);
-
-              // Calculate the position of the ball
-              var row = Math.floor(i / ballsPerRow);
-              var col = i % ballsPerRow;
-
-              // Calculate the remaining space and center the row
-              var ballsInCurrentRow = Math.min(ballsPerRow, ballCount - row * ballsPerRow);
-              var rowWidth = ballsInCurrentRow * ballSize;
-              var offsetX = (containerWidth - rowWidth) / 2;
-
-              ball.style.bottom = (row * ballSize) + "px";
-              ball.style.left = (col * ballSize + offsetX) + "px";
-
-              ballsContainer.appendChild(ball);
-
-              // Force reflow to make the transition work
-              window.getComputedStyle(ball).opacity;
-              ball.style.opacity = 1;
-            }, i * 200);
-          })(i);
-        }
+    const overlay3 = document.getElementById('overlay3');
+    btnMostrar3.addEventListener('click', () => {
+      overlay3.style.display = 'flex';
+      overlay3.style.justifyContent = 'center';
+      overlay3.style.alignItems = 'center';
+    });
+    overlay3.addEventListener('click', (e) => {
+      if (e.target === overlay3) {
+        overlay3.style.display = 'none';
       }
-
-      // Ejecutar drawBalls cuando la ventana cambia de tamaño
-      window.addEventListener('resize', drawBalls);
-    </script>
-    <!--script grafico interactivo-->
+    });
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
+
+  </script>
+  <!--script pop-ups-->
+
+  <!--script grafico interactivo-->
+
+  <script>
+    function drawBalls() {
+      var citySelect = document.getElementById("citySelect");
+      var yearSelect = document.getElementById("yearSelect");
+      var cityName = citySelect.value;
+      var yearNumber = yearSelect.value;
+      //var ballCount = cityName.length;
+      var ballCount = 0;
+      var ballCountElement = document.getElementById('ballCountValue');
+
+
+      if (cityName === "Amazonas" && yearNumber === "2020") { ballCountElement.textContent = "2578"; ballCount = 2; }
+      else if (cityName === "Ancash" && yearNumber === "2020") { ballCountElement.textContent = "2670"; ballCount = 2; }
+      else if (cityName === "Apurimac" && yearNumber === "2020") { ballCountElement.textContent = "2011"; ballCount = 2; }
+      else if (cityName === "Arequipa" && yearNumber === "2020") { ballCountElement.textContent = "3808"; ballCount = 3; }
+      else if (cityName === "Ayacucho" && yearNumber === "2020") { ballCountElement.textContent = "2769"; ballCount = 2; }
+      else if (cityName === "Cajamarca" && yearNumber === "2020") { ballCountElement.textContent = "2326"; ballCount = 2; }
+      else if (cityName === "Callao" && yearNumber === "2020") { ballCountElement.textContent = "16608"; ballCount = 16; }
+      else if (cityName === "Cusco" && yearNumber === "2020") { ballCountElement.textContent = "2234"; ballCount = 2; }
+      else if (cityName === "Huancavelica" && yearNumber === "2020") { ballCountElement.textContent = "1020"; ballCount = 1; }
+      else if (cityName === "Huanuco" && yearNumber === "2020") { ballCountElement.textContent = "2557"; ballCount = 2; }
+      else if (cityName === "Ica" && yearNumber === "2020") { ballCountElement.textContent = "6969"; ballCount = 6; }
+      else if (cityName === "Junin" && yearNumber === "2020") { ballCountElement.textContent = "3818"; ballCount = 3; }
+      else if (cityName === "La Libertad" && yearNumber === "2020") { ballCountElement.textContent = "6737"; ballCount = 6; }
+      else if (cityName === "Lambayeque" && yearNumber === "2020") { ballCountElement.textContent = "11806"; ballCount = 11; }
+      else if (cityName === "Lima" && yearNumber === "2020") { ballCountElement.textContent = "15476"; ballCount = 15; }
+      else if (cityName === "Loreto" && yearNumber === "2020") { ballCountElement.textContent = "13621"; ballCount = 13; }
+      else if (cityName === "Madre de Dios" && yearNumber === "2020") { ballCountElement.textContent = "5239"; ballCount = 5; }
+      else if (cityName === "Moquegua" && yearNumber === "2020") { ballCountElement.textContent = "3966"; ballCount = 3; }
+      else if (cityName === "Pasco" && yearNumber === "2020") { ballCountElement.textContent = "2882"; ballCount = 2; }
+      else if (cityName === "Piura" && yearNumber === "2020") { ballCountElement.textContent = "3645"; ballCount = 3; }
+      else if (cityName === "Puno" && yearNumber === "2020") { ballCountElement.textContent = "1876"; ballCount = 1; }
+      else if (cityName === "San Martin" && yearNumber === "2020") { ballCountElement.textContent = "3678"; ballCount = 3; }
+      else if (cityName === "Tacna" && yearNumber === "2020") { ballCountElement.textContent = "6042"; ballCount = 6; }
+      else if (cityName === "Tumbes" && yearNumber === "2020") { ballCountElement.textContent = "9316"; ballCount = 9; }
+      else if (cityName === "Ucayali" && yearNumber === "2020") { ballCountElement.textContent = "16527"; ballCount = 16; }
+      else if (cityName === "Amazonas" && yearNumber === "2021") { ballCountElement.textContent = "2759"; ballCount = 2; }
+      else if (cityName === "Ancash" && yearNumber === "2021") { ballCountElement.textContent = "3090"; ballCount = 3; }
+      else if (cityName === "Apurimac" && yearNumber === "2021") { ballCountElement.textContent = "2478"; ballCount = 2; }
+      else if (cityName === "Arequipa" && yearNumber === "2021") { ballCountElement.textContent = "4115"; ballCount = 4; }
+      else if (cityName === "Ayacucho" && yearNumber === "2021") { ballCountElement.textContent = "3385"; ballCount = 3; }
+      else if (cityName === "Cajamarca" && yearNumber === "2021") { ballCountElement.textContent = "2771"; ballCount = 2; }
+      else if (cityName === "Callao" && yearNumber === "2021") { ballCountElement.textContent = "16608"; ballCount = 16; }
+      else if (cityName === "Cusco" && yearNumber === "2021") { ballCountElement.textContent = "2708"; ballCount = 2; }
+      else if (cityName === "Huancavelica" && yearNumber === "2021") { ballCountElement.textContent = "1368"; ballCount = 1; }
+      else if (cityName === "Huanuco" && yearNumber === "2021") { ballCountElement.textContent = "3050"; ballCount = 3; }
+      else if (cityName === "Ica" && yearNumber === "2021") { ballCountElement.textContent = "6969"; ballCount = 6; }
+      else if (cityName === "Junin" && yearNumber === "2021") { ballCountElement.textContent = "4351"; ballCount = 4; }
+      else if (cityName === "La Libertad" && yearNumber === "2021") { ballCountElement.textContent = "8103"; ballCount = 8; }
+      else if (cityName === "Lambayeque" && yearNumber === "2021") { ballCountElement.textContent = "13993"; ballCount = 13; }
+      else if (cityName === "Lima" && yearNumber === "2021") { ballCountElement.textContent = "15924"; ballCount = 15; }
+      else if (cityName === "Loreto" && yearNumber === "2021") { ballCountElement.textContent = "13621"; ballCount = 13; }
+      else if (cityName === "Madre de Dios" && yearNumber === "2021") { ballCountElement.textContent = "5675"; ballCount = 5; }
+      else if (cityName === "Moquegua" && yearNumber === "2021") { ballCountElement.textContent = "3683"; ballCount = 3; }
+      else if (cityName === "Pasco" && yearNumber === "2021") { ballCountElement.textContent = "3087"; ballCount = 3; }
+      else if (cityName === "Piura" && yearNumber === "2021") { ballCountElement.textContent = "4236"; ballCount = 4; }
+      else if (cityName === "Puno" && yearNumber === "2021") { ballCountElement.textContent = "2174"; ballCount = 2; }
+      else if (cityName === "San Martin" && yearNumber === "2021") { ballCountElement.textContent = "4489"; ballCount = 4; }
+      else if (cityName === "Tacna" && yearNumber === "2021") { ballCountElement.textContent = "6042"; ballCount = 6; }
+      else if (cityName === "Tumbes" && yearNumber === "2021") { ballCountElement.textContent = "10480"; ballCount = 10; }
+      else if (cityName === "Ucayali" && yearNumber === "2021") { ballCountElement.textContent = "16527"; ballCount = 16; }
+      else if (cityName === "Amazonas" && yearNumber === "2022") { ballCountElement.textContent = "2537"; ballCount = 2; }
+      else if (cityName === "Ancash" && yearNumber === "2022") { ballCountElement.textContent = "2587"; ballCount = 2; }
+      else if (cityName === "Apurimac" && yearNumber === "2022") { ballCountElement.textContent = "2011"; ballCount = 2; }
+      else if (cityName === "Arequipa" && yearNumber === "2022") { ballCountElement.textContent = "3772"; ballCount = 3; }
+      else if (cityName === "Ayacucho" && yearNumber === "2022") { ballCountElement.textContent = "2699"; ballCount = 2; }
+      else if (cityName === "Cajamarca" && yearNumber === "2022") { ballCountElement.textContent = "2278"; ballCount = 2; }
+      else if (cityName === "Callao" && yearNumber === "2022") { ballCountElement.textContent = "14763"; ballCount = 14; }
+      else if (cityName === "Cusco" && yearNumber === "2022") { ballCountElement.textContent = "2234"; ballCount = 2; }
+      else if (cityName === "Huancavelica" && yearNumber === "2022") { ballCountElement.textContent = "1002"; ballCount = 1; }
+      else if (cityName === "Huanuco" && yearNumber === "2022") { ballCountElement.textContent = "2532"; ballCount = 2; }
+      else if (cityName === "Ica" && yearNumber === "2022") { ballCountElement.textContent = "6645"; ballCount = 6; }
+      else if (cityName === "Junin" && yearNumber === "2022") { ballCountElement.textContent = "3854"; ballCount = 3; }
+      else if (cityName === "La Libertad" && yearNumber === "2022") { ballCountElement.textContent = "6502"; ballCount = 6; }
+      else if (cityName === "Lambayeque" && yearNumber === "2022") { ballCountElement.textContent = "11806"; ballCount = 11; }
+      else if (cityName === "Lima" && yearNumber === "2022") { ballCountElement.textContent = "14499"; ballCount = 14; }
+      else if (cityName === "Loreto" && yearNumber === "2022") { ballCountElement.textContent = "13621"; ballCount = 13; }
+      else if (cityName === "Madre de Dios" && yearNumber === "2022") { ballCountElement.textContent = "5239"; ballCount = 5; }
+      else if (cityName === "Moquegua" && yearNumber === "2022") { ballCountElement.textContent = "3437"; ballCount = 3; }
+      else if (cityName === "Pasco" && yearNumber === "2022") { ballCountElement.textContent = "2702"; ballCount = 2; }
+      else if (cityName === "Piura" && yearNumber === "2022") { ballCountElement.textContent = "3603"; ballCount = 3; }
+      else if (cityName === "Puno" && yearNumber === "2022") { ballCountElement.textContent = "1865"; ballCount = 1; }
+      else if (cityName === "San Martin" && yearNumber === "2022") { ballCountElement.textContent = "3678"; ballCount = 3; }
+      else if (cityName === "Tacna" && yearNumber === "2022") { ballCountElement.textContent = "6042"; ballCount = 6; }
+      else if (cityName === "Tumbes" && yearNumber === "2022") { ballCountElement.textContent = "9316"; ballCount = 9; }
+      else if (cityName === "Ucayali" && yearNumber === "2022") { ballCountElement.textContent = "16527"; ballCount = 16; }
+      else if (cityName === "Amazonas" && yearNumber === "2023") { ballCountElement.textContent = "2538"; ballCount = 2; }
+      else if (cityName === "Ancash" && yearNumber === "2023") { ballCountElement.textContent = "2587"; ballCount = 2; }
+      else if (cityName === "Apurimac" && yearNumber === "2023") { ballCountElement.textContent = "2011"; ballCount = 2; }
+      else if (cityName === "Arequipa" && yearNumber === "2023") { ballCountElement.textContent = "3772"; ballCount = 3; }
+      else if (cityName === "Ayacucho" && yearNumber === "2023") { ballCountElement.textContent = "2699"; ballCount = 2; }
+      else if (cityName === "Cajamarca" && yearNumber === "2023") { ballCountElement.textContent = "2278"; ballCount = 2; }
+      else if (cityName === "Callao" && yearNumber === "2023") { ballCountElement.textContent = "14763"; ballCount = 14; }
+      else if (cityName === "Cusco" && yearNumber === "2023") { ballCountElement.textContent = "2234"; ballCount = 2; }
+      else if (cityName === "Huancavelica" && yearNumber === "2023") { ballCountElement.textContent = "1002"; ballCount = 1; }
+      else if (cityName === "Huanuco" && yearNumber === "2023") { ballCountElement.textContent = "2532"; ballCount = 2; }
+      else if (cityName === "Ica" && yearNumber === "2023") { ballCountElement.textContent = "6645"; ballCount = 6; }
+      else if (cityName === "Junin" && yearNumber === "2023") { ballCountElement.textContent = "3854"; ballCount = 3; }
+      else if (cityName === "La Libertad" && yearNumber === "2023") { ballCountElement.textContent = "6502"; ballCount = 6; }
+      else if (cityName === "Lambayeque" && yearNumber === "2023") { ballCountElement.textContent = "11806"; ballCount = 11; }
+      else if (cityName === "Lima" && yearNumber === "2023") { ballCountElement.textContent = "14499"; ballCount = 14; }
+      else if (cityName === "Loreto" && yearNumber === "2023") { ballCountElement.textContent = "13621"; ballCount = 13; }
+      else if (cityName === "Madre de Dios" && yearNumber === "2023") { ballCountElement.textContent = "5239"; ballCount = 5; }
+      else if (cityName === "Moquegua" && yearNumber === "2023") { ballCountElement.textContent = "3437"; ballCount = 3; }
+      else if (cityName === "Pasco" && yearNumber === "2023") { ballCountElement.textContent = "2702"; ballCount = 2; }
+      else if (cityName === "Piura" && yearNumber === "2023") { ballCountElement.textContent = "3603"; ballCount = 3; }
+      else if (cityName === "Puno" && yearNumber === "2023") { ballCountElement.textContent = "1865"; ballCount = 1; }
+      else if (cityName === "San Martin" && yearNumber === "2023") { ballCountElement.textContent = "3678"; ballCount = 3; }
+      else if (cityName === "Tacna" && yearNumber === "2023") { ballCountElement.textContent = "6042"; ballCount = 6; }
+      else if (cityName === "Tumbes" && yearNumber === "2023") { ballCountElement.textContent = "9316"; ballCount = 9; }
+      else if (cityName === "Ucayali" && yearNumber === "2023") { ballCountElement.textContent = "16527"; ballCount = 16; }
+      else if (cityName === "nada" || yearNumber === "nada") { ballCountElement.textContent = "X"; ballCount = 0; }
+
+
+      //ballCountElement.textContent = ballCount;
+
+      var ballsContainer = document.getElementById("ballsContainer");
+      ballsContainer.innerHTML = "";
+
+      var ballSize = 101;
+      var containerWidth = window.innerWidth;
+      var ballsPerRow = Math.floor(containerWidth / ballSize);
+
+      for (var i = 0; i < ballCount; i++) {
+        (function (i) {
+          setTimeout(function () {
+            var ball = document.createElement("div");
+            ball.className = "ball";
+
+            var img = document.createElement("img");
+            img.src = "cara_triste.png"; // Replace with the actual path to your PNG image
+            img.className = "smiley";
+            img.style.width = "100px";
+            img.style.height = "100px";
+
+            ball.appendChild(img);
+
+            // Calculate the position of the ball
+            var row = Math.floor(i / ballsPerRow);
+            var col = i % ballsPerRow;
+
+            // Calculate the remaining space and center the row
+            var ballsInCurrentRow = Math.min(ballsPerRow, ballCount - row * ballsPerRow);
+            var rowWidth = ballsInCurrentRow * ballSize;
+            var offsetX = (containerWidth - rowWidth) / 2;
+
+            ball.style.bottom = (row * ballSize) + "px";
+            ball.style.left = (col * ballSize + offsetX) + "px";
+
+            ballsContainer.appendChild(ball);
+
+            // Force reflow to make the transition work
+            window.getComputedStyle(ball).opacity;
+            ball.style.opacity = 1;
+          }, i * 200);
+        })(i);
+      }
+    }
+
+    // Ejecutar drawBalls cuando la ventana cambia de tamaño
+    window.addEventListener('resize', drawBalls);
+  </script>
+  <!--script grafico interactivo-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </body>
 
