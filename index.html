@@ -155,7 +155,36 @@
 
     /*para tarjetas de niños*/
 
-    @media screen and (max-width: 519px) {
+    @media screen and (max-width: 544px) {
+
+      #slide_descanso {
+        flex-wrap: wrap;
+      }
+
+      #slide2 {
+        flex-wrap: wrap;
+      }
+
+      #texto2 {
+        text-align: center;
+      }
+
+      #slide3 {
+        flex-wrap: wrap;
+      }
+
+      #texto3 {
+        text-align: center;
+      }
+
+      #slide4 {
+        flex-wrap: wrap;
+      }
+
+      #texto4 {
+        text-align: center;
+      }
+
 
       #imagen_sammy {
         width: 20vw;
@@ -239,11 +268,44 @@
 
 
 
+    @media screen and (min-width: 545px) and (max-width: 861px) {
 
+      #slide_descanso {
+        flex-wrap: wrap;
+      }
 
-    @media screen and (min-width: 520px) and (max-width: 980px) {
+      #slide2 {
+        flex-wrap: wrap;
+      }
 
-      /* Estilos para dispositivos móviles */
+      #texto2 {
+        text-align: center;
+      }
+
+      #slide3 {
+        flex-wrap: wrap;
+      }
+
+      #texto3 {
+        text-align: center;
+      }
+
+      #slide4 {
+        flex-wrap: wrap;
+      }
+
+      #texto4 {
+        text-align: center;
+      }
+
+      #slide3 {
+        flex-wrap: wrap;
+      }
+
+      #slide4 {
+        flex-wrap: wrap;
+      }
+
       #menusito {
         display: none;
       }
@@ -298,11 +360,103 @@
         width: 70vw;
       }
 
+    }
 
+
+
+    @media screen and (min-width: 862px) and (max-width: 980px) {
+
+      #slide_descanso {
+        flex-wrap: wrap;
+      }
+
+      #slide2 {
+        flex-wrap: wrap;
+      }
+
+      #slide3 {
+        flex-wrap: wrap;
+      }
+
+      #slide4 {
+        flex-wrap: wrap;
+      }
+
+      #menusito {
+        display: none;
+      }
+
+      #buscaricono {
+        display: none;
+      }
+
+      #logoelcomercio {
+        display: none;
+      }
+
+      #botondesuscribirse {
+        display: none;
+      }
+
+      #opt_pagina_inicio {
+        display: block;
+        font-size: 3vh;
+      }
+
+      #opt_buscar {
+        display: block;
+        font-size: 3vh;
+      }
+
+      #opt_suscribete {
+        display: block;
+        font-size: 3vh;
+      }
+
+      #cuadro_ia_rosa {
+        width: 95vw;
+      }
+
+      #dra_y_texto {
+        width: 80vw;
+        display: none;
+      }
+
+      #espacio_para_ai {
+        width: 80vw;
+        height: 500px;
+        margin-right: 2vw;
+      }
+
+      #gd_1 {
+        width: 60vw;
+      }
+
+      #espacio_mensaje {
+        width: 70vw;
+      }
 
     }
 
     @media screen and (min-width: 981px) {
+
+      #slide2 {
+        padding-left: 12vw;
+        padding-right: 12vw;
+        
+      }
+
+      #slide3 {
+        padding-left: 12vw;
+        padding-right: 12vw;
+        
+      }
+
+      #slide4 {
+        padding-left: 20vw;
+        padding-right: 12vw;
+        
+      }
 
       #opt_pagina_inicio {
         display: none;
@@ -612,7 +766,8 @@
 
   <div id="slide2" style="background-color: #b7f1f2; display: flex; 
       justify-content: center; align-items: center; padding-top: 6vh; padding-bottom: 6vh;">
-    <div id="texto2" style="margin-right: 6vw; margin-left: 12vw;  max-width: 50vw;">
+
+    <div id="texto2" style="max-width: 50vw; min-width: 100px;">
       <h2 style="color: #ff8182; font-weight: bold; font-size: 8vh;">Casi el 40%</h2>
       <p style="font-size: 23px;">son casos de trastornos emocionales y del comportamiento</p>
     </div>
@@ -632,7 +787,7 @@
     </div>
 
 
-    <div id="texto3" style="margin-right: 6vw; margin-left: 3vw;  max-width: 50vw;">
+    <div id="texto3" style="max-width: 50vw;  min-width: 400px;">
       <h2 style="color: #ffc447; font-weight: bold; font-size: 8vh;">Casi el 13%</h2>
       <p style="font-size:23px">son casos de trastorno neuróticos relacionados con el estrés y somatomorfos.</p>
     </div>
@@ -641,8 +796,8 @@
 
 
   <div id="slide4" style="background-color: #ff8182; display: flex; z-index: 2; position: sticky;
-  justify-content: center; align-items: center; padding-top: 5vh; padding-bottom: 5vh;">
-    <div id="texto4" style="margin-right: 2vw; margin-left: 6vw; max-width: 50vw;">
+  justify-content: center; align-items: center; padding-top: 5vh; padding-bottom: 5vh; min-width: 400px;">
+    <div id="texto4" style="max-width: 50vw;">
       <p style="font-size:23px; color: #ffffff; font-weight: bold;">Se reportaron</p>
       <h2 style="color: #ffffff; font-weight: bold; font-size: 8vh; margin-top:-30px">19,798</h2>
       <p style="font-size:23px">casos de violencia psicológica, sexual y física
