@@ -155,17 +155,23 @@
 
     /*para tarjetas de niños*/
 
-    @media screen and (max-width: 469px) {
+    @media screen and (max-width: 519px) {
 
       #imagen_sammy {
         width: 20vw;
         height: 20vw;
-        margin-left: 0px;
+
       }
 
       #cuadro_ia_rosa {
-        width: 300px;
+        width: 90vw;
+        height: 90vh;
+        margin: 0px;
+      }
 
+      #espacio_para_ai {
+        width: 85vw;
+        height: 85vh;
       }
 
       #titulo_sammy {
@@ -176,16 +182,10 @@
         display: block;
         width: 200px;
         margin-left: 0px;
+        display: none;
       }
 
-      #sinopsis_sammy {
-        width: 250px;
-      }
 
-      #espacio_para_ai {
-        width: 100px;
-        height: 250px;
-      }
 
       #gd_1 {
         width: 200px;
@@ -241,7 +241,7 @@
 
 
 
-    @media screen and (min-width: 470px) and (max-width: 980px) {
+    @media screen and (min-width: 520px) and (max-width: 980px) {
 
       /* Estilos para dispositivos móviles */
       #menusito {
@@ -281,10 +281,13 @@
 
       #dra_y_texto {
         width: 80vw;
+        display: none;
       }
 
       #espacio_para_ai {
         width: 80vw;
+        height: 500px;
+        margin-right: 2vw;
       }
 
       #gd_1 {
@@ -315,6 +318,16 @@
 
       #dra_y_texto {
         width: 450px;
+      }
+
+      #cuadro_ia_rosa {
+        width: 62vw;
+      }
+
+      #espacio_para_ai {
+        width: 47vw;
+        height: 500px;
+        margin-right: 30px;
       }
 
     }
@@ -893,22 +906,25 @@
 
 
 
-  <div id="slide10" style="text-align: center; padding-top: 20vh; padding-bottom: 35vh; padding-left: 30px; padding-right: 30px;">
+  <div id="slide10"
+    style="text-align: center; padding-top: 20vh; padding-bottom: 35vh; padding-left: 30px; padding-right: 30px;">
     <h3 style="color: #006d74; font-size: 6vh;">¿Cómo es la situación en diferentes regiones?</h3>
     <p style="font-size: 20px; margin-top: 20px;">Aquí podrás comparar el número de psicólogos existentes,
       los casos de acoso
       escolar y los casos de transtorno infantil por región</p>
 
-    <div style="margin-top: 10vh; height: 80vh; display: flex; justify-content: center; flex-wrap: wrap; padding: 30px;">
+    <div
+      style="margin-top: 10vh; height: 80vh; display: flex; justify-content: center; flex-wrap: wrap; padding: 30px;">
       <h3 style="color: #ff8182; font-size: 4vh; width: 90vw">Plazas de psicólogos por región</h3>
       <iframe title="Plazas de psicólogos por región" aria-label="Mapa" id="datawrapper-chart-aIVXe"
-        src="https://datawrapper.dwcdn.net/aIVXe/3/" scrolling="no" frameborder="0"
-        style="" height="682" data-external="1"></iframe>
+        src="https://datawrapper.dwcdn.net/aIVXe/3/" scrolling="no" frameborder="0" style="" height="682"
+        data-external="1"></iframe>
       <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
       </script>
     </div>
 
-    <div style="margin-top: 10px; height: 80vh; display: flex; justify-content: center; flex-wrap: wrap; padding: 30px;">
+    <div
+      style="margin-top: 10px; height: 80vh; display: flex; justify-content: center; flex-wrap: wrap; padding: 30px;">
       <h3 style="color: #ff8182; font-size: 4vh; width: 90vw">Diagnósticos de trastornos mentales por región</h3>
       <p style="text-align: justify; width: 90vw; font-size: 20px;">
         En seis regiones del país, hay solo 1 psicólogo por cada 800 personas con trastornos mentales.
@@ -919,8 +935,8 @@
 
       </p>
       <iframe title="Casos de trastornos mentales por región" aria-label="Mapa" id="datawrapper-chart-2pmn4"
-        src="https://datawrapper.dwcdn.net/2pmn4/1/" scrolling="no" frameborder="0"
-        style="" height="682" data-external="1"></iframe>
+        src="https://datawrapper.dwcdn.net/2pmn4/1/" scrolling="no" frameborder="0" style="" height="682"
+        data-external="1"></iframe>
       <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
       </script>
     </div>
@@ -1257,8 +1273,8 @@
 
 
 
-  <div id="slide_17_sammy" style="background-color: #b7f1f2; padding: 5vw;
-  display: flex; flex-wrap: wrap; justify-content: center;">
+  <div id="slide_17_sammy"
+    style="background-color: #b7f1f2; padding: 5vw; display: flex; flex-wrap: wrap; justify-content: center;">
     <p style="font-size: 18px; width: 80vw; text-align: left;">Para ayudar a reconocer situaciones de acoso escolar,
       El Comercio ha diseñado y creado a 'Sammy',
       una asistente virtual entrenada con Inteligencia Artificial que tiene la capacidad de identificar y asesorar si
@@ -1284,16 +1300,16 @@
       posible.
     </p>
 
-
-
-    <div id="cuadro_ia_rosa" style="background-color: #ff8182; border-radius: 20px; width: 62vw; margin-top: 5vh;
+    <div id="cuadro_ia_rosa" style="background-color: #ff8182; border-radius: 20px; margin-top: 5vh;
        display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; padding: 40px;">
 
 
 
       <div id="dra_y_texto" style="margin: 1vw; text-align: center;">
-        <img id="imagen_sammy" src="ia_sammy.png" height="130">
-        <div id="texto_superior_ia">
+        <div style="width: 10vw;">
+          <div style="width: 10vw;">
+            <img id="imagen_sammy" src="ia_sammy.png" height="130" width="auto">
+          </div>
           <h2 id="titulo_sammy" style="color: #ffffff; font-size: 30px ">Sammy</h2>
         </div>
       </div>
@@ -1301,8 +1317,8 @@
 
 
       <div id="solo_centrar" style="justify-content: center; display: flex; align-items: center;">
-        <div id="espacio_para_ai" style="background-color: white; width: 47vw; height: 500px; border-radius: 20px;
-       justify-content: center; display: flex; align-items: center; margin-right: 30px;">
+        <div id="espacio_para_ai" style="background-color: white; border-radius: 20px; 
+       justify-content: center; display: flex; align-items: center;">
 
           <iframe
             src="https://chatbot-template-bvq3ychcftk.streamlit.app/?embed=true&embed_options=show_footer&embed_options=light_theme"
