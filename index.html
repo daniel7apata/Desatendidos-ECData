@@ -948,54 +948,60 @@
   <!--grafico interactivo-->
   <div id="slide11_5" style="background-color: #ffc347; padding: 20px; margin-top: 10vh;">
 
-    <div id="menus_desplegables"
-      style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 20px;">
+    <div id="menus_desplegables" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
 
 
-      <h3 style="color: #006d74; font-size: 30px; margin-left: 20px;">Año</h3>
+      <div style="display: block;">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+          <h3 style="color: #006d74; font-size: 30px; margin: 20px;">Año</h3>
 
-      <select id="yearSelect" onchange="drawBalls()" style="margin-left: 20px; border-radius: 10px; font-size: 20px; max-height: 20vh; 
+          <select id="yearSelect" onchange="drawBalls()" style="margin: 20px; border-radius: 10px; font-size: 20px; max-height: 20vh; 
       font-family: Londrina Solid; color: #ffffff ; background-color: #ffc347;">
-        <option value="nada">Selecciona un año</option>
-        <option value="2020">2020</option>
-        <option value="2021">2021</option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
-      </select>
+            <option value="nada">Selecciona un año</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+      </div>
 
-      <h3 style="color: #006d74; font-size: 30px; margin-left: 5vw">Región</h3>
+      <div style="display: block;">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+          <h3 style="color: #006d74; font-size: 30px; margin: 20px;">Región</h3>
 
-      <select id="citySelect" onchange="drawBalls()" style="margin-left: 20px; border-radius: 10px; font-size: 18px; max-height: 20vh; font-family: Londrina Solid;
+          <select id="citySelect" onchange="drawBalls()" style="margin: 20px; border-radius: 10px; font-size: 18px; max-height: 20vh; font-family: Londrina Solid;
         color: #ffffff ; background-color: #ffc347;">
-        <option value="nada">Selecciona una región</option>
-        <option value="Amazonas">Amazonas</option>
-        <option value="Ancash">Ancash</option>
-        <option value="Apurimac">Apurimac</option>
-        <option value="Arequipa">Arequipa</option>
-        <option value="Ayacucho">Ayacucho</option>
-        <option value="Cajamarca">Cajamarca</option>
-        <option value="Callao">Callao</option>
-        <option value="Cusco">Cusco</option>
-        <option value="Huancavelica">Huancavelica</option>
-        <option value="Huanuco">Huanuco</option>
-        <option value="Ica">Ica</option>
-        <option value="Junin">Junin</option>
-        <option value="La Libertad">La Libertad</option>
-        <option value="Lambayeque">Lambayeque</option>
-        <option value="Lima">Lima</option>
-        <option value="Loreto">Loreto</option>
-        <option value="Madre de Dios">Madre de Dios</option>
-        <option value="Moquegua">Moquegua</option>
-        <option value="Pasco">Pasco</option>
-        <option value="Piura">Piura</option>
-        <option value="Puno">Puno</option>
-        <option value="San Martin">San Martin</option>
-        <option value="Tacna">Tacna</option>
-        <option value="Tumbes">Tumbes</option>
-        <option value="Ucayali">Ucayali</option>
-      </select>
+            <option value="nada">Selecciona una región</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Ancash">Ancash</option>
+            <option value="Apurimac">Apurimac</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Ayacucho">Ayacucho</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Callao">Callao</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Huancavelica">Huancavelica</option>
+            <option value="Huanuco">Huanuco</option>
+            <option value="Ica">Ica</option>
+            <option value="Junin">Junin</option>
+            <option value="La Libertad">La Libertad</option>
+            <option value="Lambayeque">Lambayeque</option>
+            <option value="Lima">Lima</option>
+            <option value="Loreto">Loreto</option>
+            <option value="Madre de Dios">Madre de Dios</option>
+            <option value="Moquegua">Moquegua</option>
+            <option value="Pasco">Pasco</option>
+            <option value="Piura">Piura</option>
+            <option value="Puno">Puno</option>
+            <option value="San Martin">San Martin</option>
+            <option value="Tacna">Tacna</option>
+            <option value="Tumbes">Tumbes</option>
+            <option value="Ucayali">Ucayali</option>
+          </select>
+        </div>
+      </div>
     </div>
-
     <div class="container_balls" style="height: 80vh; width: 95vw;">
       <div id="ballsContainer"></div>
     </div>
