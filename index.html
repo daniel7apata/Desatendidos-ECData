@@ -126,18 +126,18 @@
     .testimonio {
       perspective: 1000px;
       width: 400px;
-      height: 500px;
+      height: 450px;
       margin: 30px;
       position: relative;
     }
 
     .testimonio .front,
     .testimonio .back {
-      width: 100%;
-      height: 100%;
       position: absolute;
       backface-visibility: hidden;
-      transition: transform 0.6s;
+      transition: transform 0.8s;
+      width: 100%;
+      height: 100%;
     }
 
     .testimonio .back {
@@ -702,45 +702,47 @@
 
   </div>
 
-  <div id="slide5" style="text-align: center; 
-      padding-top: 20vh; padding-bottom: 20vh; display: flex; justify-content: center; 
-      align-items: center;  flex-wrap: wrap;">
+  <div id="slide5"
+    style="text-align: center; padding-top: 20vh; padding-bottom: 20vh; display: flex; justify-content: center; align-items: center;  flex-wrap: wrap;">
     <h3 style="color: #006d74; font-size: 6vh;">La violencia desde la mirada del niño</h3>
 
     <div id="cards_dos_testimonios" style="width: 90vw; display: flex; align-items: center; justify-content: center;">
 
+
       <div id="testimonio_ninia" class="testimonio">
+
         <div class="front" style="background-color: #b7f1f2; padding: 40px;">
-          <div style="width: 100%; margin-right: 2vw; display: flex; justify-content: center; flex-wrap: wrap;">
+          <div>
             <img src="ilustracion_ana4.png" width="400px" style="width: 100%;">
             <p style="font-size:18px; margin-top: 30px;">Nombre niña</p>
           </div>
         </div>
+
+
         <div class="back" style="background-color: #b7f1f2; padding: 20px;">
           <p style="font-size:18px; margin-top: 30px;">Contenido de la parte de atrás</p>
-
-          <iframe width="350" height="350" src="https://www.youtube.com/embed/EsgAibVIENo" title="YouTube video player"
-            frameborder="0"
+          <iframe width="350" height="350" style="width: 100%;" src="https://www.youtube.com/embed/EsgAibVIENo"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-
         </div>
+
       </div>
+
+
       <div id="testimonio_ninio" class="testimonio">
         <div class="front" style="background-color: #ff8182; padding: 40px;">
-          <div style="width: 100%; margin-right: 2vw; display: flex; justify-content: center; flex-wrap: wrap;">
+          <div style="display: flex; justify-content: center; flex-wrap: wrap;">
             <img src="ilustracion_ana4.png" width="400px" style="width: 100%;">
             <p style="font-size:18px; margin-top: 30px;">Nombre niña</p>
           </div>
         </div>
         <div class="back" style="background-color: #ff8182; padding: 20px;">
           <p style="font-size:18px; margin-top: 30px;">Contenido de la parte de atrás</p>
-
-          <iframe width="350" height="350" src="https://www.youtube.com/embed/EsgAibVIENo" title="YouTube video player"
-            frameborder="0"
+          <iframe width="350" height="350" style="width: 100%;" src="https://www.youtube.com/embed/EsgAibVIENo"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-
         </div>
       </div>
 
@@ -946,12 +948,14 @@
   <!--grafico interactivo-->
   <div id="slide11_5" style="background-color: #ffc347; padding: 20px; margin-top: 10vh;">
 
-    <div id="menus_desplegables" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <div id="menus_desplegables"
+      style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 20px;">
 
-      <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Año</h3>
 
-      <select id="yearSelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
-          color: #ffffff ; background-color: #ffc347;">
+      <h3 style="color: #006d74; font-size: 30px; margin-left: 20px;">Año</h3>
+
+      <select id="yearSelect" onchange="drawBalls()" style="margin-left: 20px; border-radius: 10px; font-size: 20px; max-height: 20vh; 
+      font-family: Londrina Solid; color: #ffffff ; background-color: #ffc347;">
         <option value="nada">Selecciona un año</option>
         <option value="2020">2020</option>
         <option value="2021">2021</option>
@@ -959,12 +963,11 @@
         <option value="2023">2023</option>
       </select>
 
-      <h3 style="color: #006d74; font-size: 30px; margin-left: 20px; margin-right: 20px;">Region</h3>
+      <h3 style="color: #006d74; font-size: 30px; margin-left: 120px;">Región</h3>
 
-      <select id="citySelect" onchange="drawBalls()" style="border-radius: 10px; font-size: 20px; max-height: 20vh; font-family: Londrina Solid;
+      <select id="citySelect" onchange="drawBalls()" style="margin-left: 20px; border-radius: 10px; font-size: 18px; max-height: 20vh; font-family: Londrina Solid;
         color: #ffffff ; background-color: #ffc347;">
         <option value="nada">Selecciona una región</option>
-
         <option value="Amazonas">Amazonas</option>
         <option value="Ancash">Ancash</option>
         <option value="Apurimac">Apurimac</option>
@@ -991,7 +994,6 @@
         <option value="Tumbes">Tumbes</option>
         <option value="Ucayali">Ucayali</option>
       </select>
-
     </div>
 
     <div class="container_balls" style="height: 80vh; width: 95vw;">
