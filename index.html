@@ -123,13 +123,7 @@
 
 
     /*para tarjetas de niños*/
-    .testimonio {
-      perspective: 1000px;
-      width: 400px;
-      height: 450px;
-      margin: 30px;
-      position: relative;
-    }
+
 
     .testimonio .front,
     .testimonio .back {
@@ -156,6 +150,14 @@
     /*para tarjetas de niños*/
 
     @media screen and (max-width: 544px) {
+
+
+      .testimonio {
+      perspective: 1000px;
+      width: 250px;
+      height: 300px;
+      margin: 30px;
+    }
 
       #slide_descanso {
         flex-wrap: wrap;
@@ -266,12 +268,23 @@
         color: #a30240;
       }
 
+      #v_testimonio_ninio, #v_testimonio_ninia{
+        height: 60%;
+      }
+
 
     }
 
 
 
     @media screen and (min-width: 545px) and (max-width: 631px) {
+
+      .testimonio {
+      perspective: 1000px;
+      width: 450px;
+      height: 500px;
+      margin: 30px;
+    }
 
       #slide_descanso {
         flex-wrap: wrap;
@@ -378,12 +391,23 @@
         width: 400px;
       }
 
+      #v_testimonio_ninio, #v_testimonio_ninia{
+        height: 80%;
+      }
+
 
     }
 
 
 
     @media screen and (min-width: 632px) and (max-width: 980px) {
+
+      .testimonio {
+      perspective: 1000px;
+      width: 400px;
+      height: 450px;
+      margin: 30px;
+    }
 
       #slide_descanso {
         flex-wrap: wrap;
@@ -468,9 +492,20 @@
         width: 400px;
       }
 
+      #v_testimonio_ninio, #v_testimonio_ninia{
+        height: 80%;
+      }
+
     }
 
     @media screen and (min-width: 981px) {
+
+      .testimonio {
+      perspective: 1000px;
+      width: 400px;
+      height: 450px;
+      margin: 30px;
+    }
 
       #slide2 {
         padding-left: 12vw;
@@ -527,6 +562,10 @@
 
       #cuadro_blanco_op_3 {
         width: 400px;
+      }
+
+      #v_testimonio_ninio, #v_testimonio_ninia{
+        height: 80%;
       }
     }
   </style>
@@ -919,7 +958,7 @@
     style="text-align: center; padding-top: 20vh; padding-bottom: 20vh; display: flex; justify-content: center; align-items: center;  flex-wrap: wrap;">
     <h3 style="color: #006d74; font-size: 6vh;">La violencia desde la mirada del niño</h3>
 
-    <div id="cards_dos_testimonios" style="width: 90vw; display: flex; align-items: center; justify-content: center;">
+    <div id="cards_dos_testimonios" style="width: 90vw; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
 
 
       <div id="testimonio_ninia" class="testimonio">
@@ -934,7 +973,7 @@
 
         <div class="back" style="background-color: #b7f1f2; padding: 20px;">
           <p style="font-size:18px; margin-top: 30px;">Contenido de la parte de atrás</p>
-          <iframe width="350" height="350" style="width: 100%;" src="https://www.youtube.com/embed/EsgAibVIENo"
+          <iframe id="v_testimonio_ninia" width="350" height="350" style="width: 100%;" src="https://www.youtube.com/embed/EsgAibVIENo"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
@@ -952,7 +991,7 @@
         </div>
         <div class="back" style="background-color: #ff8182; padding: 20px;">
           <p style="font-size:18px; margin-top: 30px;">Contenido de la parte de atrás</p>
-          <iframe width="350" height="350" style="width: 100%;" src="https://www.youtube.com/embed/EsgAibVIENo"
+          <iframe id="v_testimonio_ninio" width="350" height="350" style="width: 100%;" src="https://www.youtube.com/embed/EsgAibVIENo"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
