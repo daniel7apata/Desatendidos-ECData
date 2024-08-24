@@ -115,8 +115,7 @@
     /*para tarjetas de niños*/
 
 
-    .testimonio .front,
-    .testimonio .back {
+    .testimonio .front {
       position: absolute;
       backface-visibility: hidden;
       transition: transform 0.8s;
@@ -124,18 +123,6 @@
       height: 100%;
     }
 
-    .testimonio .back {
-      transform: rotateY(180deg);
-    }
-
-    .testimonio:hover .front,
-    .testimonio:hover .back {
-      transform: rotateY(180deg);
-    }
-
-    .testimonio:hover .back {
-      transform: rotateY(0deg);
-    }
 
     /*para tarjetas de niños*/
 
@@ -1106,20 +1093,11 @@
 
       <div id="testimonio_ninia" class="testimonio">
 
-        <div class="front" style="background-color: #b7f1f2; padding: 40px;">
-          <div>
-            <img src="ilustracion_ana4.png" width="400px" style="width: 100%;">
-            <p style="font-size:18px; margin-top: 30px;">Nombre niña</p>
-          </div>
-        </div>
+        <div class="front" style="background-color: #b7f1f2; padding: 10px;">
+
+          <video src="Caso_animado.webm" height="430px" controls></video>
 
 
-        <div class="back" style="background-color: #b7f1f2; padding: 20px;">
-          <p style="font-size:18px; margin-top: 30px;">Contenido de la parte de atrás</p>
-          <iframe id="v_testimonio_ninia" width="350" height="350" style="width: 100%;"
-            src="https://www.youtube.com/embed/EsgAibVIENo" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
         </div>
 
       </div>
