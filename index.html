@@ -668,6 +668,26 @@
 
 
     }
+
+
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      /* Relación de aspecto 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
   </style>
   <title>Des-atendidos</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -898,12 +918,18 @@
 
 
 
-
-  <video id="video" loop autoplay preload muted>
+  <!--display none-->
+  <video style="display: none;" id="video" loop autoplay preload muted>
     <source src="animacion_inicial.webm" type='video/webm; codecs="vp8,vorbis"' />
   </video>
 
 
+
+  <div class="video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/d_Guy6l2VQ4?si=J1nj09jG6tCTqQ2D" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 
 
   <div id="slide1" style="display: flex; justify-content: space-between; 
@@ -1061,7 +1087,15 @@
 
         <div class="front" style="background-color: #ff8182; padding: 10px;">
 
-          <video src="Caso_animado.webm" height="430px" controls></video>
+          <video style="display:none" src="Caso_animado.webm" height="430px" controls></video>
+
+
+          <iframe width="242" height="430" src="https://www.youtube-nocookie.com/embed/1p-zORCnOvA?si=cAfuh8vorEblY_14"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
           <div style="background-color: white; padding: 5px; margin: 10px">
             <h3 style="font-size:22px;
           text-align: left;">
