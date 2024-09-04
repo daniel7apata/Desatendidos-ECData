@@ -282,7 +282,7 @@
         height: 80vh;
         width: 89vw;
         overflow: hidden;
-        background-image: url('https://i.ibb.co/MSYDgHJ/salon.jpg');
+        background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZKUKI4K2HZEIBK7MMYQFHGRNMI.jpg');
         /* Imagen en el mismo directorio */
         background-size: cover;
         background-position: center;
@@ -436,7 +436,7 @@
         height: 80vh;
         width: 90vw;
         overflow: hidden;
-        background-image: url('https://i.ibb.co/MSYDgHJ/salon.jpg');
+        background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZKUKI4K2HZEIBK7MMYQFHGRNMI.jpg');
         /* Imagen en el mismo directorio */
         background-size: cover;
         background-position: center;
@@ -569,7 +569,7 @@
         height: 80vh;
         width: 92vw;
         overflow: hidden;
-        background-image: url('https://i.ibb.co/MSYDgHJ/salon.jpg');
+        background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZKUKI4K2HZEIBK7MMYQFHGRNMI.jpg');
         /* Imagen en el mismo directorio */
         background-size: cover;
         background-position: center;
@@ -668,7 +668,7 @@
         height: 80vh;
         width: 95vw;
         overflow: hidden;
-        background-image: url('https://i.ibb.co/MSYDgHJ/salon.jpg');
+        background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZKUKI4K2HZEIBK7MMYQFHGRNMI.jpg');
         /* Imagen en el mismo directorio */
         background-size: cover;
         background-position: center;
@@ -1745,7 +1745,7 @@
         <div id="espacio_para_ai" style="background-color: white; border-radius: 20px; 
        justify-content: center; display: flex; align-items: center;">
 
-          <iframe
+          <iframe id="chatbotIframe"
             src="https://chatbot-template-bvq3ychcftk.streamlit.app/?embed=true&embed_options=show_footer&embed_options=light_theme"
             style="height: 450px; width: 90%;"></iframe>
 
@@ -1759,14 +1759,22 @@
       style="display: flex; flex-wrap: wrap;justify-content: center; margin-top: 5vh; margin-bottom: 2vh;">
 
       <div style="width: 90vw; display: flex; flex-wrap: wrap;justify-content: center;">
-        <button style="margin-top:20px; color: #ffffff; background-color: #ff8182; 
+        <button id="resetButton" style="margin-top:20px; color: #ffffff; background-color: #ff8182; 
     border: 3px solid #006d74; border-radius: 30px; text-decoration: none; width: 280px; height: 40px;"
-          onclick="window.location.href='#mini_creditos'" onmouseover="this.style.backgroundColor='#ff5050';"
+          onmouseover="this.style.backgroundColor='#ff5050';"
           onmouseout="this.style.backgroundColor='#ff8182';">
 
           <h3>Regresar al inicio</h3>
         </button>
       </div>
+
+      <script>
+        document.getElementById('resetButton').addEventListener('click', function () {
+          var iframe = document.getElementById('chatbotIframe');
+          iframe.src = iframe.src;
+        });
+      </script>
+
 
 
     </div>
