@@ -1743,40 +1743,37 @@
 
       <div id="solo_centrar" style="justify-content: center; display: flex; align-items: center;">
         <div id="espacio_para_ai" style="background-color: white; border-radius: 20px; 
-       justify-content: center; display: flex; align-items: center;">
+       justify-content: center; display: flex; align-items: baseline; flex-wrap: wrap;">
 
           <iframe id="chatbotIframe"
             src="https://chatbot-template-bvq3ychcftk.streamlit.app/?embed=true&embed_options=show_footer&embed_options=light_theme"
-            style="height: 450px; width: 90%;"></iframe>
+            style="height: 80%; width: 90%; margin-top: 20px;"></iframe>
+          <div id="regresar"
+            style="display: flex; flex-wrap: wrap;justify-content: center; margin-top: 5vh; margin-bottom: 2vh;">
 
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+              <button id="resetButton" style="color: #ffffff; background-color: #ff8182; 
+        border: 3px solid #006d74; border-radius: 30px; text-decoration: none; width: 280px; height: 30px;"
+                onmouseover="this.style.backgroundColor='#ff5050';" onmouseout="this.style.backgroundColor='#ff8182';">
+
+                <h3 style="font-size: 16px;">Reiniciar chat</h3>
+              </button>
+            </div>
+
+          </div>
+
+          <script>
+            document.getElementById('resetButton').addEventListener('click', function () {
+              var iframe = document.getElementById('chatbotIframe');
+              iframe.src = iframe.src;
+            });
+          </script>
 
         </div>
       </div>
 
     </div>
 
-    <div id="regresar"
-      style="display: flex; flex-wrap: wrap;justify-content: center; margin-top: 5vh; margin-bottom: 2vh;">
-
-      <div style="width: 90vw; display: flex; flex-wrap: wrap;justify-content: center;">
-        <button id="resetButton" style="margin-top:20px; color: #ffffff; background-color: #ff8182; 
-    border: 3px solid #006d74; border-radius: 30px; text-decoration: none; width: 280px; height: 40px;"
-          onmouseover="this.style.backgroundColor='#ff5050';" onmouseout="this.style.backgroundColor='#ff8182';">
-
-          <h3>Regresar al inicio</h3>
-        </button>
-      </div>
-
-      <script>
-        document.getElementById('resetButton').addEventListener('click', function () {
-          var iframe = document.getElementById('chatbotIframe');
-          iframe.src = iframe.src;
-        });
-      </script>
-
-
-
-    </div>
 
 
 
