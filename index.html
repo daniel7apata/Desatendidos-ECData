@@ -1167,7 +1167,7 @@
       <div id="ballCountDisplay" style="font-size: 4.5vh; color:white; width: 60vw; 
       height: fit-content; text-align: center; 
       font-family: Londrina Solid; background-color: #ff8182; padding: 5px; 
-      border-radius: 20px;">1 psicólogo
+      border-radius: 20px; display: block;">1 psicólogo
         por cada <span id="ballCountValue">X</span> alumnos.</div>
     </div>
 
@@ -1991,7 +1991,7 @@
 
 
       var cuadroDeCifras = document.getElementById("ballCountDisplay");
-      if (cityName === "nada" || yearNumber === "nada") { cuadroDeCifras.style.display = "none" }
+      if (cityName === "nada" || yearNumber === "nada") { overlay4.style.display = "none" }
       else {
         //cuadroDeCifras.style.display = 'block';
         overlay4.style.display = 'flex';
